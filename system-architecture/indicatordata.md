@@ -1,0 +1,75 @@
+---
+description: This page is a stub.
+---
+
+# IndicatorData
+
+Below is an example of an Indicator Data object
+
+```text
+'groups': {'race': {'Other': [{'count': 14034.3619100001,
+     'region of birth': 'Other'},
+    {'count': 23014.7457499993, 'region of birth': 'Rest of africa'},
+    {'count': 34546.705719999, 'region of birth': 'Sadc'},
+    {'count': 33844.2467799998, 'region of birth': 'South africa'},
+    {'count': 8627.21382000001, 'region of birth': 'Unspecified'}],
+   'White': [{'count': 17755.8348600004, 'region of birth': 'Other'},
+    {'count': 1076.82088, 'region of birth': 'Rest of africa'},
+    {'count': 19345.9559600004, 'region of birth': 'Sadc'},
+    {'count': 1175191.32683901, 'region of birth': 'South africa'},
+    {'count': 9675.18685000005, 'region of birth': 'Unspecified'}],
+   'Coloured': [{'count': 1104.4229, 'region of birth': 'Other'},
+    {'count': 842.120029999999, 'region of birth': 'Rest of africa'},
+    {'count': 5666.85164000002, 'region of birth': 'Sadc'},
+    {'count': 1575281.6271999, 'region of birth': 'South africa'},
+    {'count': 1675.21038, 'region of birth': 'Unspecified'}],
+   'Black african': [{'count': 9463.15047999995, 'region of birth': 'Other'},
+    {'count': 68003.2315900028, 'region of birth': 'Rest of africa'},
+    {'count': 810647.802930328, 'region of birth': 'Sadc'},
+    {'count': 14739761.6385047, 'region of birth': 'South africa'},
+    {'count': 85310.3884700055, 'region of birth': 'Unspecified'}],
+   'Indian or asian': [{'count': 38132.814809999, 'region of birth': 'Other'},
+    {'count': 5076.67313999999, 'region of birth': 'Rest of africa'},
+    {'count': 2539.20952000001, 'region of birth': 'Sadc'},
+    {'count': 414713.136599942, 'region of birth': 'South africa'},
+    {'count': 5150.74462, 'region of birth': 'Unspecified'}]},
+  'gender': {'Male': [{'count': 55748.008589999, 'region of birth': 'Other'},
+    {'count': 72957.3858900018, 'region of birth': 'Rest of africa'},
+    {'count': 517617.920130245, 'region of birth': 'Sadc'},
+    {'count': 8727584.65349521, 'region of birth': 'South africa'},
+    {'count': 63433.5451700032, 'region of birth': 'Unspecified'}],
+   'Female': [{'count': 24742.5763700004, 'region of birth': 'Other'},
+    {'count': 25056.2055000003, 'region of birth': 'Rest of africa'},
+    {'count': 355128.605640082, 'region of birth': 'Sadc'},
+    {'count': 9211207.32242836, 'region of birth': 'South africa'},
+    {'count': 47005.1989700023, 'region of birth': 'Unspecified'}]},
+  'age group': {'15-19': [{'count': 6298.26723000001,
+     'region of birth': 'Other'},
+    {'count': 6312.14378000002, 'region of birth': 'Rest of africa'},
+    {'count': 68137.1359800096, 'region of birth': 'Sadc'},
+    {'count': 4775821.0196088, 'region of birth': 'South africa'},
+    {'count': 9359.01092000012, 'region of birth': 'Unspecified'}],
+   '20-24': [{'count': 16982.6305099999, 'region of birth': 'Other'},
+    {'count': 22846.8292099995, 'region of birth': 'Rest of africa'},
+    {'count': 229155.41202007, 'region of birth': 'Sadc'},
+    {'count': 4684128.15334481, 'region of birth': 'South africa'},
+    {'count': 27011.4452600009, 'region of birth': 'Unspecified'}],
+   '25-29': [{'count': 26769.6408399996, 'region of birth': 'Other'},
+    {'count': 34202.7678200008, 'region of birth': 'Rest of africa'},
+    {'count': 309901.929190191, 'region of birth': 'Sadc'},
+    {'count': 4354313.53260714, 'region of birth': 'South africa'},
+    {'count': 37417.0233700027, 'region of birth': 'Unspecified'}],
+   '30-35': [{'count': 30440.0463799999, 'region of birth': 'Other'},
+    {'count': 34651.8505800018, 'region of birth': 'Rest of africa'},
+    {'count': 265552.048580056, 'region of birth': 'Sadc'},
+    {'count': 4124529.27036281, 'region of birth': 'South africa'},
+    {'count': 36651.2645900019, 'region of birth': 'Unspecified'}]}},
+ 'subindicators': {'Sadc': 872746.525770327,
+  'Other': 80490.5849599994,
+  'Unspecified': 110438.744140006,
+  'South africa': 17938791.9759236,
+  'Rest of africa': 98013.5913900021}}
+```
+
+
+
