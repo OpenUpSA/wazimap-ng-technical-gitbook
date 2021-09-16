@@ -250,3 +250,11 @@ translations: {
   },
 ```
 
+This can also be used to relable terms to be more appropriate to a specifc profile, e.g. presenting the default "points"
+
+![](.gitbook/assets/screenshot_2021-09-16_16-37-41.png)
+
+as "services"
+
+![](.gitbook/assets/screenshot_2021-09-16_16-37-53.png)
+
