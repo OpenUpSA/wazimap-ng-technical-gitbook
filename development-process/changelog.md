@@ -1,5 +1,23 @@
 # Webflow exports & changelog
 
+## 09/23/2021 - Facilities loading state
+
+{% file src="../.gitbook/assets/wazimap-ng.webflow-facilities-loading-state-09232021-.zip" caption="Webflow export" %}
+
+### Fixed:
+
+* Fixed a small bug where the facilities facet number was being pushed too far left if there was not a download button visible. Now, if the download button is hidden, the facet will align correctly with the right side of the panel. This fix was imlemented by changing the display of the parent from `display: grid` to `display: flex` 
+
+### Changed:
+
+* Added loading state **\(hidden\)** for the location facilities title \(.location\_\_facilities\_title--loading\)
+* Added loading state **\(hidden\)** for hide/show facilities button \(.location-facilities\_\_trigger--loading\)
+* Added loading state **\(hidden\)** for location facility block items \(.location-facility\_\_item--loading\)
+
+![Loading state for title and show locations button](../.gitbook/assets/image%20%2875%29.png)
+
+![location-facility\_\_item\_loading for loading indicator on each row](../.gitbook/assets/image%20%2874%29.png)
+
 ## 09/16/2021 - Point mapper dropdown icon colour fix
 
 {% file src="../.gitbook/assets/wazimap-ng.webflow-icon-colour-fix-09162021-.zip" caption="Webflow Export" %}
