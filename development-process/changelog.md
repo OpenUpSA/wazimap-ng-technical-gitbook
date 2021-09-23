@@ -4,11 +4,11 @@
 
 {% file src="../.gitbook/assets/wazimap-ng.webflow-facilities-loading-state-09232021-.zip" caption="Webflow export" %}
 
-### Fixed:
+**Fixed:**
 
 * Fixed a small bug where the facilities facet number was being pushed too far left if there was not a download button visible. Now, if the download button is hidden, the facet will align correctly with the right side of the panel. This fix was imlemented by changing the display of the parent from `display: grid` to `display: flex` 
 
-### Changed:
+**Changed:**
 
 * Added loading state **\(hidden\)** for the location facilities title \(.location\_\_facilities\_title--loading\)
 * Added loading state **\(hidden\)** for hide/show facilities button \(.location-facilities\_\_trigger--loading\)
