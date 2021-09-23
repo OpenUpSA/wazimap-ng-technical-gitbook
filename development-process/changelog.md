@@ -2,7 +2,7 @@
 
 ## 09/23/2021 - Facilities loading state
 
-{% file src="../.gitbook/assets/wazimap-ng.webflow-facilities-loading-state-09232021-.zip" caption="Webflow export" %}
+{% file src="../.gitbook/assets/wazimap-ng.webflow-facilities-loading-state-fixed-09232021-.zip" %}
 
 **Fixed:**
 
