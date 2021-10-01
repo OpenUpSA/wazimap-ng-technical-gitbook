@@ -30,10 +30,6 @@ Documentation of indicator version: [https://wazimap-ng.webflow.io/documentation
 
 ![Added highlight element that notifies users as to where they can change options in future \(.highlight\)](../.gitbook/assets/image%20%2877%29.png)
 
-
-
-#### Changed: 
-
 ## 09/23/2021 - Facilities loading state
 
 {% file src="../.gitbook/assets/wazimap-ng.webflow-facilities-loading-state-fixed-2-09232021-.zip" %}
