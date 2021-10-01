@@ -1,5 +1,39 @@
 # Webflow exports & changelog
 
+## 10/01/2021 - Map data version support
+
+{% file src="../.gitbook/assets/wazimap-ng.webflow-indicator-version-10012021- \(1\).zip" %}
+
+{% hint style="info" %}
+Documentation of indicator version: [https://wazimap-ng.webflow.io/documentation\#rich-data](https://wazimap-ng.webflow.io/documentation#rich-data)
+{% endhint %}
+
+{% hint style="info" %}
+Documentation of highlight element: [https://wazimap-ng.webflow.io/documentation\#utility](https://wazimap-ng.webflow.io/documentation#utility)
+{% endhint %}
+
+{% hint style="info" %}
+Documentation of generic modal: [https://wazimap-ng.webflow.io/documentation\#modals](https://wazimap-ng.webflow.io/documentation#modals)
+{% endhint %}
+
+**Generic Modal:**
+
+![Added generic modal \(.generic-modal\)](../.gitbook/assets/image%20%2879%29.png)
+
+![Element structure](../.gitbook/assets/image%20%2878%29.png)
+
+![.profile-indicator\_\_version](../.gitbook/assets/image%20%2876%29.png)
+
+{% hint style="info" %}
+Documentation of indicator version: [https://wazimap-ng.webflow.io/documentation\#rich-data](https://wazimap-ng.webflow.io/documentation#rich-data)
+{% endhint %}
+
+![Added highlight element that notifies users as to where they can change options in future \(.highlight\)](../.gitbook/assets/image%20%2877%29.png)
+
+
+
+#### Changed: 
+
 ## 09/23/2021 - Facilities loading state
 
 {% file src="../.gitbook/assets/wazimap-ng.webflow-facilities-loading-state-fixed-2-09232021-.zip" %}
