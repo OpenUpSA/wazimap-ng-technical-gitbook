@@ -258,3 +258,24 @@ as "services"
 
 ![](.gitbook/assets/screenshot_2021-09-16_16-37-53.png)
 
+### Enabling / Disabling Point Marker Clustering
+
+Clustering is disabled in default. Adding the JSON below to the profile config enables clustering. 
+
+```text
+
+  "point_markers": {
+    "clustering": {
+      "enabled": true
+    }
+  },
+```
+
+* When clustering is disabled : 
+
+![](.gitbook/assets/image%20%2881%29.png)
+
+* When clustering is enabled : 
+
+![](.gitbook/assets/image%20%2882%29.png)
+
