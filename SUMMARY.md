@@ -54,6 +54,7 @@
 
 * [Profile Configuration](profile-configuation.md)
 * [Profile Indicator Configuration](profile-indicator-configuration.md)
+* [Profile Collection Configuration](profile-collection-configuration.md)
 
 ## API
 
