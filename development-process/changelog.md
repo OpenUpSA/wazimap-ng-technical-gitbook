@@ -1,5 +1,13 @@
 # Webflow exports & changelog
 
+## 10/06/2021 - Point mapper truncation fix
+
+{% file src="../.gitbook/assets/wazimap-ng.webflow-pointmapper-truncation-100621-.zip" caption="Webflow export" %}
+
+Ensured that point mapper labels are correctly truncated.
+
+![](../.gitbook/assets/image%20%2885%29.png)
+
 ## 10/01/2021 - Map data version support
 
 {% file src="../.gitbook/assets/wazimap-ng.webflow-indicator-version-10012021- \(1\).zip" %}
