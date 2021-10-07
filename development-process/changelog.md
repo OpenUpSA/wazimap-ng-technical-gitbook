@@ -1,5 +1,13 @@
 # Webflow exports & changelog
 
+## 10/06/2021 - Cluster scroll fix
+
+{% file src="../.gitbook/assets/wazimap-ng.webflow-cluster-scroll-fix-10062021-.zip" caption="Webflow export" %}
+
+#### Changed:
+
+Added a element .facility-tooltip\_\_scroll inside .facility-tooltip is--cluster which has overflow: auto to accommodate a long scrolling list. 
+
 ## 10/06/2021 - Point mapper truncation fix
 
 {% file src="../.gitbook/assets/wazimap-ng.webflow-pointmapper-truncation-100621-.zip" caption="Webflow export" %}
