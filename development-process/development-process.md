@@ -21,27 +21,27 @@ Once you decide to **start working** on a task, this is your process:
 
 * Assign the task to yourself
 * Post in the Slack channel on which issue you‘re starting to work on
-* Create a Draft PR \(use the `--allow-empty` git command to create an empty commit and push the branch to the repository\). 
+* Create a Draft PR (use the `--allow-empty` git command to create an empty commit and push the branch to the repository). 
 * Adjust the description of the PR with a description of the ticket in your own words.
   * Сheck off the item _good description_ in the PR checklist
 * Adjust the title of the PR
   * Check off the item _good title_ in the PR checklist
-* Create a link to the issue best to use _closes \#..._
+* Create a link to the issue best to use _closes #..._
   * _issue linked_ in the checklist
-* On the right side of the PR make sure the PR is linked to a ticket and therefore the GitHub Project _WazimapNG_ is added \(otherwise the automation won‘t work\).
-* Add Design Screenshots \(if necessary\)
+* On the right side of the PR make sure the PR is linked to a ticket and therefore the GitHub Project _WazimapNG _is added (otherwise the automation won‘t work).
+* Add Design Screenshots (if necessary)
 * Start working on the ticket 
 
 Once you‘re **done working** on the issue follow this process
 
 * Run all tests locally
   * Check off the item _ran tests locally & are passing_ in the checklist
-* Run the build \(FE `npm run build` & BE `docker-compose up`\)
-  * check-off _does it work \(build\) locally_ from the checklist
-* Write down how to test your changes locally and add them to the PR \(check off the item\)
+* Run the build (FE `npm run build` & BE `docker-compose up`)
+  * check-off _does it work (build) locally _from the checklist
+* Write down how to test your changes locally and add them to the PR (check off the item)
 * Go through the Code Quality Checklist
   * make sure you do not commit commented out code
-  * Make sure you do not have unnecessary login \(console.log, print, etc\)
+  * Make sure you do not have unnecessary login (console.log, print, etc)
   * Make sure you did not add magic numbers 
 * Fill out the changelog 
 * Do a review yourself
@@ -58,4 +58,3 @@ These are things we've seen cause bugs when we didn't consider them. We should t
 
 * Data can exist for some geographies in a set of siblings but not all
 * An admin can configure a default filter value which doesn't exist in the data for a given geography
-

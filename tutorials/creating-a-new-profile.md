@@ -4,7 +4,7 @@ description: Quick tutorial on creating a new profile.
 
 # Creating a new profile
 
-Here is a quick tutorial that explains how to create a new profile. There are two parts, a\) the frontend site and b\) the backend profile.
+Here is a quick tutorial that explains how to create a new profile. There are two parts, a) the frontend site and b) the backend profile.
 
 ## Setting up the frontend
 
@@ -24,13 +24,13 @@ The backend is also simple to create. Login at [https://production.wazimap-ng.op
 
 ![](../.gitbook/assets/screen-shot-2020-09-12-at-09.12.33.png)
 
-Provide a useful name for the profile - this one will be called Covid. Choose a [Geography Hierarchy](../system-architecture/geography-hierarchies.md). I am choosing the pre-installed **2016 boundaries with wards** hierarchy. This uses boundaries used in the 2016 South African municipal elections.
+Provide a useful name for the profile - this one will be called Covid. Choose a [Geography Hierarchy](../system-architecture/geography-hierarchies.md). I am choosing the pre-installed **2016 boundaries with wards **hierarchy. This uses boundaries used in the 2016 South African municipal elections.
 
 ![](../.gitbook/assets/screen-shot-2020-09-12-at-09.24.39.png)
 
 Assign the new domain name created above in the config field
 
-```text
+```
 {
   "urls": [
     "covid.openup.org.za"
@@ -44,7 +44,6 @@ Here is my completed profile screen
 
 Save and you're done.
 
-Visit [http://covid.openup.org.za/](http://covid.openup.org.za/) to see if everything is setup. It should look like the image below.
+Visit [http://covid.openup.org.za/](http://covid.openup.org.za) to see if everything is setup. It should look like the image below.
 
 ![](../.gitbook/assets/screen-shot-2020-09-12-at-09.32.29.png)
-

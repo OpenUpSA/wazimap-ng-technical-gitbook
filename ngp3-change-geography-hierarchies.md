@@ -10,31 +10,31 @@
 
 ### **Context**
 
-Read about Geography Hierarchies [here](system-architecture/geography-hierarchies.md).  
+Read about Geography Hierarchies [here](system-architecture/geography-hierarchies.md).\
 
 
 ## **Current Challenges**
 
 #### **Sharing levels across hierarchies**
 
-The current architecture considers levels to belong to only a single hierarchy. For instance **Wards** **version 2016**, belongs to the **2016 Boundaries Hierarchy**.  There are occasions where this level might be relevant to another hierarchy. South African **Provinces** are useful in both **South African hierarchies** as well as a **World** hierarchy. For this level to belong to both hierarchies, another version of the boundaries must be uploaded.  
+The current architecture considers levels to belong to only a single hierarchy. For instance **Wards** **version 2016**, belongs to the **2016 Boundaries Hierarchy**.  There are occasions where this level might be relevant to another hierarchy. South African **Provinces** are useful in both **South African hierarchies** as well as a **World** hierarchy. For this level to belong to both hierarchies, another version of the boundaries must be uploaded.\
 ****
 
-This limitation is inconvenient and creates database bloat by storing a second copy of the boundaries.  
+This limitation is inconvenient and creates database bloat by storing a second copy of the boundaries.\
 
 
-#### \*\*\*\*
+#### ****
 
 ![Province boundaries are identical but used in different hierarchies](.gitbook/assets/hierarchies.svg)
 
-  
+****\
 **Sharing datasets across hierarchies**
 
 The limitation above also has an impact on datasets associated with these geographies. Since datasets are tied to a particular hierarchy, it is impossible to use the same data with another hierarchy, even if they share boundaries.
 
 **Children can only have one parent**
 
-Child geographies explicitly identify their parent when uploaded. This prevents hierarchies where a child can be reached through different paths.  
+Child geographies explicitly identify their parent when uploaded. This prevents hierarchies where a child can be reached through different paths.\
 ****
 
 ![Children cannot have two different types of parents](.gitbook/assets/multiple-parents.svg)
@@ -51,7 +51,7 @@ Decoupling levels from hierarchies would add flexibility when constructing hiera
 
 In both cases, CPT points to WC as its parent. The namespace is not explicit. This allows us to create a new Geography Hierarchy that combines 2011 Municipalities with 2016 Provinces. We simply add these sets of Geographies to the same Geography Hierarchy. A 2011 Geography will identify any available parent Geography which has the correct code. In this case, 2011 CPT will link to 2016 WC.
 
-The Geography Hierarchy itself does not actually encode the hierarchical relationship between Geographies. This is already encoded in the Geography itself.  
+The Geography Hierarchy itself does not actually encode the hierarchical relationship between Geographies. This is already encoded in the Geography itself.\
 ****
 
 ![Proposed new database structure](.gitbook/assets/new_hierarchies.svg)
@@ -64,12 +64,11 @@ This proposal not only addresses the current limitation of not being able to sha
 
 Unfortunately, this proposal cannot accommodate a Geography with multiple parents. A modification to this design may be able to address this issue as well. The source of this limitation is how spatial data is imported into the database. Each Geography already names the code of a single parent. A possible direction to explore is creating a many-to-many table when Geographies are loaded into the system. Using this table, it would be possible to query the children of a particular Geography, and not only child Geographies that have a given Geography as a parent. 
 
-\*\*\*\*
+****
 
-.  
-  
-  
+.\
+****\
+****\
 ****
 
 ## **Recommendation**
-

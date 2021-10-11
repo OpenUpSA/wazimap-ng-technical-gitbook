@@ -13,11 +13,11 @@ A common way to fetch points is to
 
 Example themes:
 
-![](../.gitbook/assets/screenshot_2021-08-26_15-03-42.png)
+![](../.gitbook/assets/screenshot\_2021-08-26\_15-03-42.png)
 
 Example point categories
 
-![](../.gitbook/assets/screenshot_2021-08-26_15-03-53.png)
+![](../.gitbook/assets/screenshot\_2021-08-26\_15-03-53.png)
 
 {% hint style="info" %}
 **Profile Collections vs Categories**
@@ -35,25 +35,17 @@ Avoid hard-coding theme, category and point IDs without documented agreement wit
 To update points in-place rather than replace entire categories of points, agree on a consistent unique identifier that will be available in the point data fields with the profile administrators.
 {% endhint %}
 
-{% api-method method="get" host="https://production.wazimap-ng.openup.org.za" path="/api/v1/profiles/" %}
-{% api-method-summary %}
-Fetch Profile ID
-{% endapi-method-summary %}
+{% swagger baseUrl="https://production.wazimap-ng.openup.org.za" path="/api/v1/profiles/" method="get" summary="Fetch Profile ID" %}
+{% swagger-description %}
+Profile id is required to make requests to points API.
 
-{% api-method-description %}
-Profile id is required to make requests to points API.  
+\
+
+
 Get the ID of the profile from the Profile list.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
     "count": 2,
@@ -102,49 +94,56 @@ Get the ID of the profile from the Profile list.
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-| Field | Detail |
-| :--- | :--- |
-| id | ID of the Profile |
-| name | Profile Name |
-| permission\_type | Public \| Private - Profile Admin can specify which type of user should be able to view data linked to profile |
-| requires\_authentication | Boolean - Decides if the user needs authentication to view data |
-| geography\_hierarchy | Hierarchy for the Profile |
-| description | TextField - Contains short intro about Profile |
-| configuration | Profile configurations set up by profile admin |
+| Field                   | Detail                                                                                                         |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| id                      | ID of the Profile                                                                                              |
+| name                    | Profile Name                                                                                                   |
+| permission_type         | Public \| Private - Profile Admin can specify which type of user should be able to view data linked to profile |
+| requires_authentication | Boolean - Decides if the user needs authentication to view data                                                |
+| geography_hierarchy     | Hierarchy for the Profile                                                                                      |
+| description             | TextField - Contains short intro about Profile                                                                 |
+| configuration           | Profile configurations set up by profile admin                                                                 |
 
-{% api-method method="get" host="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile\_id/points/themes/" %}
-{% api-method-summary %}
-Get Themes for a Profile
-{% endapi-method-summary %}
+{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/themes/" method="get" summary="Get Themes for a Profile" %}
+{% swagger-description %}
+This API endpoint will return all Themes that are linked to specific Profile
 
-{% api-method-description %}
-This API endpoint will return all Themes that are linked to specific Profile  
-A Profile can be linked to multiple themes and Themes contains multiple categories.  
-  
-Example request:  
-`GET https://production.wazimap-ng.openup.org.za/api/v1/profile/8/points/themes/`  
-{% endapi-method-description %}
+\
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="profile\_id" type="number" required=true %}
+
+A Profile can be linked to multiple themes and Themes contains multiple categories.
+
+\
+
+
+
+
+\
+
+
+Example request:
+
+\
+
+
+
+
+`GET https://production.wazimap-ng.openup.org.za/api/v1/profile/8/points/themes/`
+
+\
+
+
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="profile_id" type="number" %}
 ID of the profile
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 [
     {
@@ -178,48 +177,32 @@ ID of the profile
     },
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-| Field | Description |
-| :--- | :--- |
-| ID | Theme ID |
-| name | Name of the Theme |
-| icon | Icon used to display on Theme |
-| order | Order in which themes are displayed in UI |
-| profile | ID of the Linked Profile |
+| Field      | Description                                                                       |
+| ---------- | --------------------------------------------------------------------------------- |
+| ID         | Theme ID                                                                          |
+| name       | Name of the Theme                                                                 |
+| icon       | Icon used to display on Theme                                                     |
+| order      | Order in which themes are displayed in UI                                         |
+| profile    | ID of the Linked Profile                                                          |
 | categories | List of sub-data that displays more information and points available for a Theme  |
 
-{% api-method method="get" host="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile\_id/points/theme/:theme\_id/profile\_categories/" %}
-{% api-method-summary %}
-Get Categories for a Theme
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/theme/:theme_id/profile_categories/" method="get" summary="Get Categories for a Theme" %}
+{% swagger-description %}
 Get all categories under a Theme
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="profile\_id" type="number" required=true %}
+{% swagger-parameter in="path" name="profile_id" type="number" %}
 ID of the Profile
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="theme\_id" type="number" required=true %}
+{% swagger-parameter in="path" name="theme_id" type="number" %}
 ID of the theme
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 [
     {
@@ -241,49 +224,43 @@ ID of the theme
     }
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-| Field | Description |
-| :--- | :--- |
-| ID | Category ID |
-| name | Name of category |
+| Field       | Description                                |
+| ----------- | ------------------------------------------ |
+| ID          | Category ID                                |
+| name        | Name of category                           |
 | description | Description to explain info about category |
-| theme | Linked Theme obj Details |
-| Metadata | Information about the source of data |
+| theme       | Linked Theme obj Details                   |
+| Metadata    | Information about the source of data       |
 
-{% api-method method="get" host="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile\_id/points/category/:category\_id/points/" %}
-{% api-method-summary %}
-Get Points for a Category
-{% endapi-method-summary %}
+{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/category/:category_id/points/" method="get" summary="Get Points for a Category" %}
+{% swagger-description %}
+Get coordinates and location details for a category.
 
-{% api-method-description %}
-Get coordinates and location details for a category.  
-Example request:  
+\
+
+
+Example request:
+
+\
+
+
+
+
 `GET https://production.wazimap-ng.openup.org.za/api/v1/profile/8/points/category/578/points/`
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="profile\_id" type="number" required=true %}
+{% swagger-parameter in="path" name="profile_id" type="number" %}
 ID of the Profile
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="category\_id" type="number" required=true %}
+{% swagger-parameter in="path" name="category_id" type="number" %}
 ID of the Category
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
     "type": "FeatureCollection",
@@ -332,73 +309,35 @@ ID of the Category
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Field</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">features</td>
-      <td style="text-align:left">List of coordinates inside a category</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">features &gt; id</td>
-      <td style="text-align:left">Location ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">features &gt; geometry</td>
-      <td style="text-align:left">Coordinate details for a Location</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">features &gt; properties</td>
-      <td style="text-align:left">
-        <p>Data associated with coordinates. It can include anything profile admin
-          wants to display in association with location. ex: Name, Phone number,
-          Detailed address etc.</p>
-        <p>There is also option for profile admin to have url and image in feature
-          properties</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Field                 | Description                                                                                                                                                                                                                                                          |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| features              | List of coordinates inside a category                                                                                                                                                                                                                                |
+| features > id         | Location ID                                                                                                                                                                                                                                                          |
+| features > geometry   | Coordinate details for a Location                                                                                                                                                                                                                                    |
+| features > properties | <p>Data associated with coordinates. It can include anything profile admin wants to display in association with location. ex: Name, Phone number, Detailed address etc.</p><p>There is also option for profile admin to have url and image in feature properties</p> |
 
-{% api-method method="get" host="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile\_id/points/geography/:geography\_code/points/" %}
-{% api-method-summary %}
-Get Categories & Points for a Geography
-{% endapi-method-summary %}
+{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/geography/:geography_code/points/" method="get" summary="Get Categories & Points for a Geography" %}
+{% swagger-description %}
+Get points within a Geography.
 
-{% api-method-description %}
-Get points within a Geography.  
+\
+
+
 API returns Categories within Geography with all the points associated with specific Category inside requested Geo Code
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="profile\_id" type="number" required=true %}
+{% swagger-parameter in="path" name="profile_id" type="number" %}
 ID of the profile
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="geography\_code" type="string" required=true %}
+{% swagger-parameter in="path" name="geography_code" type="string" %}
 Geo Code for Geography
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
     count: 2,
@@ -429,50 +368,34 @@ Geo Code for Geography
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-| Field | Description |
-| :--- | :--- |
-| count | Total Number of Categories with in a Geography |
-| results | List of Detailed points collection for Categories |
-| results &gt; category | Category Name |
-| results &gt; features | List of locations with details for a category within Geography |
+| Field              | Description                                                    |
+| ------------------ | -------------------------------------------------------------- |
+| count              | Total Number of Categories with in a Geography                 |
+| results            | List of Detailed points collection for Categories              |
+| results > category | Category Name                                                  |
+| results > features | List of locations with details for a category within Geography |
 
-{% api-method method="get" host="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile\_id/points/category/:category\_id/geography/:geography\_code/points/" %}
-{% api-method-summary %}
-Get Points for a Category within a Geography
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/category/:category_id/geography/:geography_code/points/" method="get" summary="Get Points for a Category within a Geography" %}
+{% swagger-description %}
 Get all Points for a Category within a specific Geo Code
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="profile\_id" type="number" required=true %}
+{% swagger-parameter in="path" name="profile_id" type="number" %}
 ID of the Profile
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="category\_id" type="number" required=true %}
+{% swagger-parameter in="path" name="category_id" type="number" %}
 ID for the Category
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="geography\_code" type="string" required=true %}
+{% swagger-parameter in="path" name="geography_code" type="string" %}
 Geo Code for Geography
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
     "type": "FeatureCollection",
@@ -509,8 +432,5 @@ Geo Code for Geography
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

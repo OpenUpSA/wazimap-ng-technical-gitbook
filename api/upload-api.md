@@ -8,65 +8,46 @@ description: How to upload new and update existing datasets
 
 Authoritation is done in the header via an user-based token. The token can be generated via the Admin Interface
 
-```text
+```
 Authorization : Token yourtoken
 ```
 
-{% api-method method="post" host="" path="/api/v1/datasets/" %}
-{% api-method-summary %}
-Create new dataset
-{% endapi-method-summary %}
+{% swagger baseUrl="" path="/api/v1/datasets/" method="post" summary="Create new dataset" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="body" name="file" type="string" %}
 
-{% api-method-form-data-parameters %}
-{% api-method-parameter name="file" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="profile" type="string" %}
 
-{% api-method-parameter name="profile" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-form-data-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Update existing dataset
 
-```text
+```
 POST /api/v1/datasets/:id/upload/
 ```
 
 #### Parameters
 
-| Name | Description | required |
-| :--- | :--- | :--- |
-| file | the file you want to update | True |
-| update | not just update the dataset but also update the corresponding Indicator Data | False |
-| overwrite | remove the previous data \(including the Indicator Data\) and replace with new data from dataset | False |
+| Name      | Description                                                                                    | required |
+| --------- | ---------------------------------------------------------------------------------------------- | -------- |
+| file      | the file you want to update                                                                    | True     |
+| update    | not just update the dataset but also update the corresponding Indicator Data                   | False    |
+| overwrite | remove the previous data (including the Indicator Data) and replace with new data from dataset | False    |
 
 #### Example Response
 
@@ -96,6 +77,4 @@ curl --location --request POST 'http://production.wazimap-ng.openup.org.za/api/v
 --form 'update=True' \
 --form 'overwrite=True'
 ```
-
-
 

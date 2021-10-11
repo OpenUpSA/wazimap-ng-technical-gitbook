@@ -20,28 +20,27 @@ Create a link to the related Trello Card here. So that it can be easily referenc
 
 ### **How to test it locally**
 
-Explain how you tested the changes locally and made sure that the PR does what you intend to.   
-For example if you working on Frontend Code describe which page you should open and what steps to take to see the changes you made.  
+Explain how you tested the changes locally and made sure that the PR does what you intend to. \
+For example if you working on Frontend Code describe which page you should open and what steps to take to see the changes you made.\
 For the backend, which endpoint to hit with which params, best to provide an example like a curl command.
 
 ### **Screenshots**
 
-If on FE, upload the desired outcome \(design\) and create a Screenshot, once you complete your work. Even better create a gif which shows how it works.
+If on FE, upload the desired outcome (design) and create a Screenshot, once you complete your work. Even better create a gif which shows how it works.
 
 ### **Changelog**
 
-Create a detailed changelog, if possible. This changelog can be informed by the commits you create \(reference the commit part in the git handbook\). They should contain parts that you changed. This can be a bullet list, no need to create full sentences. Should be functions, classes, API Endpoints, etc.
+Create a detailed changelog, if possible. This changelog can be informed by the commits you create (reference the commit part in the git handbook). They should contain parts that you changed. This can be a bullet list, no need to create full sentences. Should be functions, classes, API Endpoints, etc.
 
-**Added**  
-What has been added.
+**Added**\
+****What has been added.
 
-**Updated**  
-What has been updated.
+**Updated**\
+****What has been updated.
 
-**Removed**  
-What has been removed.
+**Removed**\
+****What has been removed.
 
 ### **Checklists**
 
 This part should be checked off accordingly, when you're ready.
-
