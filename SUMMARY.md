@@ -10,16 +10,17 @@
 * [Choropleth Maps](system-architecture/choropleth-maps.md)
 * [Determine which instance to use](system-architecture/which-instance-to-use.md)
 
-## Development <a id="development-process"></a>
+## Development <a href="development-process" id="development-process"></a>
 
 * [Code Deployment](development-process/code-deployment.md)
 * [Component Architecture](development-process/component-architecture.md)
 * [Development Process](development-process/development-process.md)
 * [Pull Request Template Explanation](development-process/pull-request-template-explanation.md)
 * [Code Review Process](development-process/how-to-prepare-a-pull-request-for-review.md)
-* [Pull Request Template \(FE\)](development-process/pull-request-template-fe.md)
+* [Pull Request Template (FE)](development-process/pull-request-template-fe.md)
 * [Merging webflow exports](development-process/merging-webflow-exports.md)
-* [Webflow exports & changelog](development-process/changelog.md)
+* [Webflow exports & changelog](development-process/changelog/README.md)
+  * [October 2021](development-process/changelog/october-2021.md)
 * [Translation](development-process/translation.md)
 * [Map components](development-process/map-components.md)
 
@@ -31,9 +32,9 @@
 
 ## Change Proposals
 
----
+***
 
-* [NGP1 - Changing the data model \(Implemented\)](ngp1-changing-the-data-model.md)
+* [NGP1 - Changing the data model (Implemented)](ngp1-changing-the-data-model.md)
 * [NGP2 - Presenting Geographical Hierarchies to users](ngp2-presenting-geographical-hierarchies-to-users.md)
 * [NGP3 - Change Geography Hierarchies](ngp3-change-geography-hierarchies.md)
 * [NGP4 - Format configuration](ngp4-format-configuration.md)
@@ -50,7 +51,7 @@
 
 ## Configuration
 
----
+***
 
 * [Profile Configuration](profile-configuation.md)
 * [Profile Indicator Configuration](profile-indicator-configuration.md)
@@ -62,4 +63,3 @@
 * [Upload API](api/upload-api.md)
 * [Task Status](api/task-status.md)
 * [Point data API](api/point-data-api.md)
-
