@@ -20,6 +20,7 @@
 * [Pull Request Template (FE)](development-process/pull-request-template-fe.md)
 * [Merging webflow exports](development-process/merging-webflow-exports.md)
 * [Webflow exports & changelog](development-process/changelog/README.md)
+  * [November 2021](development-process/changelog/november-2021.md)
   * [October 2021](development-process/changelog/october-2021.md)
 * [Translation](development-process/translation.md)
 * [Map components](development-process/map-components.md)
