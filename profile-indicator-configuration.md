@@ -2,7 +2,7 @@
 
 Each ProfileIndicator can be individually configured in the Admin backend using a json dictionary. A typical configuration might look as follows:
 
-```text
+```
 {
     "types": {
         "Value": {"formatting": "~s", "minX": 0, "maxX": 5000},
@@ -30,13 +30,13 @@ All values are optional. Below is a description of each configuration option:
 
 `maxX`: maximum value on the x-axis. This defaults to the maximum value in the data.
 
-`disableToggle`: By default, graphs can be toggled to display both a percentage and a value view. Setting this value to false removes that toggle from the chart context \(hamburger\) menu. The toggle is enabled by default.
+`disableToggle`: By default, graphs can be toggled to display both a percentage and a value view. Setting this value to false removes that toggle from the chart context (hamburger) menu. The toggle is enabled by default.
 
 `defaultType`: Sets whether the toggle defaults to Percentage or Value. If `disableToggle` is set to false, then this is the only visible view. The Percentage view is set as default.
 
 `xTicks` : Sets the number of ticks on the X-Axis.
 
-#### Default filters
+### Default filters
 
 Filter options are available for any dimensions other than the indicator variable.
 
@@ -47,9 +47,9 @@ To do so, add an object with keys `name` and `value` to the `filter.defaults` ar
 * `name` should be the subindicator group name
 * `value` should be the value that should be selected by default.
 
-e.g. to ensure that "Locally generated\(%\)" is matched on the "income sources" column, add the following configuration to the profile indicator:
+e.g. to ensure that "Locally generated(%)" is matched on the "income sources" column, add the following configuration to the profile indicator:
 
-```text
+```
     "filter": {
         "defaults": [
             {
@@ -60,5 +60,12 @@ e.g. to ensure that "Locally generated\(%\)" is matched on the "income sources" 
     },
 ```
 
+### Excluding profile indicators
 
+It is possible to hide profile indicators in data mapper using the `exclude`  property.`exclude` is optional. If a profile indicator does not have this property, it will not be excluded.
 
+```
+  "exclude": [
+    "data mapper"
+  ]
+```
