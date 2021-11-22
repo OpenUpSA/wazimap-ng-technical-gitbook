@@ -47,6 +47,7 @@
 * [Loading new geographies](tutorials/loading-new-geographies.md)
 * [Loading Data](tutorials/loading-data.md)
 * [Creating a new admin user](tutorials/creating-a-new-admin-user.md)
+* [Creating a non-admin user for a private profile](tutorials/creating-a-non-admin-user-for-a-private-profile.md)
 * [Changing the Geography level name](tutorials/changing-the-geography-level-name.md)
 * [Deployment to Dokku](tutorials/deployment-to-dokku.md)
 
