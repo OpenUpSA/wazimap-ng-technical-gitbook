@@ -4,16 +4,16 @@
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (various-changes-12032021).zip" %}
 
-![Map credit in the bottom left corner.](<../../.gitbook/assets/image (90).png>)
+#### Map credit:
 
-#### Changes:
+![Map credit in the bottom left corner.](<../../.gitbook/assets/image (90) (1).png>)
 
 * Added .map-credit to .map.
 * This item is shown by default and the link directs to Wazimap NG product page.
 
-![Point filters closed by default with th](<../../.gitbook/assets/image (89).png>)
+#### Point filters: <a href="#changes" id="changes"></a>
 
-#### Changes: <a href="#changes" id="changes"></a>
+![Point filters closed by default](<../../.gitbook/assets/image (89) (1).png>)
 
 * Added `.is--shown` and `.is--hidden` for the `.point-filters_content` element.
 * Backend should toggle this to open and close the modal.
@@ -21,6 +21,13 @@
 * The `.is--hidden` class is applied as default.
 * Removed the interaction that used to hide and show this content.
 * Added `.point-filters__no-data` to the `.point-filters_content` block for when there is no data available.
+
+#### Data mapper:
+
+![](<../../.gitbook/assets/image (89).png>)
+
+* Added `.map-options__no-data` to the `.map-options__filters_content`
+* `.map-options__no-data` is hidden by default
 
 
 

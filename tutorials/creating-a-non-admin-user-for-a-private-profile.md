@@ -19,6 +19,6 @@ One can create a non-admin account as follows:
 2. Under **Permissions**, **DO NOT** assign Staff or Superuser status!&#x20;
 3. In the **Groups** selector, add the groups applicable for the user. In the screenshot below, the user has been given access to the SIOC dashboard and SIOC dashboard SANDBOX groups. This means that the user will only be able to log into those instances of Wazimap-NG.
 
-![](<../.gitbook/assets/image (87).png>)
+![](<../.gitbook/assets/image (87) (1).png>)
 
 7\. When done, press **Save**
