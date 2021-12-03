@@ -14,7 +14,7 @@ The Django apps and database models are divided into roughly two groups: models 
 
 ![](<../.gitbook/assets/datasetdata (1).svg>)
 
-Data models can be found in the **datasets** app. The central model is **Dataset. **It represents a dataset that was uploaded by the [**Data Administrator**](broken-reference)**. **Each dataset is associated with a [Geography Hierarchy](geography-hierarchies.md). Data files uploaded to the system are expected to have the following structure:
+Data models can be found in the **datasets** app. The central model is **Dataset.** It represents a dataset that was uploaded by the [**Data Administrator**](broken-reference)**.** Each dataset is associated with a [Geography Hierarchy](geography-hierarchies.md). Data files uploaded to the system are expected to have the following structure:
 
 | Geography | Group 1 | Group 2 | ... | Group N | Count         |
 | --------- | ------- | ------- | --- | ------- | ------------- |
@@ -32,7 +32,7 @@ Only the **Geography**, **Count**, and at least one additional column are requir
 | WC        | Male   | 20  | 5     |
 | ...       |        |     |       |
 
- When this file is uploaded, a new **Dataset** object is created. Each row is stored in a **DatasetData **object. A typical DatasetData object might look as follows:
+&#x20;When this file is uploaded, a new **Dataset** object is created. Each row is stored in a **DatasetData** object. A typical DatasetData object might look as follows:
 
 ```
 {
@@ -43,7 +43,7 @@ Only the **Geography**, **Count**, and at least one additional column are requir
 }
 ```
 
-All groups and the **Count** column are stored in a JSONField. 
+All groups and the **Count** column are stored in a JSONField.&#x20;
 
 ### Indicators and IndicatorData
 
@@ -98,11 +98,11 @@ The actual structure of IndicatorData objects is a little more complicated. More
 
 ### Universe
 
-**Universes** represent saved filters on queries and enable the Data Administrator to run a query on a subset of the database. The default **Universe **is the total of all the distinct observations in a geography (e.g. the total population of the geography). It is possible to create a custom **Universe **and apply it to an **Indicator. ** 
+**Universes** represent saved filters on queries and enable the Data Administrator to run a query on a subset of the database. The default **Universe** is the total of all the distinct observations in a geography (e.g. the total population of the geography). It is possible to create a custom **Universe** and apply it to an **Indicator.**&#x20;
 
 ![](../.gitbook/assets/universe.svg)
 
-A **Universe **which creates a filter on gender can enable queries on Female exclusively. PseudoSQL to represent this operation
+A **Universe** which creates a filter on gender can enable queries on Female exclusively. PseudoSQL to represent this operation
 
 ```
 Select
@@ -121,7 +121,7 @@ Group by
 
 
 
-The **Universe **filters field contains a dictionary that will be used in a Django ORM filter method. Below is an example filter to extract adults 60 and older.
+The **Universe** filters field contains a dictionary that will be used in a Django ORM filter method. Below is an example filter to extract adults 60 and older.
 
 ```
 {
@@ -135,25 +135,25 @@ This filter is then passed to the Django ORM as follows:
 Dataset.objects.filter(**universe.filters) # pseudocode
 ```
 
-Other noteworthy models are Geography and GeographyHierarchy. These are discussed in more detail here: [Geography Hierarchies](geography-hierarchies.md). 
+Other noteworthy models are Geography and GeographyHierarchy. These are discussed in more detail here: [Geography Hierarchies](geography-hierarchies.md).&#x20;
 
 ## Profile App
 
 ![](../.gitbook/assets/profile.svg)
 
-Whereas models in the Datasets app focus on data, Profile App models are for presentation to end-users. The key model is **Profile**. A **profile** is a view of the data curated by the [Profile Administrator](broken-reference). Each profile can be considered to be a complete Wazimap instance. A **profile **organises tabular data in Categories (**IndicatorCategory**) and Subcategories (**IndicatorSubcategory**). This data can be presented using three different models:
+Whereas models in the Datasets app focus on data, Profile App models are for presentation to end-users. The key model is **Profile**. A **profile** is a view of the data curated by the [Profile Administrator](broken-reference). Each profile can be considered to be a complete Wazimap instance. A **profile** organises tabular data in Categories (**IndicatorCategory**) and Subcategories (**IndicatorSubcategory**). This data can be presented using three different models:
 
-**ProfileIndicator**, **ProfileKeyMetrics**, and **ProfileHighlight. ProfileIndicator **is the most commonly used of the three.  
+**ProfileIndicator**, **ProfileKeyMetrics**, and **ProfileHighlight. ProfileIndicator** is the most commonly used of the three. &#x20;
 
 ![](../.gitbook/assets/profileindicators.svg)
 
-**ProfileIndicators **present Indicators. They provide explanatory text, a custom label, and other attributes that control presentation. They are used in the Rich Data Panel in the form of graphs and the Data Mapper Panel in the form of [choropleth maps](choropleth-maps.md).
+**ProfileIndicators** present Indicators. They provide explanatory text, a custom label, and other attributes that control presentation. They are used in the Rich Data Panel in the form of graphs and the Data Mapper Panel in the form of [choropleth maps](choropleth-maps.md).
 
 ![](../.gitbook/assets/screen-shot-2020-09-08-at-23.58.04.png)
 
 ![](../.gitbook/assets/screen-shot-2020-09-09-at-00.00.10.png)
 
-**ProfileKeyMetrics **display only a single value from an Indicator. For instance, the number of youth between 15-24 living in the area.
+**ProfileKeyMetrics** display only a single value from an Indicator. For instance, the number of youth between 15-24 living in the area.
 
 ![](../.gitbook/assets/screen-shot-2020-09-09-at-00.04.23.png)
 

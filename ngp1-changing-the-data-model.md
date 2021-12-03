@@ -65,7 +65,7 @@ The problem does not only apply to time-based data, e.g.\
 In this case we have two universes which overlap but we still want to be able to compare them:\
 ****
 
-![](https://lh4.googleusercontent.com/iL4gI7ssYKmHq-sorLAn4y9NR6Aa2bC50M-6fW0SUJ7dgUJMjdxi6h_XfLZ1s5gZ7GGNkdlbLi-ZSb7BHqXYEJULoIEpBYGimLTjOLyIKwhccZ9KfbbRHfaoFBx0jsUDI7J5JFUM)
+![](https://lh4.googleusercontent.com/iL4gI7ssYKmHq-sorLAn4y9NR6Aa2bC50M-6fW0SUJ7dgUJMjdxi6h\_XfLZ1s5gZ7GGNkdlbLi-ZSb7BHqXYEJULoIEpBYGimLTjOLyIKwhccZ9KfbbRHfaoFBx0jsUDI7J5JFUM)
 
 ## **Proposed Solution 1**
 
@@ -148,33 +148,33 @@ This solution would affect the following components:
 **In the case of two incompatible datasets, we need to decide whether filters are available for missing groups.**\
 ****
 
-![](https://lh5.googleusercontent.com/zfcFBFZ8H_JfxZnqsypJfpfWtLyR9jg6-ybsF0TgleSuN8dKXNbktIzQNcXthvaIaNU9j2--WFNoEpnPR0aA-PY4QIY2usR-bZMpiim-6ud5cuvlMLvf31\_YZP7gACk8cAvrPu26)
+![](https://lh5.googleusercontent.com/zfcFBFZ8H\_JfxZnqsypJfpfWtLyR9jg6-ybsF0TgleSuN8dKXNbktIzQNcXthvaIaNU9j2--WFNoEpnPR0aA-PY4QIY2usR-bZMpiim-6ud5cuvlMLvf31\_YZP7gACk8cAvrPu26)
 
 ### **Other implications**
 
 Whereas indicators can now be mapped using a choropleth. Superindicators cannot since a choropleth can only display one Count variable at a time. This can be addressed by another select box allowing the user to choose the Count variable of interest or mapping multi-count variables could be prevented entirely.\
 
 
-![](https://lh3.googleusercontent.com/q1EzzSboYGpybn0E3VkqFSIQeuvHrkyOq-qKsZ8zE525yZXbvPMaD17SFFl--0cSPNVNosIJoL0rB39a5lNhTsBk9NbpgmdLhP7QPCBCI7uKp7CIttRd1V8bYm2FI15jrioBF_Rw)
+![](https://lh3.googleusercontent.com/q1EzzSboYGpybn0E3VkqFSIQeuvHrkyOq-qKsZ8zE525yZXbvPMaD17SFFl--0cSPNVNosIJoL0rB39a5lNhTsBk9NbpgmdLhP7QPCBCI7uKp7CIttRd1V8bYm2FI15jrioBF\_Rw)
 
 ## **Proposed Solution 3**
 
-Another  approach to addressing this issue is to recognise that the cause of this problem is the concept of a non-overlapping universe introduce by the **Dataset **model. This approach does not always make sense as in the examples above. To create an **Indicator**, a background process is fired that groups **DatasetData** objects appropriately. In cases like the ones described here, it might be easier to create the indicator directly and avoid datasets entirely.
+Another  approach to addressing this issue is to recognise that the cause of this problem is the concept of a non-overlapping universe introduce by the **Dataset** model. This approach does not always make sense as in the examples above. To create an **Indicator**, a background process is fired that groups **DatasetData** objects appropriately. In cases like the ones described here, it might be easier to create the indicator directly and avoid datasets entirely.
 
-When creating a new indicator, the admin is asked whether it should be created from a dataset (the current process) or whether it should be uploaded from a file. This latter approach would simply create the relevant **IndicatorData **directly. Since an indicator must link to a dataset, one can be created automatically. Creating new indicators from this dataset should not be allowed however.
+When creating a new indicator, the admin is asked whether it should be created from a dataset (the current process) or whether it should be uploaded from a file. This latter approach would simply create the relevant **IndicatorData** directly. Since an indicator must link to a dataset, one can be created automatically. Creating new indicators from this dataset should not be allowed however.
 
 ### Benefits
 
-This is by far the easiest approach to implement. Very little needs to change with the exception of the file upload mechanism when creating a new indicator. Once the IndicatorData objects are created, downstream users of this data remain unchanged. 
+This is by far the easiest approach to implement. Very little needs to change with the exception of the file upload mechanism when creating a new indicator. Once the IndicatorData objects are created, downstream users of this data remain unchanged.&#x20;
 
-It also allows flexibility for data administrators to shape data without too many constraints on the format. 
+It also allows flexibility for data administrators to shape data without too many constraints on the format.&#x20;
 
 ### Disadvantages
 
-Data re-use is limited. Datasets provide opportunities to create multiple indicators. The superindicator concept allows even more mixing and matching of indicators. 
+Data re-use is limited. Datasets provide opportunities to create multiple indicators. The superindicator concept allows even more mixing and matching of indicators.&#x20;
 
 ## **Resolution**
 
-This problem was finally addressed by marking columns as aggregatable or not aggregateable. If a column is not aggregateable, different values in that column need to be shown separately. This can be implemented as a dropdown filter, e.g. you always need to choose a year. Alternatively, a grouped bar chart could be used, e.g. 2016 and 2017 bars. 
+This problem was finally addressed by marking columns as aggregatable or not aggregateable. If a column is not aggregateable, different values in that column need to be shown separately. This can be implemented as a dropdown filter, e.g. you always need to choose a year. Alternatively, a grouped bar chart could be used, e.g. 2016 and 2017 bars.&#x20;
 
 The change also involved removing all aggregation from the backend and sending raw data to the frontend.\

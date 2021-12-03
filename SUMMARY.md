@@ -10,7 +10,7 @@
 * [Choropleth Maps](system-architecture/choropleth-maps.md)
 * [Determine which instance to use](system-architecture/which-instance-to-use.md)
 
-## Development <a href="development-process" id="development-process"></a>
+## Development <a href="#development-process" id="development-process"></a>
 
 * [Code Deployment](development-process/code-deployment.md)
 * [Component Architecture](development-process/component-architecture.md)
@@ -20,6 +20,7 @@
 * [Pull Request Template (FE)](development-process/pull-request-template-fe.md)
 * [Merging webflow exports](development-process/merging-webflow-exports.md)
 * [Webflow exports & changelog](development-process/changelog/README.md)
+  * [December 2021](development-process/changelog/december-2021.md)
   * [November 2021](development-process/changelog/november-2021.md)
   * [October 2021](development-process/changelog/october-2021.md)
 * [Translation](development-process/translation.md)

@@ -20,11 +20,11 @@ Done. Your frontend is ready!
 
 ## Setting up the backend
 
-The backend is also simple to create. Login at [https://production.wazimap-ng.openup.org.za/admin](https://production.wazimap-ng.openup.org.za/admin) and add a new profile [https://production.wazimap-ng.openup.org.za/admin/profile/profile/add/](https://production.wazimap-ng.openup.org.za/admin/profile/profile/add/). 
+The backend is also simple to create. Login at [https://production.wazimap-ng.openup.org.za/admin](https://production.wazimap-ng.openup.org.za/admin) and add a new profile [https://production.wazimap-ng.openup.org.za/admin/profile/profile/add/](https://production.wazimap-ng.openup.org.za/admin/profile/profile/add/).&#x20;
 
 ![](../.gitbook/assets/screen-shot-2020-09-12-at-09.12.33.png)
 
-Provide a useful name for the profile - this one will be called Covid. Choose a [Geography Hierarchy](../system-architecture/geography-hierarchies.md). I am choosing the pre-installed **2016 boundaries with wards **hierarchy. This uses boundaries used in the 2016 South African municipal elections.
+Provide a useful name for the profile - this one will be called Covid. Choose a [Geography Hierarchy](../system-architecture/geography-hierarchies.md). I am choosing the pre-installed **2016 boundaries with wards** hierarchy. This uses boundaries used in the 2016 South African municipal elections.
 
 ![](../.gitbook/assets/screen-shot-2020-09-12-at-09.24.39.png)
 

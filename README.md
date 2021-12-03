@@ -37,7 +37,7 @@ These items sit on the left hand side of the rich data panel and act as anchors 
 {% hint style="info" %}
 **Default state:** .rich-data-nav\_\_ list will be populated with the .rich-data-nav\_\_item "summary" and the location pin icon. This item links to the top of the rich data panel using the anchor link #top.
 
-**Anchor links: **Anchor link named need to be added when implementing a component. They should be added to **.section-link** within **.section** within **.rich-data\_\_content** as they are brought into the page. See image below. Position adjustment has been made to this .section-link to ensure users scroll to the correct position, taking into account navigation elements etc.
+**Anchor links:** Anchor link named need to be added when implementing a component. They should be added to **.section-link** within **.section** within **.rich-data\_\_content** as they are brought into the page. See image below. Position adjustment has been made to this .section-link to ensure users scroll to the correct position, taking into account navigation elements etc.
 {% endhint %}
 
 ![.section-link within a .section](<.gitbook/assets/image (34).png>)

@@ -14,7 +14,7 @@ Each layer needs to have four fields:
 
 **Code** - A unique identifier, this can be anything but it is best if it is a commonly used identifier such as ISO3166 for countries
 
-**Parent_cod** (this is due to the field length limitation in shapefiles) - The code of the parent Geography.  This field can be blank if it is a top-level geography such as a country. ESRI shapefiles limit field names to 10 letters which is why this is truncated.
+**Parent\_cod** (this is due to the field length limitation in shapefiles) - The code of the parent Geography.  This field can be blank if it is a top-level geography such as a country. ESRI shapefiles limit field names to 10 letters which is why this is truncated.
 
 **Area** - This field has been included for historic reasons and will likely be dropped in future.
 
@@ -68,13 +68,13 @@ A quick look at the municipalities layer’s attribute table shows the following
 
 ![](../.gitbook/assets/13.-mn-attribute-table.png)
 
-In this case, the code column with be used as **parent_cod** of the wards.
+In this case, the code column with be used as **parent\_cod** of the wards.
 
 Run the **Join Attributes by Location** tool with the following settings:
 
 ![](../.gitbook/assets/14.-join-attributes-dialogue.png)
 
-In brief, the input layer represents the child layer, i.e. wards, the join layer is the parent layer, i.e. municipalities. I choose to join based on wards that are are within municipalities. I also ticked the **intersects** box because there are some tiny overlaps between wards and municipalities in my shapefiles. You will need to check that this does what you expect. 
+In brief, the input layer represents the child layer, i.e. wards, the join layer is the parent layer, i.e. municipalities. I choose to join based on wards that are are within municipalities. I also ticked the **intersects** box because there are some tiny overlaps between wards and municipalities in my shapefiles. You will need to check that this does what you expect.&#x20;
 
 Once you click run, it will create a new layer with the fields that we want. Note that on my computer, this dialogue is occasionally displayed behind the main QGIS window. Keep this in mind if your dialogue disappears.
 
@@ -82,11 +82,11 @@ The attribute table of the new layer now contains the parent code in the **code\
 
 ![](../.gitbook/assets/15.-new-attribute-table.png)
 
-All that’s left is to create a new Parent_cod column by copying the value from code\_2 and then deleting code\_2 (unfortunately it isn’t possible to rename the column). 
+All that’s left is to create a new Parent\_cod column by copying the value from code\_2 and then deleting code\_2 (unfortunately it isn’t possible to rename the column).&#x20;
 
 ### **Simplifying boundary files**
 
-The file produced in the previous step was 122mb. Before loading boundaries into Wazimap, I use mapshaper.org to compress them by removing unnecessary detail. 
+The file produced in the previous step was 122mb. Before loading boundaries into Wazimap, I use mapshaper.org to compress them by removing unnecessary detail.&#x20;
 
 ![](../.gitbook/assets/16.-mapshaper.png)
 
@@ -116,17 +116,17 @@ To load the file into Wazimap you will now need to run the **loadshp** managemen
 
 **/tmp/wards.shp**  - path to the shapefile I exported from map shaper
 
-**code=code,name=name,parent_cod=parent_code,area=area ward** - a mapping between the attribute names in the shapefile and the expected field names, in this case they are almost identical as we gave the attributes the correct names in QGIS.
+**code=code,name=name,parent\_cod=parent\_code,area=area ward** - a mapping between the attribute names in the shapefile and the expected field names, in this case they are almost identical as we gave the attributes the correct names in QGIS.
 
 **ward** - a label for the type of geography
 
 **"2011 Boundaries"** - This is the label (version) for the geography hierarchy that the boundaries belong to.
 
-When importing, the script will look for the parent geography found in the **parent_cod** field with the same version. If the parent is not found the geography will not be loaded. Geographies without values in **parent_cod **are considered to be root Geographies.
+When importing, the script will look for the parent geography found in the **parent\_cod** field with the same version. If the parent is not found the geography will not be loaded. Geographies without values in **parent\_cod** are considered to be root Geographies.
 
-### Creating a Geography Hierarchy 
+### Creating a Geography Hierarchy&#x20;
 
-You can load multiple shapefiles in the previous step to create a hierarchy of linked geographies. In order to use these geographies, you need to create a **GeographyHierarchy. **You can find the dialogue here: **/admin/datasets/geographyhierarchy/add/**. 
+You can load multiple shapefiles in the previous step to create a hierarchy of linked geographies. In order to use these geographies, you need to create a **GeographyHierarchy.** You can find the dialogue here: **/admin/datasets/geographyhierarchy/add/**.&#x20;
 
 ### Creating a profile
 
@@ -165,6 +165,6 @@ You will need to create a new profile that uses this hierarchy. A tutorial to do
 
 ### Loading datasets
 
-All datasets that are loaded will need to be associated with this **GeographyHierarchy **in order to use with your profile. Data files that are uploaded will need a **Geography** column that uses the same codes as those in your shapefiles in order to join correctly. 
+All datasets that are loaded will need to be associated with this **GeographyHierarchy** in order to use with your profile. Data files that are uploaded will need a **Geography** column that uses the same codes as those in your shapefiles in order to join correctly.&#x20;
 
 An explanation of the most important classes and how they relate to Datasets can be found [here](../system-architecture/database-models.md).

@@ -8,17 +8,17 @@ Create a new admin account as follows:
 
 2\. Select a username and secure password (important for the production site)
 
-3\. Press **Save and continue editing **(don't only press save)
+3\. Press **Save and continue editing** (don't only press save)
 
 ![](../.gitbook/assets/screenshot-from-2021-03-05-15-27-31.png)
 
-4\. Add details under **Personal info **(optional)
+4\. Add details under **Personal info** (optional)
 
 5\. Under Permissions, select **Staff status**
 
 6\. Don't provide superuser access unless you know what you're doing.
 
-7\. Under groups, select Data Admin and Profile Admin 
+7\. Under groups, select Data Admin and Profile Admin&#x20;
 
 ![](../.gitbook/assets/screenshot-from-2021-03-05-15-20-10.png)
 
