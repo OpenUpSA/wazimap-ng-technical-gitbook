@@ -4,7 +4,7 @@ Wazimap-NG is multi-tenanted. A single backend can host multiple profiles, e.g. 
 
 In order to determine which profile to use, the client sends a `wm-hostname`header with this api call: `/api/v1/profile_by_url/?format=json`this is received by the server which then matches the hostname with available profiles. You can determine which profiles are currently served by a particular backend using the following url: `/api/v1/profiles/`. It will return a list of profiles with their configurations, e.g.
 
-```text
+```
 {
     ...
     "results": [
@@ -35,4 +35,3 @@ In order to determine which profile to use, the client sends a `wm-hostname`head
 ```
 
 In this case, when the server receives `wm-hostname` set to geo.vulekamali.gov.za, it returns profile 2. A single profile may match multiple urls.
-

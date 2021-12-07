@@ -1,4 +1,4 @@
-# Pull Request Template \(FE\)
+# Pull Request Template (FE)
 
 
 
@@ -21,7 +21,7 @@
 ### Checklist
 
 * [ ] 🚀 is the code ready to be merged and go live?
-* [ ] 🛠 does it work \(build\) locally
+* [ ] 🛠 does it work (build) locally
 
 #### Pull Request
 
@@ -45,7 +45,6 @@
 
 #### Testing
 
-* [ ] ✅ added \(appropriate\) unit tests
+* [ ] ✅ added (appropriate) unit tests
 * [ ] 💢 edge cases in tests were considered
 * [ ] ✅ ran tests locally & are passing
-

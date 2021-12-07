@@ -9,5 +9,3 @@ Below are some direct links:
 * Creating universes: [https://app.gitbook.com/@openup/s/wazimap-ng/data-admin/creating-universes](https://app.gitbook.com/@openup/s/wazimap-ng/data-admin/creating-universes)
 * Loading point collections: [https://app.gitbook.com/@openup/s/wazimap-ng/data-admin/creating-point-collections](https://app.gitbook.com/@openup/s/wazimap-ng/data-admin/creating-point-collections)
 
-
-

@@ -2,21 +2,21 @@
 
 Try to write tests first. You don't need to practice TDD, but if you write a test first it will make it easier for yourself to write the correct code.
 
-## **red, green, refactor** 
+## **red, green, refactor**&#x20;
 
-Always start a test with red \(**failing test**\). If your test is green from the beginning you might not catch potential bugs. Always make sure the **tests fail first**, even if you wrote the correct code already. Use a different assumption then, to make sure the test fails and you see the actual output. After the test is **green**, try to **refactor** your code \(make it better\).
+Always start a test with red (**failing test**). If your test is green from the beginning you might not catch potential bugs. Always make sure the **tests fail first**, even if you wrote the correct code already. Use a different assumption then, to make sure the test fails and you see the actual output. After the test is **green**, try to **refactor** your code (make it better).
 
-Don't write your test assertions by using the output of a failing test. You should know the output \(assertion\) before the test runner tells you the failure.
+Don't write your test assertions by using the output of a failing test. You should know the output (assertion) before the test runner tells you the failure.
 
 ## What to test
 
 The ideal set of tests tends to result in ...
 
 * small but right number of unit tests.
-* large number of integration tests. 
-* small number of E2E tests as kind off smoke tests. 
+* large number of integration tests.&#x20;
+* small number of E2E tests as kind off smoke tests.&#x20;
 
-### **Always test edge cases.** 
+### **Always test edge cases.**&#x20;
 
 Do not only test the obvious path but also the not so obvious. Use parameterized tests in pytest for that.
 
@@ -37,4 +37,3 @@ Typical boundaries:
 * API calls
 * User Interface
 * Third party services
-

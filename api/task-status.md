@@ -6,7 +6,7 @@ description: API Endpoint for checking the status of a task
 
 Check the status of a background task via API.
 
-```text
+```
 GET /api/v1/tasks/:id/
 ```
 
@@ -18,4 +18,3 @@ GET /api/v1/tasks/:id/
   "status": "running|error|success",
 }
 ```
-

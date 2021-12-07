@@ -6,7 +6,7 @@ description: This page is a stub.
 
 Below is an example of an Indicator Data object
 
-```text
+```
 'groups': {'race': {'Other': [{'count': 14034.3619100001,
      'region of birth': 'Other'},
     {'count': 23014.7457499993, 'region of birth': 'Rest of africa'},
@@ -70,6 +70,4 @@ Below is an example of an Indicator Data object
   'South africa': 17938791.9759236,
   'Rest of africa': 98013.5913900021}}
 ```
-
-
 

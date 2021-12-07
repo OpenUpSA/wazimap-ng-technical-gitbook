@@ -94,7 +94,7 @@ When a new indicator is created, data from **DatasetData** is processed to creat
 
 The actual structure of IndicatorData objects is a little more complicated. More detail can be found here: [IndicatorData](indicatordata.md).
 
-![Relationship between Indicator and IndicatorData](../.gitbook/assets/indicatordata.svg)
+![Relationship between Indicator and IndicatorData](<../.gitbook/assets/indicatordata (1).svg>)
 
 ### Universe
 
@@ -149,16 +149,16 @@ Whereas models in the Datasets app focus on data, Profile App models are for pre
 
 **ProfileIndicators** present Indicators. They provide explanatory text, a custom label, and other attributes that control presentation. They are used in the Rich Data Panel in the form of graphs and the Data Mapper Panel in the form of [choropleth maps](choropleth-maps.md).
 
-![](../.gitbook/assets/screen-shot-2020-09-08-at-23.58.04.png)
+![](<../.gitbook/assets/Screen Shot 2020-09-08 at 23.58.04.png>)
 
-![](../.gitbook/assets/screen-shot-2020-09-09-at-00.00.10.png)
+![](<../.gitbook/assets/Screen Shot 2020-09-09 at 00.00.10.png>)
 
 **ProfileKeyMetrics** display only a single value from an Indicator. For instance, the number of youth between 15-24 living in the area.
 
-![](../.gitbook/assets/screen-shot-2020-09-09-at-00.04.23.png)
+![](<../.gitbook/assets/Screen Shot 2020-09-09 at 00.04.23.png>)
 
 ProfileHighlights are similar to ProfileKeyMetrics in that they display a single value from an Indicator, but are displayed in the Map View rather than the Rich Data View.
 
-![Example of how ProfileHighlights are displayed on the frontend. ](../.gitbook/assets/screen-shot-2020-09-09-at-00.08.33.png)
+![Example of how ProfileHighlights are displayed on the frontend. ](<../.gitbook/assets/Screen Shot 2020-09-09 at 00.08.33.png>)
 
 ## Points App

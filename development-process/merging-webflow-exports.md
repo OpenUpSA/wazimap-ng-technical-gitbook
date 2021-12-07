@@ -16,4 +16,4 @@ Command: `rsync -avz unzipped/* /home/warachi/Documents/OpenUp/wazimap-ng-ui/src
 
 A lot of changes are made by the above command and in this case, the files marked `M` for modified and the ones that are desired.
 
-![](../.gitbook/assets/screenshot-from-2021-06-29-15-27-34.png)
+![](<../.gitbook/assets/Screenshot from 2021-06-29 15-27-34.png>)

@@ -5,7 +5,7 @@
 * We use Cypress for GUI tests along with Cucumber
 * All the GUI tests could be found in `__tests__/gui` folder
 * The test steps are in the `.feature` files and the test step definitions are in the `.js` files in the folder that shares the same name as the `.feature` file
-  * For example the step definitions of `facility_modal.feature` need to be in the `facility_modal`folder\(name of the js files are not important\)
+  * For example the step definitions of `facility_modal.feature` need to be in the `facility_modal`folder(name of the js files are not important)
 * We intercept all the requests and respond with local data. The data for each test are kept in json files in the folder of the corresponding test.
 
 ### Running the tests
@@ -19,21 +19,20 @@
 
 ### Cypress dashboard
 
-* [https://dashboard.cypress.io/](https://dashboard.cypress.io/)
+* [https://dashboard.cypress.io/](https://dashboard.cypress.io)
 * The credentials for the dashboard could be found in OpenUp general credentials file
-* Everytime `cypress:gui` script is run, the test results, logs and their videos are saved to the dashboard. Github actions runs this script too. 
+* Everytime `cypress:gui` script is run, the test results, logs and their videos are saved to the dashboard. Github actions runs this script too.&#x20;
 * By selecting `WazimapNG` in the Projects page, all the latest test runs could be viewed.
 
-![Projects page](../.gitbook/assets/image%20%2860%29.png)
+![Projects page](<../.gitbook/assets/image (60) (1).png>)
 
-![Latest test runs of WazimapNG project](../.gitbook/assets/image%20%2872%29.png)
+![Latest test runs of WazimapNG project](<../.gitbook/assets/image (72).png>)
 
 * By clicking on any of the test runs, you can view
   * Overview : How many tests are failed / passed / skipped.... etc
   * Test results : Details, statuses, result logs... etc
   * Specs : Screenshots, videos... etc
 
-![Analytics](../.gitbook/assets/image%20%2864%29.png)
+![Analytics](<../.gitbook/assets/image (64).png>)
 
-* More useful details\(Average run duration, Top failures, Slowest tests...\)  could be found in Analytics menu of the dashboard. 
-
+* More useful details(Average run duration, Top failures, Slowest tests...)  could be found in Analytics menu of the dashboard.&#x20;

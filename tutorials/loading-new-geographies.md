@@ -4,7 +4,7 @@ Here is a quick tutorial for loading up new geography files into Wazimap. To sta
 
 I downloaded the shapefiles from the Municipal Demarcation Board website and loaded them up into QGIS. Here is what the wards look like:
 
-![](../.gitbook/assets/1.-wards.png)
+![](<../.gitbook/assets/1. wards.png>)
 
 ￼
 
@@ -20,59 +20,59 @@ Each layer needs to have four fields:
 
 Back to QGIS, we inspect our attribute table. The above-mentioned fields need to be added. We can also see that wards do not have a parent geography. Extraneously fields such as **OBJECTID**, **WARNo**, etc need to be removed.
 
-![](../.gitbook/assets/2.-attribute-menu.png)
+![](<../.gitbook/assets/2. attribute menu.png>)
 
-![](../.gitbook/assets/3.-attribute-table.png)
+![](<../.gitbook/assets/3. attribute table.png>)
 
 All the fields except for **PklWardID** are extraneous. We will remove them now.
 
 First, make sure that you select the toggle editing option in the **Layer menu**
 
-![](../.gitbook/assets/4.-toggle-editing.png)
+![](<../.gitbook/assets/4. toggle editing.png>)
 
 Now select the delete option and remove all of the unnecessary fields.
 
-![](../.gitbook/assets/5.-delete-button.png)
+![](<../.gitbook/assets/5. delete button.png>)
 
 
 
-![](../.gitbook/assets/6.-delete-dialogue.png)
+![](<../.gitbook/assets/6. delete dialogue.png>)
 
 You will be left with only one field which is the ward code. Wards do not have a separate name and so we will use the **code** as the **name**. We will use the field calculator to create both **name** and **code** fields.
 
-![](../.gitbook/assets/7.-field-calculator.png)
+![](<../.gitbook/assets/7. field calculator.png>)
 
 Here is an example of what the dialogue box should look like:
 
-![](../.gitbook/assets/8.-field-calculator-dialogue.png)
+![](<../.gitbook/assets/8. field calculator dialogue.png>)
 
 Do the same for code.
 
 The attribute table show now look like this:
 
-![](../.gitbook/assets/9.-attribute-table.png)
+![](<../.gitbook/assets/9. attribute table.png>)
 
 Now we can delete the **PklWardID** field as before.
 
 The next field to create Is Area. We can use the field calculator area function to do this. $area is given as square meters, divide by a million to get square kilometres.
 
-![](../.gitbook/assets/10.-attribute-table-area.png)
+![](<../.gitbook/assets/10. attribute table area.png>)
 
 You will note that we do not have a parent geography as an attribute. This is required by Wazimap in order to create geography hierarchies. We can use the **Join Attributes by Location** tool until the **Vector -> Data** **Management** **Tools** menu. We load up another layer which contains the parent geographies and then use the tool to run a spatial join between the two layers. The tool will then create a copy of our Ward layer with the desired code field from the parent layer. In this case, our parent layer is municipalities.
 
-![](../.gitbook/assets/11.-add-layer.png)
+![](<../.gitbook/assets/11. add layer.png>)
 
-![](../.gitbook/assets/12.-add-layer.png)
+![](<../.gitbook/assets/12. add layer.png>)
 
 A quick look at the municipalities layer’s attribute table shows the following:
 
-![](../.gitbook/assets/13.-mn-attribute-table.png)
+![](<../.gitbook/assets/13. mn attribute table.png>)
 
 In this case, the code column with be used as **parent\_cod** of the wards.
 
 Run the **Join Attributes by Location** tool with the following settings:
 
-![](../.gitbook/assets/14.-join-attributes-dialogue.png)
+![](<../.gitbook/assets/14. join attributes dialogue.png>)
 
 In brief, the input layer represents the child layer, i.e. wards, the join layer is the parent layer, i.e. municipalities. I choose to join based on wards that are are within municipalities. I also ticked the **intersects** box because there are some tiny overlaps between wards and municipalities in my shapefiles. You will need to check that this does what you expect.&#x20;
 
@@ -80,7 +80,7 @@ Once you click run, it will create a new layer with the fields that we want. Not
 
 The attribute table of the new layer now contains the parent code in the **code\_2** column.
 
-![](../.gitbook/assets/15.-new-attribute-table.png)
+![](<../.gitbook/assets/15. new attribute table.png>)
 
 All that’s left is to create a new Parent\_cod column by copying the value from code\_2 and then deleting code\_2 (unfortunately it isn’t possible to rename the column).&#x20;
 
@@ -88,23 +88,23 @@ All that’s left is to create a new Parent\_cod column by copying the value fro
 
 The file produced in the previous step was 122mb. Before loading boundaries into Wazimap, I use mapshaper.org to compress them by removing unnecessary detail.&#x20;
 
-![](../.gitbook/assets/16.-mapshaper.png)
+![](<../.gitbook/assets/16. mapshaper.png>)
 
 When importing, be sure to import all of the various files associated with the shapefile, i.e. **wards.shp**, **wards.dbf**, **wards.prj**, and any other files that are provided. Also, tick the **snap vertices** checkbox to ensure that almost identical points are snapped together.
 
-![](../.gitbook/assets/17.-mapshaper-import.png)
+![](<../.gitbook/assets/17. mapshaper import.png>)
 
 Now select simplify from the top-right menu. Accept the default options or experiment with the settings to get the best results.
 
-![](../.gitbook/assets/18.-mapshaper-simplify-map.png)
+![](<../.gitbook/assets/18. mapshaper simplify map.png>)
 
 You are presented with a slider which you can use to decide what level of simplification you are happy with.
 
-![](../.gitbook/assets/19.-mapshaper-slider.png)
+![](<../.gitbook/assets/19. mapshaper slider.png>)
 
 Too much simplification results in strange shapes
 
-![](../.gitbook/assets/20.-mapshaper-too-much-simplification.png)
+![](<../.gitbook/assets/20. mapshaper too much simplification.png>)
 
 To choose an appropriate trade-off between file size and detail, I typically zoom into the smallest boundary that I expect the user to be interested in and simplify until it becomes unrecognizable, then I dial it back a little. In this case, I simplified to 11.2%. Once I export the file again as a shapefile, it has been reduced to 16mb.
 

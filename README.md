@@ -14,7 +14,7 @@ description: 'Stable version: ... | Latest version: https://wazi-rich-data.webfl
 3. An improved mobile experience
 4. Filtering of sub-indicator
 
-![Overall page structure. ](<.gitbook/assets/image (61).png>)
+![Overall page structure. ](.gitbook/assets/image.png)
 
 ## Styles section
 
@@ -22,13 +22,13 @@ The functional styles div resides on the main mapping page (hidden using .hidden
 \
 Elements can be called as needed into different areas. This approach was aimed at improving loading times and initial states that would have incorrect information.
 
-![The individual components ready to be cloned.](<.gitbook/assets/image (73).png>)
+![The individual components ready to be cloned.](<.gitbook/assets/image (1).png>)
 
 ## Rich Data Panel
 
 Every other element is arranged in relation to this panel (using position fixed). This is so that we can maintain in page anchor linking and page navigation.
 
-![The styled components for the rich data panel](<.gitbook/assets/image (28).png>)
+![The styled components for the rich data panel](<.gitbook/assets/image (2).png>)
 
 ### 1. Rich data nav items
 
@@ -40,11 +40,11 @@ These items sit on the left hand side of the rich data panel and act as anchors 
 **Anchor links:** Anchor link named need to be added when implementing a component. They should be added to **.section-link** within **.section** within **.rich-data\_\_content** as they are brought into the page. See image below. Position adjustment has been made to this .section-link to ensure users scroll to the correct position, taking into account navigation elements etc.
 {% endhint %}
 
-![.section-link within a .section](<.gitbook/assets/image (34).png>)
+![.section-link within a .section](<.gitbook/assets/image (6).png>)
 
-![Example nav items](<.gitbook/assets/image (14).png>)
+![Example nav items](<.gitbook/assets/image (3).png>)
 
-![Structure of the .rich-data-nav](<.gitbook/assets/image (43).png>)
+![Structure of the .rich-data-nav](<.gitbook/assets/image (5).png>)
 
 #### How to implement this component:
 

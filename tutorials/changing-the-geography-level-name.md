@@ -3,7 +3,7 @@
 If a geography label needs to change, e.g. Districts => Districts and Metros, follow the following steps:
 
 1. `Geography.objects.filter(level="district", version="2011 Boundaries").update(level="Districts and Metros")`Make sure you select the appropriate version
-2. Change the preferred_children object in the Profile configuration json for each profile that uses that geography hierarchy, e.g.:
+2. Change the preferred\_children object in the Profile configuration json for each profile that uses that geography hierarchy, e.g.:
 
 ```
 "preferred_children": {

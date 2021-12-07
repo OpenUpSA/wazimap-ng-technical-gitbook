@@ -1,6 +1,6 @@
 # Component Architecture
 
-The Wazimap-NG frontend uses a custom component architecture. Over time, this will likely evolve to use a more standard framework such as [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components).
+The Wazimap-NG frontend uses a custom component architecture. Over time, this will likely evolve to use a more standard framework such as [web components](https://developer.mozilla.org/en-US/docs/Web/Web\_Components).
 
 
 
@@ -8,13 +8,13 @@ The Wazimap-NG frontend uses a custom component architecture. Over time, this wi
 
 ![Component class hierarchy](../.gitbook/assets/wazimap-components.png)
 
-All components extend the `Component` abstract class which itself extends the `Observable` abstract class. `Observable`implements the [Observer design pattern](https://en.wikipedia.org/wiki/Observer_pattern#:~:text=The%20observer%20pattern%20is%20a,calling%20one%20of%20their%20methods). Extending it gives a class the ability to register listeners and trigger events \[Note, we may move to use native CustomEvents if we adopt the web component architecture\]. Events are arbitrary string identifiers although they are often namespaced to the component itself.
+All components extend the `Component` abstract class which itself extends the `Observable` abstract class. `Observable`implements the [Observer design pattern](https://en.wikipedia.org/wiki/Observer\_pattern#:\~:text=The%20observer%20pattern%20is%20a,calling%20one%20of%20their%20methods). Extending it gives a class the ability to register listeners and trigger events \[Note, we may move to use native CustomEvents if we adopt the web component architecture]. Events are arbitrary string identifiers although they are often namespaced to the component itself.
 
 For instance, when a dropdown element is selected, a dropdown component might fire the `dropdown.selected` event.
 
 Here's an example:
 
-```text
+```
 class DropDown extends Observable {
     static EVENTS = {
         selected: 'dropdown.selected' 
@@ -35,7 +35,7 @@ The `payload` is any arbitrary object and datatype that the class seeks to send 
 
 Calling code might look something like this:
 
-```text
+```
 let dropdown = new DropDown();
 dropdown.on(DropDown.EVENTS.selected, payload => alert('An element has been selected')
 ```
@@ -48,7 +48,7 @@ whenever the `onElementSelected` method is called, every listener will receive t
 
 Instead of our Dropdown extending `Observable`, it now extends `Component`.
 
-```text
+```
 class DropDown extends Component {
     static EVENTS = {
         selected: 'dropdown.selected' 
@@ -66,7 +66,7 @@ class DropDown extends Component {
 
 The calling code would look like this:
 
-```text
+```
 class Application extends Component {
     constructor() {
         super()
@@ -77,19 +77,19 @@ class Application extends Component {
 }
 ```
 
-Doing this simply stores the parent and child components. In future this may be used to bubble events or in someway communicate across the entire component hierarchy. \[Note, the Component class is still being developed\].
+Doing this simply stores the parent and child components. In future this may be used to bubble events or in someway communicate across the entire component hierarchy. \[Note, the Component class is still being developed].
 
 ### Building Components
 
-Apart from extending `Component` Wazimap-NG components use a [Model View Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) design. The view comprises an HTML fragment, usually created by the web designer. \[These are currently embeded in index.html but may in future be separated into individual component html files.\]
+Apart from extending `Component` Wazimap-NG components use a [Model View Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) design. The view comprises an HTML fragment, usually created by the web designer. \[These are currently embeded in index.html but may in future be separated into individual component html files.]
 
-The model stores the state and associated logic of the component and the controller acts as the glue between model and view, as well as handling events and interactions. 
+The model stores the state and associated logic of the component and the controller acts as the glue between model and view, as well as handling events and interactions.&#x20;
 
 #### Controller
 
 Here is a basic implementation of the DropDown component.
 
-```text
+```
 // This class implements the controller for the DropDown component.
 export class DropDownComponent extends Component {
     constructor(parent, container, values = [], defaultText = '') {
@@ -152,13 +152,13 @@ export class DropDownComponent extends Component {
 
 A few points worth noting:
 
-```text
+```
 constructor(parent, container, values = [], defaultText = '')
 ```
 
 All components receive their parent component as the first argument. In many cases the second argument is the DOM element that contains the view HTML.
 
-```text
+```
 constructor(...) {
     ...
     this.prepareDomElements();
@@ -182,7 +182,7 @@ By convention, the constructor calls `prepareDomElements` which prepares various
 
 A `prepareEvents` method is often also used to wire up events from the constructor.
 
-```text
+```
 constructor(...) {
         ...
         this.prepareEvents();
@@ -201,7 +201,7 @@ constructor(...) {
 
 It's  is important to note that only the web designer edits the HTML directly. If addition DOM elements are needed, the component will clone existing elements:
 
-```text
+```
 setOptions(values) {
         ...
         values.array.forEach((element, idx) => {
@@ -215,9 +215,9 @@ setOptions(values) {
 
 #### Model
 
-While it is tempting to create the Component using a single class, separating the model from the view often results in cleaner, more robust, and easier-to-test code. The model only stores the state of the component and does not interact with either the view or the controller directly. 
+While it is tempting to create the Component using a single class, separating the model from the view often results in cleaner, more robust, and easier-to-test code. The model only stores the state of the component and does not interact with either the view or the controller directly.&#x20;
 
-It is important that the model is agnostic of the controller. In other words, the model should not hold a reference to the controller and should not call its methods. Communication takes place using either events or callbacks. While not mandatory, events are preferred as callbacks can result in slightly less-readable code. 
+It is important that the model is agnostic of the controller. In other words, the model should not hold a reference to the controller and should not call its methods. Communication takes place using either events or callbacks. While not mandatory, events are preferred as callbacks can result in slightly less-readable code.&#x20;
 
 In the case of a DropDown component, the state that needs to be stored includes:
 
@@ -225,7 +225,7 @@ In the case of a DropDown component, the state that needs to be stored includes:
 * The currently selected item
 * Default text to display if no item is selected.
 
-```text
+```
 class DropDownModel extends Observable {
     static EVENTS = {
         changeValue: 'dropdown.model.changevalue'
@@ -276,7 +276,7 @@ class DropDownModel extends Observable {
 
 most of the model class looks like boilerplate, the most interesting method is the setter for `currentIndex`
 
-```text
+```
 set currentIndex(newIdx) {
     if (newIdx != this._currentIndex) {
         this._currentIndex = newIdx;
@@ -287,7 +287,7 @@ set currentIndex(newIdx) {
 
 Here we check if the index of the selected item has changed, if so, it is update and a `DropDownModel.EVENTS.changeValue` is fired. Recall from the DropDownComponent class above, we add a listener to this event:
 
-```text
+```
 prepareEvents() {
     ...
     this.model.on(DropDownModel.EVENTS.changeValue, model => {
@@ -299,7 +299,7 @@ prepareEvents() {
 
 which then gets the appropriate value from the model:
 
-```text
+```
 updateText() {
     $(this._textArea).text(this.model.currentValue)
 }
@@ -307,7 +307,7 @@ updateText() {
 
 The current index value on the model is updated when the li element is clicked:
 
-```text
+```
 setOptions(values) {
     ...
     li.on('click', () => {
@@ -319,7 +319,7 @@ setOptions(values) {
 
 ### MVC Architecture
 
-The benefit of using a decoupled MVC framework is that the resulting code is uncomplicated and reusable. Using this structure, it would be possible to have two controllers working with a single model. When a user interacts with the first component, the second one will automatically update. 
+The benefit of using a decoupled MVC framework is that the resulting code is uncomplicated and reusable. Using this structure, it would be possible to have two controllers working with a single model. When a user interacts with the first component, the second one will automatically update.&#x20;
 
 To ensure that the Model is decoupled from the Controller, it is usually best to separate events into two types, user interaction events and state change events. A user clicking on a box is an example of a user interaction event. They are typically primitive events. The controller notifies the model of the event by calling a method on the model object. This method will likely modify the internal state of the model. Once the state changes, a state change event is fired from the model. An example is the `changeValue` event. These events usually operate at a higher semantic level. The controller receives the state change event and updates the view accordingly. In this case, the text shown.
 
@@ -329,7 +329,7 @@ To ensure that the Model is decoupled from the Controller, it is usually best to
 
 Prefer using the `_` prefix as a signifier of a private attribute, e.g.
 
-```text
+```
 constructor(options = [], defaultText = '') {
         this._options = options
         this._defaultText = defaultText;
@@ -339,7 +339,7 @@ constructor(options = [], defaultText = '') {
 
 Use getters and setters
 
-```text
+```
 get options() {
         return this._options;
     }
@@ -352,7 +352,7 @@ get options() {
 
 Where possible provide the simplest possible arguments to methods, e.g.
 
-```text
+```
 doSomething(data) {
     console.log(data.key1.key2.value) // bad 
 }
@@ -363,4 +363,3 @@ doSomething(value) {
 ```
 
 Methods should receive only information that they need. Large application-wide state objects should be avoided.
-

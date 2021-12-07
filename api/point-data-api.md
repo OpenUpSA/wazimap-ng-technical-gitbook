@@ -13,11 +13,11 @@ A common way to fetch points is to
 
 Example themes:
 
-![](../.gitbook/assets/screenshot\_2021-08-26\_15-03-42.png)
+![](../.gitbook/assets/Screenshot\_2021-08-26\_15-03-42.png)
 
 Example point categories
 
-![](../.gitbook/assets/screenshot\_2021-08-26\_15-03-53.png)
+![](../.gitbook/assets/Screenshot\_2021-08-26\_15-03-53.png)
 
 {% hint style="info" %}
 **Profile Collections vs Categories**
@@ -97,15 +97,15 @@ Get the ID of the profile from the Profile list.
 {% endswagger-response %}
 {% endswagger %}
 
-| Field                   | Detail                                                                                                         |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
-| id                      | ID of the Profile                                                                                              |
-| name                    | Profile Name                                                                                                   |
-| permission_type         | Public \| Private - Profile Admin can specify which type of user should be able to view data linked to profile |
-| requires_authentication | Boolean - Decides if the user needs authentication to view data                                                |
-| geography_hierarchy     | Hierarchy for the Profile                                                                                      |
-| description             | TextField - Contains short intro about Profile                                                                 |
-| configuration           | Profile configurations set up by profile admin                                                                 |
+| Field                    | Detail                                                                                                         |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| id                       | ID of the Profile                                                                                              |
+| name                     | Profile Name                                                                                                   |
+| permission\_type         | Public \| Private - Profile Admin can specify which type of user should be able to view data linked to profile |
+| requires\_authentication | Boolean - Decides if the user needs authentication to view data                                                |
+| geography\_hierarchy     | Hierarchy for the Profile                                                                                      |
+| description              | TextField - Contains short intro about Profile                                                                 |
+| configuration            | Profile configurations set up by profile admin                                                                 |
 
 {% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/themes/" method="get" summary="Get Themes for a Profile" %}
 {% swagger-description %}

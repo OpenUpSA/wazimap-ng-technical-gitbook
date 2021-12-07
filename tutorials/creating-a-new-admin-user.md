@@ -10,7 +10,7 @@ Create a new admin account as follows:
 
 3\. Press **Save and continue editing** (don't only press save)
 
-![](../.gitbook/assets/screenshot-from-2021-03-05-15-27-31.png)
+![](<../.gitbook/assets/Screenshot from 2021-03-05 15-27-31.png>)
 
 4\. Add details under **Personal info** (optional)
 
@@ -20,7 +20,7 @@ Create a new admin account as follows:
 
 7\. Under groups, select Data Admin and Profile Admin&#x20;
 
-![](../.gitbook/assets/screenshot-from-2021-03-05-15-20-10.png)
+![](<../.gitbook/assets/Screenshot from 2021-03-05 15-20-10.png>)
 
 8\. In the **Available groups** selector, also select all of the profiles that that administrator should have access to.
 
