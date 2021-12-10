@@ -1,5 +1,15 @@
 # December 2021
 
+## Map panels update - 12/10/2021
+
+{% file src="../../.gitbook/assets/wazimap-ng.webflow (map-panels - 12102021).zip" %}
+
+#### Changes:
+
+* Added map-bottom-items--v2 version with updated functionality and styling
+* Removed various leaflet styling code from the webflow side
+* Removed webflow interactions for opening and closing map option panels. Now controlled by devs using hidden classes.
+
 ## Various changes - 12/03/2021
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (various-changes-12032021).zip" %}
