@@ -1,5 +1,11 @@
 # January 2022
 
+## Transition CSS - 01/14/2022
+
+{% file src="../../.gitbook/assets/wazimap-ng.webflow (transition-css-01142022).zip" %}
+
+Added transition styling to the v2 data mapper content items and made max-height on closed !important.
+
 ## Data mapper v2 - 01/13/2022
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (data-mapper-v2-01132022) (2).zip" %}
