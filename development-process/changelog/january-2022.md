@@ -1,5 +1,11 @@
 # January 2022
 
+## Class renaming - 01/18/2022
+
+{% file src="../../.gitbook/assets/wazimap-ng.webflow (class-renaming - 01182022).zip" %}
+
+Changed class name `.hdden` to `.hidden` for `.mapping-options__add-filter`.
+
 ## Transition CSS - 01/14/2022
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (transition-css-01142022).zip" %}
