@@ -19,6 +19,7 @@
 * [Code Review Process](development-process/how-to-prepare-a-pull-request-for-review.md)
 * [Pull Request Template (FE)](development-process/pull-request-template-fe.md)
 * [Merging webflow exports](development-process/merging-webflow-exports.md)
+* [Rules for Webflow exports](development-process/rules-for-webflow-exports.md)
 * [Webflow exports & changelog](development-process/changelog/README.md)
   * [March 2022](development-process/changelog/march-2022.md)
   * [January 2022](development-process/changelog/january-2022.md)
