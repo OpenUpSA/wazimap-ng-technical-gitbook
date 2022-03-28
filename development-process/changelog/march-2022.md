@@ -2,12 +2,12 @@
 
 ## Remove dummy tutorial content - 03/28/2022
 
-{% file src="../../.gitbook/assets/wazimap-ng.webflow (remove-tutorial-dummy - 03282022).zip" %}
+{% file src="../../.gitbook/assets/wazimap-ng.webflow (remove-tutorial-dummy - 03282022-reupload-4).zip" %}
 
 Changelog:
 
-* Created "tutorial-modal--v2" and replaced all dummy content with "Loading..."
-* Created "tutorial\_\_slide-image--v2" and removed the default background image.
+* Replaced all dummy content in the tutorial modal with "Loading..."
+* Removed the default background image for ."tutorial-slide\_\_image".
 * Left the same number of slides to not break the JS.
 * Removed "municipality" dummy text from ".map-tooltip\_\_geography-chip"
 * Removed "location type" dummy text from ".location-tag\_\_type"
