@@ -39,6 +39,7 @@
 
 ***
 
+* [NGPx - Template](ngpx-template.md)
 * [NGP1 - Changing the data model (Implemented)](ngp1-changing-the-data-model.md)
 * [NGP2 - Presenting Geographical Hierarchies to users](ngp2-presenting-geographical-hierarchies-to-users.md)
 * [NGP3 - Change Geography Hierarchies](ngp3-change-geography-hierarchies.md)
