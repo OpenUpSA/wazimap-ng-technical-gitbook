@@ -44,6 +44,7 @@
 * [NGP3 - Change Geography Hierarchies](ngp3-change-geography-hierarchies.md)
 * [NGP4 - Format configuration](ngp4-format-configuration.md)
 * [NGP5 - Multiple count columns](ngp5-multiple-count-columns.md)
+* [NGP6 - Handling missing and zero values](ngp6-handling-missing-and-zero-values.md)
 
 ## Tutorials
 
