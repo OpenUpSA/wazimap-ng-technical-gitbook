@@ -13,8 +13,6 @@ Quantitative data uploaded to Wazimap NG takes the format
 | Geography | Dimension 1 | Dimension 2 | Dimension n | Count |
 | --------- | ----------- | ----------- | ----------- | ----- |
 | CPT       | Yellow      | Hot         | ...         | 123   |
-|           |             |             |             |       |
-|           |             |             |             |       |
 
 Where there could be any number of dimensions (zero to many) which classify the value in Count.
 
@@ -34,11 +32,11 @@ The remaining dimensions are offered as filters in the data mapper and rich data
 
 Sometimes no data is available for a given geographic area. It is important to present missing data as such, and not assume that missing values are zero. Consider a dataset on vaccinations, where some provinces have submitted their data, some have submitted zero, while others have not submitted any data yet.
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+| Geography | Vaccine | Count |
+| --------- | ------- | ----- |
+| EC        | Pfizer  | 123   |
+| EC        | JJ      | 234   |
+| WC        | Pfizer  | 0     |
 
 Without being told how to interpret missing values, we know
 
