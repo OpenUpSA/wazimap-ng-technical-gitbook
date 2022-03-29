@@ -1,5 +1,13 @@
 # March 2022
 
+## Roll back tutorial content - 03/29/2022
+
+{% file src="../../.gitbook/assets/wazimap-ng.webflow (tutorial-modal-rollback-02292022).zip" %}
+
+Changelog:
+
+* Rolled back the changes to the tutorial modal. Includes tutorial content.
+
 ## Remove dummy tutorial content - 03/28/2022
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (remove-tutorial-dummy - 03282022-reupload-4).zip" %}
