@@ -2,7 +2,7 @@
 
 ## Roll back tutorial content - 03/29/2022
 
-{% file src="../../.gitbook/assets/wazimap-ng.webflow (tutorial-modal-rollback-02292022).zip" %}
+{% file src="../../.gitbook/assets/wazimap-ng.webflow (tutorial-modal-rollback-02292022-reupload).zip" %}
 
 Changelog:
 
@@ -20,7 +20,7 @@ Changelog:
 * Removed "municipality" dummy text from ".map-tooltip\_\_geography-chip"
 * Removed "location type" dummy text from ".location-tag\_\_type"
 
-![](<../../.gitbook/assets/image (63).png>)
+![](<../../.gitbook/assets/image (63) (1).png>)
 
 ![](<../../.gitbook/assets/image (61).png>)
 
