@@ -6,12 +6,18 @@ We work in an agile environment. We use scrum.&#x20;
 
 Look for the highest priority available task in the current sprint.&#x20;
 
-If you can't find any available tasks in the current sprint
+**If you can't find any available tasks** in the current sprint
 
 1. ask the rest of the team if you can help with anything,&#x20;
 2. let the PO and PM know that you can't find anything to work on
 3. groom the backlog of upcoming sprints
 4. Start working on tasks in the upcoming sprint
+
+**The priority of what to work on** is as follows:
+
+1. data mis-representation bugs and bugs seriously affecting production (these should be moved to the top of the sprint)
+2. Deploy something that is Ready to Deploy unless we're waiting for a particular deploy time
+3. The story highest up in the sprint that is not finished
 
 ### As a Developer
 
