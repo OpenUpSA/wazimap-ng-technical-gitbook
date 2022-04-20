@@ -15,8 +15,8 @@ Look for the highest priority available task in the current sprint.&#x20;
 
 **The priority of what to work on** is as follows:
 
-1. data mis-representation bugs and bugs seriously affecting production (these should be moved to the top of the sprint)
-2. Deploy something that is Ready to Deploy unless we're waiting for a particular deploy time
+1. Deploy something that is Ready to Deploy unless we're waiting for a particular deploy time (unless it will take more than a few minutes to deploy)
+2. data mis-representation bugs and bugs seriously affecting production (these should be moved to the top of the sprint)
 3. The story highest up in the sprint that is not finished
 
 ### As a Developer
