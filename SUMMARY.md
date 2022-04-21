@@ -46,7 +46,7 @@
 * [NGP3 - Change Geography Hierarchies](ngp3-change-geography-hierarchies.md)
 * [NGP4 - Format configuration](ngp4-format-configuration.md)
 * [NGP5 - Multiple count columns](ngp5-multiple-count-columns.md)
-* [NGP5 - Profile-specific open graph metadata](ngp5-profile-specific-open-graph-metadata.md)
+* [NGP6 - Profile-specific open graph metadata](ngp6-profile-specific-open-graph-metadata.md)
 
 ## Tutorials
 
