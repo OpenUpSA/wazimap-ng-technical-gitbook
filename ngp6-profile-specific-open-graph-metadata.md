@@ -43,6 +43,10 @@ In ascending order of value:
 4. Specific indicator and geography, e.g. "Multidimensional youth poverty - Tshwane - Youth Explorer" in the title, perhaps some or all of the indicator description in the open graph metadata
 5. dynamic image, e.g. the selected geography on the map, perhaps dynamically-branded; perhaps a choropleth or rich data view chart image for the selected geography and indicator.
 
+We're aiming around level 2 for now.
+
+Level 3 depends on changing from fragment identifier (#geo:CPT) to querystring (?geo=CPT)
+
 ## **Proposed Solution 1 -** Server-side rendering (SSR) for the frontend app using node.js in a dokku app
 
 The frontend would be deployed as it currently is, but Javascript is executed server-side to inspect the request, fetch the profile-specific data via the API, templates the metadata into the HTML page, and serves the response.
