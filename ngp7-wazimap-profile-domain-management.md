@@ -46,6 +46,17 @@ As wazimap scales in the number of profiles it hosts, we will need to serve on m
 * TLS Certificates can only be handled by Netlify if Netlify DNS is used for the wildcard cart
 * Only 100 custom domains are supported on a site. (Possibly due to letsencrypt Names per Cert limit)
 
+#### Similar functionality on competitors/related tools
+
+| Product                                                       | Subdomains | Custom domains |
+| ------------------------------------------------------------- | ---------- | -------------- |
+| Power BI                                                      |            |                |
+| Carto                                                         |            |                |
+|                                                               |            |                |
+| Tableau                                                       |            |                |
+| [https://storymaps.arcgis.com/](https://storymaps.arcgis.com) |            |                |
+| [https://www.arcgis.com/](https://www.arcgis.com)             |            |                |
+
 ## **Proposed Solution 1 - Only allow subdomains of our base domain**
 
 Requirements:
