@@ -76,7 +76,19 @@ Requirements:
 
 ### **Other implications**
 
-## **Proposed Solution 3**
+## **Proposed Solution 3 - subdomains by default, option of custom domains on dokku**
+
+**Approach**
+
+* DNS
+  * Wildcard DNS for subdomains of our base domain
+  * Any DNS CNAME to to our frontend web server
+* Virtual hosting (reverse proxy or static server)
+  * Subdomains are handled automatically by dokku/nginx wicard domain
+  * Custom domains: ??? manually-added or automated?
+* TLS certificate
+  * dokku letsencrypt - wildcard + up to 99 custom domains via dokku letsencrypt (100 30-char domains like [e.g youthexplorer.wazimap.co.za](https://youthexplorer.wazimap.co.za) is 3kb baggage per new TLS connection)
+  * alternative to dokku letsencrypt: certbot + vhost per custom domain + dokku app listening on a host port for non-dokku reverse proxy
 
 ### Benefits
 
