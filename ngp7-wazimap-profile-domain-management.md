@@ -40,25 +40,35 @@ As wazimap scales in the number of profiles it hosts, we will need to serve on m
 * **Names per Certificate** (100) - Relevant if all domains are on a single certificate. This (all domains added as Subject Alternative Name values on a single certificate for the app) is the usual approach dokku-letsencrypt and netlify uses for domains added to the same app.
 * **Failed Validation** limit of 5 failures per account, per hostname, per hour. - Relevant if one certificate is used for multiple domains, and DNS for one of the domains is not resolving to us yet. We'd need to be careful about accidental or intentional denial of service here.
 
-Limits on Netlify:
+#### Limits on Netlify:
 
 * Wildcard domains are supported on Pro, but not at the same time as custom domains
 * TLS Certificates can only be handled by Netlify if Netlify DNS is used for the wildcard cart
 * Only 100 custom domains are supported on a site. (Possibly due to letsencrypt Names per Cert limit)
 
-## **Proposed Solution 1 - Only allow custom subdomains**
+## **Proposed Solution 1 - Only allow subdomains of our base domain**
 
 Requirements:
 
 * Once-off wildcard DNS for the base domain, e.g. \*.wazimap.co.za
+  * Supported by netlify, dokku
 * 2-monthly wildcard TLS certificate for the wildcard domain
+  * Supported by netlify, dokku
 * Wildcard reverse proxying to the frontend web server
+  * Supported by netlify, dokku
 
 ### **Benefits**
 
 ### **Disadvantages**
 
-## **Proposed Solution 2**
+## **Proposed Solution 2 - Allow subdomain of our base domain for new sites, and legacy custom domains**
+
+**Requirements:**
+
+* Same as solution 1 for wildcard DNS/cert/proxying
+* The solution 1 requirements for about 5 custom domains
+  * Supported by dokku
+  * Not supported by netlify (["You can’t use domain aliases on a site with wildcard subdomains enabled"](https://answers.netlify.com/t/support-for-wildcard-domains-and-multiple-custom-domains/31331/9))
 
 ### **Benefits**
 
