@@ -88,7 +88,7 @@ Requirements:
 
 ### **Other implications**
 
-## **Proposed Solution 3 - subdomains by default, option of custom domains on dokku**
+## **Proposed Solution 3 - subdomains by default, option of custom domains on dokku added manually**
 
 **Approach**
 
@@ -101,6 +101,38 @@ Requirements:
 * TLS certificate
   * dokku letsencrypt - wildcard + up to 99 custom domains via dokku letsencrypt (100 30-char domains like [e.g youthexplorer.wazimap.co.za](https://youthexplorer.wazimap.co.za) is 3kb baggage per new TLS connection)
   * alternative to dokku letsencrypt: certbot + vhost per custom domain + dokku app listening on a host port for non-dokku reverse proxy
+
+Adding/removing a domain manually would entail
+
+1. Add the domain to the profile in Admin
+2. Add CNAME record pointing to the server, or ask the client to do so
+3. SSH to the server
+4. Add domain to dokku/nginx vhost
+5. Renew TLS certificate
+
+For 20 custom domains, we might have to do this on average 30 times or just over once every 2 weeks.
+
+### Benefits
+
+### Disadvantages
+
+## **Proposed Solution 4 - subdomains by default, option of custom domains on dokku automated**
+
+Same as Solution 3 but instead of adding/removing domains manually by SSHing to the server, we automate that, triggered by domain modifications in admin.
+
+Approach:
+
+* Add the domain to the profile in Admin
+* Add CNAME record pointing to the server, or ask the client to do so
+* ...Automation to add/remove domain config to server
+* ...Automation to renew certificate
+* ...Automation to let admin know it's all up and running or feed back errors
+
+### Benefits
+
+### Disadvantages
+
+## **Proposed Solution 5**
 
 ### Benefits
 

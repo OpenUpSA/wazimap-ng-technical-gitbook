@@ -1,4 +1,4 @@
-# NGP5 - Profile-specific open graph metadata
+# NGP6 - Profile-specific open graph metadata
 
 **Proposed by: JD Bothma**
 
@@ -67,7 +67,7 @@ Same as above, but on a (not so?)-static hosting platform like netlify or Cloudf
 
 ### **Other implications**
 
-* Each profile hostname has to be added as a custom domain in Netlify or whatever the platform is. Netlify doesn't support more than 100 custom domains (it's not clear what the technical limit is) on an app and we have already had issues with their restriction of the apex domain being allowed only on one netlify team without manual intervention from thier support. See Managing profile domains without devops.
+* Each profile hostname has to be added as a custom domain in Netlify or whatever the platform is. Netlify doesn't support more than 100 custom domains (it's not clear what the technical limit is) on an app and we have already had issues with their restriction of the apex domain being allowed only on one netlify team without manual intervention from their support. See [NGP7 - Wazimap profile domain management.](ngp7-wazimap-profile-domain-management.md)
 
 ## **Proposed Solution 3 -** Serving HTML, CSS and JS using the (currently) backend django app
 
