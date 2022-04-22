@@ -54,6 +54,7 @@ As wazimap scales in the number of profiles it hosts, we will need to serve on m
 | Carto                                                         |            |                |
 |                                                               |            |                |
 | Tableau                                                       |            |                |
+| [https://storymaps.com/](https://storymaps.com)               |            |                |
 | [https://storymaps.arcgis.com/](https://storymaps.arcgis.com) |            |                |
 | [https://www.arcgis.com/](https://www.arcgis.com)             |            |                |
 
