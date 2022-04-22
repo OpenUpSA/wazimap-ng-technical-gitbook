@@ -38,12 +38,21 @@ As wazimap scales in the number of profiles it hosts, we will need to serve on m
 
 * **Certificates per Registered Domain** (50 per week) - Only really relevant if we try to have a distinct certificate per wazimap.co.za subdomain instead of a wildcard certificate for that domain. Renewal could be staggered. This would probably happen naturally by renewing daily a month before expiry as is currently done.
 * **Names per Certificate** (100) - Relevant if all domains are on a single certificate. This (all domains added as Subject Alternative Name values on a single certificate for the app) is the usual approach dokku-letsencrypt and netlify uses for domains added to the same app.
-*
+* **Failed Validation** limit of 5 failures per account, per hostname, per hour. - Relevant if one certificate is used for multiple domains, and DNS for one of the domains is not resolving to us yet. We'd need to be careful about accidental or intentional denial of service here.
+
+Limits on Netlify:
+
+* Wildcard domains are supported on Pro, but not at the same time as custom domains
+* TLS Certificates can only be handled by Netlify if Netlify DNS is used for the wildcard cart
+* Only 100 custom domains are supported on a site. (Possibly due to letsencrypt Names per Cert limit)
 
 ## **Proposed Solution 1 - Only allow custom subdomains**
 
-* Adding a hostname triggers automation that
-  *
+Requirements:
+
+* Once-off wildcard DNS for the base domain, e.g. \*.wazimap.co.za
+* 2-monthly wildcard TLS certificate for the wildcard domain
+* Wildcard reverse proxying to the frontend web server
 
 ### **Benefits**
 
@@ -70,3 +79,4 @@ This problem was finally addressed by ...&#x20;
 ## Further reading
 
 * [https://discuss.httparchive.org/t/san-certificates-how-many-alt-names-are-too-many/1867](https://discuss.httparchive.org/t/san-certificates-how-many-alt-names-are-too-many/1867)
+* [Someone exploring many of the same questions on Netlify](https://answers.netlify.com/t/support-for-wildcard-domains-and-multiple-custom-domains/31331/9)
