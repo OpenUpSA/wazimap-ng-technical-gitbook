@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Webflow Integration](README.md)
+* [Introduction](README.md)
 
 ## System Architecture
 
@@ -18,6 +18,7 @@
 * [Pull Request Template Explanation](development-process/pull-request-template-explanation.md)
 * [Code Review Process](development-process/how-to-prepare-a-pull-request-for-review.md)
 * [Pull Request Template (FE)](development-process/pull-request-template-fe.md)
+* [Webflow Integration](development-process/master.md)
 * [Merging webflow exports](development-process/merging-webflow-exports.md)
 * [Rules for Webflow exports](development-process/rules-for-webflow-exports.md)
 * [Webflow exports & changelog](development-process/changelog/README.md)
