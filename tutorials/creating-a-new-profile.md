@@ -44,6 +44,6 @@ Here is my completed profile screen
 
 Save and you're done.
 
-Visit [http://covid.openup.org.za/](http://covid.openup.org.za) to see if everything is setup. It should look like the image below.
+Visit [http://covid.openup.org.za/](http://covid.openup.org.za/) to see if everything is setup. It should look like the image below.
 
 ![](<../.gitbook/assets/Screen Shot 2020-09-12 at 09.32.29.png>)

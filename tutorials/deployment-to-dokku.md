@@ -2,7 +2,7 @@
 
 ### On the server
 
-* Install [dokku](https://dokku.com)
+* Install [dokku](https://dokku.com/)
 * Install the [postgres plugin](https://github.com/dokku/dokku-postgres).
 * Install the [letsencrypt plugin](https://github.com/dokku/dokku-letsencrypt)
 * Install the [redis plugin](https://github.com/dokku/dokku-redis)

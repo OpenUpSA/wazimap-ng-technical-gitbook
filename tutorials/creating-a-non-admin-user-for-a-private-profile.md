@@ -9,7 +9,7 @@ description: >-
 One can create a non-admin account as follows:
 
 1. Navigate to the user creation page: [https://production.wazimap-ng.openup.org.za/admin/auth/user/add/](https://production.wazimap-ng.openup.org.za/admin/auth/user/add/)
-2. Select a username and password (this will be a temporary password or can be generated from [https://passwordsgenerator.net/](https://passwordsgenerator.net) if you'd prefer to do so)
+2. Select a username and password (this will be a temporary password or can be generated from [https://passwordsgenerator.net/](https://passwordsgenerator.net/) if you'd prefer to do so)
 3. Press **Save**
 4. Copy the link to send to the user to change their password (see image below). **NOTE: This link is specific to the user and should not be shared with anyone but that user.**
 

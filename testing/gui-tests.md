@@ -19,7 +19,7 @@
 
 ### Cypress dashboard
 
-* [https://dashboard.cypress.io/](https://dashboard.cypress.io)
+* [https://dashboard.cypress.io/](https://dashboard.cypress.io/)
 * The credentials for the dashboard could be found in OpenUp general credentials file
 * Everytime `cypress:gui` script is run, the test results, logs and their videos are saved to the dashboard. Github actions runs this script too.&#x20;
 * By selecting `WazimapNG` in the Projects page, all the latest test runs could be viewed.

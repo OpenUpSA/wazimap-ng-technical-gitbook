@@ -48,15 +48,15 @@ As wazimap scales in the number of profiles it hosts, we will need to serve on m
 
 #### Similar functionality on competitors/related tools
 
-| Product                                                       | Subdomains | Custom domains |
-| ------------------------------------------------------------- | ---------- | -------------- |
-| Power BI                                                      |            |                |
-| Carto                                                         |            |                |
-|                                                               |            |                |
-| Tableau                                                       |            |                |
-| [https://storymaps.com/](https://storymaps.com)               |            |                |
-| [https://storymaps.arcgis.com/](https://storymaps.arcgis.com) |            |                |
-| [https://www.arcgis.com/](https://www.arcgis.com)             |            |                |
+| Product                                                        | Subdomains | Custom domains |
+| -------------------------------------------------------------- | ---------- | -------------- |
+| Power BI                                                       |            |                |
+| Carto                                                          |            |                |
+|                                                                |            |                |
+| Tableau                                                        |            |                |
+| [https://storymaps.com/](https://storymaps.com/)               |            |                |
+| [https://storymaps.arcgis.com/](https://storymaps.arcgis.com/) |            |                |
+| [https://www.arcgis.com/](https://www.arcgis.com/)             |            |                |
 
 ## **Proposed Solution 1 - Only allow subdomains of our base domain**
 
@@ -99,7 +99,7 @@ Requirements:
   * Subdomains are handled automatically by dokku/nginx wicard domain
   * Custom domains: ??? manually-added or automated?
 * TLS certificate
-  * dokku letsencrypt - wildcard + up to 99 custom domains via dokku letsencrypt (100 30-char domains like [e.g youthexplorer.wazimap.co.za](https://youthexplorer.wazimap.co.za) is 3kb baggage per new TLS connection)
+  * dokku letsencrypt - wildcard + up to 99 custom domains via dokku letsencrypt (100 30-char domains like [e.g youthexplorer.wazimap.co.za](https://youthexplorer.wazimap.co.za/) is 3kb baggage per new TLS connection)
   * alternative to dokku letsencrypt: certbot + vhost per custom domain + dokku app listening on a host port for non-dokku reverse proxy
 
 Adding/removing a domain manually would entail
