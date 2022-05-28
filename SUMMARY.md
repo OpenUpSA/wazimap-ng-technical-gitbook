@@ -37,6 +37,7 @@
 * [Testing guidelines](testing/testing-guidelines.md)
 * [Critical Paths](testing/critical-paths.md)
 * [GUI Tests](testing/gui-tests.md)
+* [Heroku Review Apps](testing/heroku-review-apps.md)
 
 ## Change Proposals
 
