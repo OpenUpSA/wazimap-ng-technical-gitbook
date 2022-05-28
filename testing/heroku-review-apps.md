@@ -83,3 +83,8 @@ Via GUI:
   ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.42.54 PM.png>)
 * Go to Ui deploy preview add ?dev-tools=true to enable dev tools and add `deploy-preview-542--wazimap-staging.netlify.app` to Hostname and backend review app url to Api url `https://wazireview.herokuapp.com` and enter\
   ``![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.44.34 PM.png>)\
+
+
+### Destroy review apps when branches are merged
+
+`heroku apps:destroy wazimap-pr-1234`
