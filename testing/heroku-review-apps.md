@@ -1,6 +1,18 @@
 # Heroku Review Apps
 
-We're creating "review apps" in the staging "stage" of the wazimap pipeline in heroku until we're ready to use real heroku review apps.
+### Connecting a netlify frontend deploy preview to backend review app
+
+* Copy link for frontend review app ex: [deploy-preview-542--wazimap-staging.netlify.app](https://deploy-preview-542--wazimap-staging.netlify.app/)
+* Add it to the configuration in profiles for the backend review app and save\
+  ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.42.54 PM.png>)
+* Go to Ui deploy preview add ?dev-tools=true to enable dev tools and add `deploy-preview-542--wazimap-staging.netlify.app` to Hostname and backend review app url to Api url `https://wazireview.herokuapp.com` and enter\
+  ``![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.44.34 PM.png>)
+
+## Creating staging apps in heroku
+
+This is probably not helpful any more now that real review apps work again, but we're leaving this here for now in case it's needed.
+
+We were creating "review apps" in the staging "stage" of the wazimap pipeline in heroku while heroku review apps were not working due to the exfiltration of github oauth keys.
 
 ### Create a new app
 
@@ -76,9 +88,9 @@ Via GUI:
 
 
 
-### Connecting review app to UI deployed preview app
+### Connecting backend review app to deploy preview app
 
-* Copy link for review app ex: [deploy-preview-542--wazimap-staging.netlify.app](https://deploy-preview-542--wazimap-staging.netlify.app/)
+* Copy link for frontend review app ex: [deploy-preview-542--wazimap-staging.netlify.app](https://deploy-preview-542--wazimap-staging.netlify.app/)
 * Add it to the configuration in profiles for the backend review app and save\
   ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.42.54 PM.png>)
 * Go to Ui deploy preview add ?dev-tools=true to enable dev tools and add `deploy-preview-542--wazimap-staging.netlify.app` to Hostname and backend review app url to Api url `https://wazireview.herokuapp.com` and enter\
