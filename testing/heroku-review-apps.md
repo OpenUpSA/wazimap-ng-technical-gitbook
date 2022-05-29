@@ -1,5 +1,17 @@
 # Heroku Review Apps
 
+### Creating a review app
+
+![](../.gitbook/assets/Screenshot\_2022-05-29\_16-55-42.png)
+
+1. Login to the heroku dashboard
+2. Go to the wazimap pipeline
+3. Click "Create review app" for your pull request
+
+Find the URL to the deployed review app in the pull request or by clicking "View app" in heroku.
+
+Migrations and demodata are only loaded when the app is created. If you need to recreate the database, destroy the app and recreate it.
+
 ### Connecting a netlify frontend deploy preview to backend review app
 
 * Copy link for frontend review app ex: [deploy-preview-542--wazimap-staging.netlify.app](https://deploy-preview-542--wazimap-staging.netlify.app/)
