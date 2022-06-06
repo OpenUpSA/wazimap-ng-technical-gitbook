@@ -47,6 +47,18 @@ We are now looking at introducing a frontend framework, or the frontend librarie
 * Breadcrumbs / Profile highlights container
 * Feedback button
 
+### Libraries and tech to consider
+
+* Web components
+* [https://polymer-library.polymer-project.org/3.0/docs/devguide/feature-overview](https://polymer-library.polymer-project.org/3.0/docs/devguide/feature-overview)
+  * Maintenance mode, referring to Lit.
+  * [https://github.com/PolymerElements](https://github.com/PolymerElements) is a github org of component repos
+* [https://lit.dev/](https://lit.dev/)
+* [https://semantic-ui.com/](https://semantic-ui.com/)
+* [https://material.io/components?platform=web](https://material.io/components?platform=web)
+* [https://github.com/material-components/material-web](https://github.com/material-components/material-web)
+  * > IMPORTANT: Material Web is a work in progress and subject to major changes until 1.0 release.
+
 ## See also
 
 * [Using the same Redux store for multiple React instances](https://stackoverflow.com/questions/59743168/multiple-instances-of-react-application-on-the-same-page) (in our case this is probably desirable)
