@@ -10,6 +10,8 @@ We are now looking at introducing a frontend framework, or the frontend librarie
 
 ### Current components
 
+(n) means there can be multiple instances
+
 * Page header
   * Logo
   * Search box
@@ -24,7 +26,12 @@ We are now looking at introducing a frontend framework, or the frontend librarie
         * Profile (point) collection item (n)
     * Category (n)
       * Subcategory (n)
-        *
+        * Indicator (n)
+          * Filters Section
+          * Chart
+          * Description
+          * Source
+          * Table
   * Point Mapper
     * Point theme (n)
       * Enable-all toggle-switch
