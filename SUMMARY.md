@@ -51,6 +51,7 @@
 * [NGP5 - Multiple count columns](ngp5-multiple-count-columns.md)
 * [NGP6 - Profile-specific open graph metadata](ngp6-profile-specific-open-graph-metadata.md)
 * [NGP7 - Wazimap profile domain management](ngp7-wazimap-profile-domain-management.md)
+* [NGP8 - Replacing Webflow as frontend framework](ngp8-replacing-webflow-as-frontend-framework.md)
 
 ## Tutorials
 
