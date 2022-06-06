@@ -22,6 +22,9 @@ We are now looking at introducing a frontend framework, or the frontend librarie
       * Show services button
       * Point theme card (n)
         * Profile (point) collection item (n)
+    * Category (n)
+      * Subcategory (n)
+        *
   * Point Mapper
     * Point theme (n)
       * Enable-all toggle-switch
@@ -31,8 +34,13 @@ We are now looking at introducing a frontend framework, or the frontend librarie
       * Subcategory (n)
         * Subindicator (n)
 * Map
+  * Map Download button
 * "Map Chip" (Non-modal fixed dialogue for data mapper controls)
 * "Point filters dialogue"
 * Breadcrumbs / Profile highlights container
 * Feedback button
-* Download button
+
+## See also
+
+* [Using the same Redux store for multiple React instances](https://stackoverflow.com/questions/59743168/multiple-instances-of-react-application-on-the-same-page) (in our case this is probably desirable)
+
