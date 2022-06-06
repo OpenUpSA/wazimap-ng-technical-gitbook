@@ -51,6 +51,8 @@ Level 3 depends on changing from fragment identifier (#geo:CPT) to querystring (
 
 The frontend would be deployed as it currently is, but Javascript is executed server-side to inspect the request, fetch the profile-specific data via the API, templates the metadata into the HTML page, and serves the response.
 
+[https://www.npmjs.com/package/mustache-express](https://www.npmjs.com/package/mustache-express)
+
 ### **Benefits**
 
 * a lot of people are doing this these days
