@@ -15,7 +15,24 @@ We are now looking at introducing a frontend framework, or the frontend librarie
   * Search box
   * Tutorial button
 * Panels (on the left)
+  * Rich Data View
+    * Point data summary
+      * Total point and profile (point) collection count
+      * Download all button
+      * Show services button
+      * Point theme card (n)
+        * Profile (point) collection item (n)
+  * Point Mapper
+    * Point theme (n)
+      * Enable-all toggle-switch
+      * Profile (point) collection button (n)
+  * Data Mapper
+    * Category (n)
+      * Subcategory (n)
+        * Subindicator (n)
 * Map
+* "Map Chip" (Non-modal fixed dialogue for data mapper controls)
+* "Point filters dialogue"
 * Breadcrumbs / Profile highlights container
 * Feedback button
 * Download button
