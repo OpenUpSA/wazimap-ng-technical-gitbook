@@ -1,5 +1,13 @@
 # NGP8 - Replacing Webflow as frontend framework
 
+**Proposed by: JD Bothma**
+
+**Date: 2022-04-21**
+
+**Status: Spike probable solution**
+
+### **Context**
+
 Using webflow as the frontend framework makes concurrent frontend development error-prone and requires complicated synchronisation between team members to plan changes. It also often requires multiple round-trips between Matt making changes in Webflow, frontend devs trying to use those changes, Matt then having to make tweaks, until it is done. Each change requires a webflow export, sharing a big zip file, requiring an import which may bring surprise changes in the diff introduced by webflow, adding cognitive load to the code review.
 
 The plan thus far has been to introduce React for the next interactive component we need to modify or introduce.
@@ -62,6 +70,17 @@ We are now looking at introducing a frontend framework, or the frontend librarie
 * [https://material.io/components?platform=web](https://material.io/components?platform=web)
 * [https://github.com/material-components/material-web](https://github.com/material-components/material-web)
   * > IMPORTANT: Material Web is a work in progress and subject to major changes until 1.0 release.
+
+## Spike
+
+* Try the [MUI react material UI component library](https://mui.com/material-ui/)
+* Try the [Semantic UI component library](https://semantic-ui.com/) with React integration
+* Implement the search/select-one component and style accordingly
+  * &#x20;![](<.gitbook/assets/image (22) (2).png>)
+* Implement the filter-reset snackbar
+  * &#x20;![](<.gitbook/assets/indicator-panel-contracted-filter-reset (1).jpg>)
+* Do either of them risk breaking styling of existing parts?
+* Does it look like both approaches to styling scale nicely - Is consistent styling convenient enough with both options as we eventually replace all components on the site?
 
 ## See also
 
