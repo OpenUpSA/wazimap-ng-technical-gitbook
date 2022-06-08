@@ -82,6 +82,14 @@ We are now looking at introducing a frontend framework, or the frontend librarie
 * Do either of them risk breaking styling of existing parts?
 * Does it look like both approaches to styling scale nicely - Is consistent styling convenient enough with both options as we eventually replace all components on the site?
 
+## Resolution
+
+* **Interactive/reactive markup library:** React
+* **Component library:** To be determined - see spike above
+* **Styling/CSS:** To be determined - see spike above
+* **State management:** custom event system and controller until enough of UI is react that changing to something standard is easier than maintaining the custom approach
+* **Framework:** Nothing more than what we have for now. Revisit things like next.js but for SPAs when most of the webflow dependency is gone
+
 ## See also
 
 * [Using the same Redux store for multiple React instances](https://stackoverflow.com/questions/59743168/multiple-instances-of-react-application-on-the-same-page) (in our case this is probably desirable)
