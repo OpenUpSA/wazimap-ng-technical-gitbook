@@ -92,4 +92,9 @@ The backend will need to respond to requests for all profile hostnames, affectin
 
 ## **Resolution**
 
-This problem was finally addressed by ...&#x20;
+Proposal:
+
+1. interim: server-side mustache templating for index.html
+   1. enables all achievement levels
+2. eventually: next.js once we've replaced webflow
+   1. enables pre-rendering javascript-drawn content, skipping several data roundtrips
