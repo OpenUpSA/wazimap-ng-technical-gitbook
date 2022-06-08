@@ -166,7 +166,7 @@ Approach:
 
 ## **Resolution**
 
-This problem was finally addressed by ...&#x20;
+Try option 3 until the effort of maintaining custom domains manually and the value to be gained by automating is worth the effort of automating handling custom domains.
 
 ## Further reading
 
