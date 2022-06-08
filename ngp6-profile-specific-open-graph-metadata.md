@@ -53,6 +53,8 @@ The frontend would be deployed as it currently is, but Javascript is executed se
 
 [https://www.npmjs.com/package/mustache-express](https://www.npmjs.com/package/mustache-express)
 
+A prerequisite for next.js would be replacing webflow or horrid hacks to import our webflow export as a [custom "Document"](https://nextjs.org/docs/advanced-features/custom-document).
+
 ### **Benefits**
 
 * a lot of people are doing this these days
@@ -92,4 +94,11 @@ The backend will need to respond to requests for all profile hostnames, affectin
 
 ## **Resolution**
 
-This problem was finally addressed by ...&#x20;
+Proposal:
+
+1. Quick win with minimal interruption:
+   1. Use minimal server-side templating like express-handlebars to query and render profile details
+   2. enables all achievement levels but certainly 2-3
+2. eventually consider full-blown server-side rendering next.js style
+   1. enables pre-rendering javascript-drawn content, skipping several data roundtrips
+   2. watch out: next.js is possibly not the right tool - apparently more page-content oriented than SPA.

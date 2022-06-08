@@ -46,6 +46,20 @@ As wazimap scales in the number of profiles it hosts, we will need to serve on m
 * TLS Certificates can only be handled by Netlify if Netlify DNS is used for the wildcard cart
 * Only 100 custom domains are supported on a site. (Possibly due to letsencrypt Names per Cert limit)
 
+#### Client wants/needs
+
+[youthexplorer.org.za](https://youthexplorer.org.za)&#x20;
+
+Youth explorer very much is an established brand in their circles.
+
+[gdc-projects.org.za](http://gdc-projects.org.za/)
+
+> Could you please also let us know what the technical costs are for keeping a custom domain.
+
+whowhatwhere.org.za
+
+> We are fine with [http://whowhatwhere.wazimap.co.za/](http://whowhatwhere.wazimap.co.za/) being the domain
+
 #### Similar functionality on competitors/related tools
 
 | Product                                                        | Subdomains | Custom domains |
@@ -111,6 +125,18 @@ Adding/removing a domain manually would entail
 5. Renew TLS certificate
 
 For 20 custom domains, we might have to do this on average 30 times or just over once every 2 weeks.
+
+{% hint style="danger" %}
+**Beware cert renewal errors.**
+
+Can one hostname break renewal for all or is that one skipped?
+
+We can monitor expiry.
+
+We can monitor the renewal cron output.
+
+\-> Urgent manual devops action until we automate.
+{% endhint %}
 
 ### Benefits
 
