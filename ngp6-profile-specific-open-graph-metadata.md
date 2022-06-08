@@ -53,8 +53,6 @@ The frontend would be deployed as it currently is, but Javascript is executed se
 
 [https://www.npmjs.com/package/mustache-express](https://www.npmjs.com/package/mustache-express)
 
-A prerequisite for next.js would be replacing webflow or horrid hacks to import our webflow export as a [custom "Document"](https://nextjs.org/docs/advanced-features/custom-document).
-
 ### **Benefits**
 
 * a lot of people are doing this these days
@@ -94,9 +92,4 @@ The backend will need to respond to requests for all profile hostnames, affectin
 
 ## **Resolution**
 
-Proposal:
-
-1. interim: server-side mustache templating for index.html
-   1. enables all achievement levels
-2. eventually: next.js once we've replaced webflow
-   1. enables pre-rendering javascript-drawn content, skipping several data roundtrips
+This problem was finally addressed by ...&#x20;

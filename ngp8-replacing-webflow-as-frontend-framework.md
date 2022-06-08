@@ -47,10 +47,6 @@ We are now looking at introducing a frontend framework, or the frontend librarie
 * Breadcrumbs / Profile highlights container
 * Feedback button
 
-### Upcoming components
-
-![](<.gitbook/assets/WaziCompare - Mockup 1 (3) (1).png>) ![](<.gitbook/assets/image (22) (2).png>) ![](<.gitbook/assets/image (21) (1).png>) ![](<.gitbook/assets/indicator-panel-contracted-filter-reset (1).jpg>)
-
 ### Libraries and tech to consider
 
 * Web components
