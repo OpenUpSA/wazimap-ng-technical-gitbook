@@ -112,6 +112,18 @@ Adding/removing a domain manually would entail
 
 For 20 custom domains, we might have to do this on average 30 times or just over once every 2 weeks.
 
+{% hint style="danger" %}
+**Beware cert renewal errors.**
+
+Can one hostname break renewal for all or is that one skipped?
+
+We can monitor expiry.
+
+We can monitor the renewal cron output.
+
+\-> Urgent manual devops action until we automate.
+{% endhint %}
+
 ### Benefits
 
 ### Disadvantages
