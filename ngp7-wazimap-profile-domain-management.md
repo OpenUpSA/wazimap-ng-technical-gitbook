@@ -1,10 +1,10 @@
 # NGP7 - Wazimap profile domain management
 
-**Proposed by:**&#x20;
+**Proposed by: JD Bothma**
 
-**Date:**&#x20;
+**Date: April 2022**
 
-**Status: Proposed**
+**Status: Spike probable solution**
 
 ### **Context**
 
