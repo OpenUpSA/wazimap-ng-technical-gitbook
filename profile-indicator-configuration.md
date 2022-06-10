@@ -69,3 +69,11 @@ It is possible to hide profile indicators in data mapper using the `exclude`  pr
     "data mapper"
   ]
 ```
+
+### Setting the chart type
+
+At the moment we support 2 chart types : bar chart and line chart.  `chartType` can be set as `line` for line charts or`bar` for bar charts. If `chartType` is not set, the default is the bar chart
+
+```
+ "chartType": "line" 
+```
