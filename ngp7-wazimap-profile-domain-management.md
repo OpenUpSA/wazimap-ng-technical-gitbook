@@ -27,6 +27,7 @@ As wazimap scales in the number of profiles it hosts, we will need to serve on m
 * Stale domains can break certificate renewal
 * Netlify has a limit to the number of custom domains allowed - they have warned us not to add more than 100
 * The Certificate is growing bigger and bigger. We aren't sure of the consequences of this.
+* Cloudflare pages requires apex domains for Pages sites to be zones on cloudflare ![](.gitbook/assets/2022-06-11\_13-29.png)
 
 #### Anticipated scale over the next 1-3 years:
 
