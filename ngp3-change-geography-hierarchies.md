@@ -43,6 +43,16 @@ Child geographies explicitly identify their parent when uploaded. This prevents 
 
 Geographies belong to a particular level and version. There are cases where the same term may be used for different levels causing confusion. For instance, a **District** in South African may not be comparable to a district in another country which may fit in a different position in the hierarchy.&#x20;
 
+#### Version of ancestors
+
+You need to know which version of ancestors to show to potentially navigate away from the selected geography.
+
+In the image below, the hexagons should be children of the 2016 Mangaung but are incorrectly added as children of the smaller 2011 Mangaung. Hexagons are technically not part of the municipal demarcation, but in one demarcation version, hexagon _a_ might be best presented a child of one municipality, and in another demarcation version, it would be a child of another.&#x20;
+
+This raises the question of which demarcation version to use to determine the ancestors for the breadcrumb and ancestor siblings for the map navigation.
+
+![Sibling Xhariep of parent Mangaung overlaps hexagons when hovering](.gitbook/assets/Screenshot\_2022-08-16\_18-05-28.png)
+
 ### **Proposed Solution**
 
 #### **Sharing levels across hierarchies**
