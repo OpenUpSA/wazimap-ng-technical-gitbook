@@ -53,6 +53,10 @@ This raises the question of which demarcation version to use to determine the an
 
 ![Sibling Xhariep of parent Mangaung overlaps hexagons when hovering](.gitbook/assets/Screenshot\_2022-08-16\_18-05-28.png)
 
+#### Search within a profile should be restricted to the part of the hierarchy they care about
+
+If there is only one hierarchy and only part of it is relevant, e.g. Gauteng for GCRO, then search should be restricted to only Gauteng, and only the boundary types that are used on the GCRO profile.
+
 ### **Proposed Solution**
 
 #### **Sharing levels across hierarchies**
