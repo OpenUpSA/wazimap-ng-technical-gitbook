@@ -10,6 +10,21 @@ See [the tutorial for how to format with the appropriate attributes and simplify
 
 ## South Africa 2020 demarcation
 
+The zip file says 2021 because that's the election when it took effect but the files are labeled 2020 because that's when the changes were announced by the demarcation board.
+
+* ZA
+* Provinces
+* Districts - district and metro municipalities
+* LocalMuni
+* Wards
+
+Attributes
+
+* Name
+* Code
+* Parent\_cod
+* Area
+
 {% file src=".gitbook/assets/2021-demarcation.zip" %}
 
 ## South Africa 2016 demarcation
