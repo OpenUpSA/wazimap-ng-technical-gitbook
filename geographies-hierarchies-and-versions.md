@@ -23,7 +23,7 @@ When loading shapefiles, they are related to a specific geography hierarchy and 
 There are some issues with hierarchies that are beginning to show their teeth.
 
 * I think at least the upload script currently requires each geo to have a parent in the same version. That is probably not really necessary for the frontend or backend in normal use, it means redundant provinces and ZA boundaries, and weirdly the equal area hexagons are "in" the 2016 demarcation rather than just having the 2016 metros as their parents&#x20;
-* Versions are keyed on their name, but they can only exist in one hierarchy, so to add a second "2016 Boundaries" I had to add (ye) to its name to disstinguish it from another one yet be similar to its peer "2011 Boundaries" in youth explorer.
+* Versions are keyed on their name, but they can only exist in one hierarchy, so to add a second "2016 Boundaries" I had to add (ye) to its name to distinguish it from another one yet be similar to its peer "2011 Boundaries" in youth explorer.
 
 ## Shapefiles
 
