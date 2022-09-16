@@ -1,6 +1,6 @@
 # Geography Hierarchies
 
-CookieMismatchThe central unit of analysis in NG is a **geography**. These represent spatial boundaries which can be associated with data that describes it. For example, a typical geography may represent a **Province**. Associated data may include demographics in the area, the crime rate, economic activity, education, or any other arbitrary data.
+The central unit of analysis in NG is a **geography**. These represent spatial boundaries which can be associated with data that describes it. For example, a typical geography may represent a **Province**. Associated data may include demographics in the area, the crime rate, economic activity, education, or any other arbitrary data.
 
 Geographies are related to each other in a tree-like structure (strictly a directed acyclic graph) where each geography in a **level** is either a root node or has exactly one parent.![](https://lh5.googleusercontent.com/o2p2V\_Q8bl2gL48ORYc1HnyMQmyW8mqi7IColSlle1peNCyEgLc9uBT69yJdywHQq-EKQ\_JWyyqXedpYZ\_\_52ajqF7vDHKRYfY6-b2lgLqkCJd2MbO80LDhrjXFucKe9OvKOn3ps)****\
 ****
