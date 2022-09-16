@@ -6,6 +6,8 @@ description: Shapefiles to load geographies and boundaries into geography hierar
 
 See also discussion of [geography-hierarchies.md](system-architecture/geography-hierarchies.md "mention")architecture.
 
+## Hierarchy and profile configuration considerations
+
 A profile has a geography hierarchy which represents the set of geographies it will make available to users.
 
 A hierarchy has a root, a default demarcation version, and a full list of the versions it supports. When a user loads a profile URL, the default version will be selected. The user can change the selected version using the child type/version dropdown on the bottom right, or by selecting an indicator which only has data for that version.
@@ -16,7 +18,12 @@ A dataset is related to a specific geography hierarchy through the profile, and 
 
 When loading shapefiles, they are related to a specific geography hierarchy and demarcation version by their names. Levels in the hierarchy are distinguished via the "level" field, e.g. `country`, `ward`, `mainplace`, `equal area hexagon`. All levels that have a parent in another level must be [configured as "child types" of their parent in the profile configuration](profile-configuation.md#preferred\_children) to determine their priority for selection as the current child type shown on the map when their parent geography is selected by the user.&#x20;
 
+### Discussion
 
+There are some issues with hierarchies that are beginning to show their teeth.
+
+* I think at least the upload script currently requires each geo to have a parent in the same version. That is probably not really necessary for the frontend or backend in normal use, it means redundant provinces and ZA boundaries, and weirdly the equal area hexagons are "in" the 2016 demarcation rather than just having the 2016 metros as their parents&#x20;
+* Versions are keyed on their name, but they can only exist in one hierarchy, so to add a second "2016 Boundaries" I had to add (ye) to its name to disstinguish it from another one yet be similar to its peer "2011 Boundaries" in youth explorer.
 
 ## Shapefiles
 
