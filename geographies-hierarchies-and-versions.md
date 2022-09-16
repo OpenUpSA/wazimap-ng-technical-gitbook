@@ -2,11 +2,17 @@
 description: Shapefiles to load geographies and boundaries into geography hierarchies
 ---
 
-# Geographies/
+# Geographies, hierarchies and versions
 
 These are already simplified and have the right fields to import to Wazimap.
 
-See [the tutorial for how to format with the appropriate attributes and simplify shapefiles](tutorials/loading-new-geographies.md) similarly.
+See [the tutorial for how to format with the appropriate attributes and simplify shapefiles](tutorials/loading-new-geographies.md) similarly. It also demonstrates uploading.
+
+A profile has a geography hierarchy which represents the set of geographies it will make available to users.
+
+A hierarchy has a root, a default demarcation version, and a full list of the versions it supports. When a user loads a profile URL, the default version will be selected. The user can change the selected version using the child type/version dropdown on the bottom right, or by selecting an indicator which only has data for that version.
+
+
 
 ## Shapefiles
 

@@ -70,7 +70,7 @@
 * [Profile Configuration](profile-configuation.md)
 * [Profile Indicator Configuration](profile-indicator-configuration.md)
 * [Profile Collection Configuration](profile-collection-configuration.md)
-* [Geographies/](geographies.md)
+* [Geographies, hierarchies and versions](geographies-hierarchies-and-versions.md)
 
 ## API
 
