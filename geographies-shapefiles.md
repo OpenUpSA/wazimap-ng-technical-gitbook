@@ -14,11 +14,31 @@ See [the tutorial for how to format with the appropriate attributes and simplify
 
 ## South Africa 2016 demarcation
 
+* za - parent is NULL to make it a root in the hierarchy
+* pr
+* dc - district and metro municipalities
+* local-mn
+* Wards\_2016_\__geomfix
+
+Attributes
+
+* code
+* `parent_cod` except ZA which has `parent`
+* name
+* area
+
 {% file src=".gitbook/assets/2016-demarcation.zip" %}
 
 ## South Africa 2011 demarcation
 
 ## Equal area hexagons (Uber H3 resolution 7)
+
+Attributes:
+
+* code
+* parent\_cod
+* area
+* name
 
 Resolution 7 hexagons.
 
