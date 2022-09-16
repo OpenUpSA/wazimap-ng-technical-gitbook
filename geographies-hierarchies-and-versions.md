@@ -6,19 +6,21 @@ description: Shapefiles to load geographies and boundaries into geography hierar
 
 See also discussion of [geography-hierarchies.md](system-architecture/geography-hierarchies.md "mention")architecture.
 
-
-
-These are already simplified and have the right fields to import to Wazimap.
-
-See [the tutorial for how to format with the appropriate attributes and simplify shapefiles](tutorials/loading-new-geographies.md) similarly. It also demonstrates uploading.
-
 A profile has a geography hierarchy which represents the set of geographies it will make available to users.
 
 A hierarchy has a root, a default demarcation version, and a full list of the versions it supports. When a user loads a profile URL, the default version will be selected. The user can change the selected version using the child type/version dropdown on the bottom right, or by selecting an indicator which only has data for that version.
 
+A demarcation version is used to distinguish multiple versions of the same geography boundary, e.g. wards in 2011, 2016, and 2021.
 
+A dataset is related to a specific geography hierarchy through the profile, and a specific demarcation version. The data is related to specific boundaries via the geography codes.
+
+When loading shapefiles, they are related to a specific geography hierarchy and demarcation version by their names.
 
 ## Shapefiles
+
+These are already simplified and have the right fields to import to Wazimap.
+
+See [the tutorial for how to format with the appropriate attributes and simplify shapefiles](tutorials/loading-new-geographies.md) similarly. It also demonstrates uploading.
 
 ### South Africa 2020 demarcation
 
