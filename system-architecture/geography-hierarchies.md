@@ -95,7 +95,7 @@ Overly detailed geographies can result in large downloads. The GeographyBoundary
 
 every key represents a level, following by an ordered list of children that it can display. A **municipality** has two types of children **mainplace** and **ward.** According to this configuration, **mainplaces** should be preferred to **wards** and will be displayed as default. A toggle exists on the user interface to switch between **geographies**. If data for a particular **level** is not available then that should not be shown to the user.
 
-## Discussions
+## See also
 
 {% content-ref url="../ngp2-presenting-geographical-hierarchies-to-users.md" %}
 [ngp2-presenting-geographical-hierarchies-to-users.md](../ngp2-presenting-geographical-hierarchies-to-users.md)
