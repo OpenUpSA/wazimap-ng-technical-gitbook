@@ -1,6 +1,6 @@
 # Translation
 
-In index.html adding `.i18n` class to an element makes the i18n library translate the text of that element on the fly. Using the `data-i18n` attribute, we can define which property to be used from the translations config.
+In index.html adding `.i18n` class to an element makes the i18n library translate the text of that element on the fly. Using the `data-i18n` attribute, we can define which property to be used from the [translations config](../profile-configuation.md#translations).
 
 ```
 //sample config
