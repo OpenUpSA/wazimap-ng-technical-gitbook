@@ -4,6 +4,10 @@ description: Shapefiles to load geographies and boundaries into geography hierar
 
 # Geographies, hierarchies and versions
 
+See also discussion of [geography-hierarchies.md](system-architecture/geography-hierarchies.md "mention")architecture.
+
+
+
 These are already simplified and have the right fields to import to Wazimap.
 
 See [the tutorial for how to format with the appropriate attributes and simplify shapefiles](tutorials/loading-new-geographies.md) similarly. It also demonstrates uploading.
