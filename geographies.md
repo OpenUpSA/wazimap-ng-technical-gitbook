@@ -2,13 +2,15 @@
 description: Shapefiles to load geographies and boundaries into geography hierarchies
 ---
 
-# Geographies/Shapefiles
+# Geographies/
 
 These are already simplified and have the right fields to import to Wazimap.
 
 See [the tutorial for how to format with the appropriate attributes and simplify shapefiles](tutorials/loading-new-geographies.md) similarly.
 
-## South Africa 2020 demarcation
+## Shapefiles
+
+### South Africa 2020 demarcation
 
 The zip file says 2021 because that's the election when it took effect but the files are labeled 2020 because that's when the changes were announced by the demarcation board.
 
@@ -27,7 +29,7 @@ Attributes
 
 {% file src=".gitbook/assets/2021-demarcation.zip" %}
 
-## South Africa 2016 demarcation
+### South Africa 2016 demarcation
 
 * za - parent is NULL to make it a root in the hierarchy
 * pr
@@ -44,9 +46,9 @@ Attributes
 
 {% file src=".gitbook/assets/2016-demarcation.zip" %}
 
-## South Africa 2011 demarcation
+### South Africa 2011 demarcation
 
-## Equal area hexagons (Uber H3 resolution 7)
+### Equal area hexagons (Uber H3 resolution 7)
 
 Attributes:
 
