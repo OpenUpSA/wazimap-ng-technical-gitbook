@@ -265,6 +265,17 @@ as "services"
 
 ![](.gitbook/assets/screenshot\_2021-09-16\_16-37-53.png)
 
+#### Translatable Keys :&#x20;
+
+* 'No filters available for the selected data'
+* 'No facilities for this location'
+* 'locations'
+* 'Point Mapper'
+* 'View location in Google Maps'
+* 'Select the category, or specific type of point data you would like to overlay onto the map.'
+* 'No points available for this location'
+* 'Point Filters'
+
 ### Enabling / Disabling Point Marker Clustering
 
 Clustering is disabled in default. Adding the JSON below to the profile config enables clustering.&#x20;
