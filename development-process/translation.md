@@ -1,6 +1,6 @@
 # Translation
 
-In index.html adding `.i18n` class to an element makes the i18n library translate the text of that element on the fly. Using the `data-i18n` attribute, we can define which property to be used from the [translations config](../profile-configuation.md#translations).
+In index.html adding `.i18n` class to an element makes the i18n library translate the text of that element on the fly. `.18n` class can be added using the `js/webflow/import.js`. Using the `data-i18n` attribute, we can define which property to be used from the [translations config](../profile-configuation.md#translations).
 
 ```
 //sample config
