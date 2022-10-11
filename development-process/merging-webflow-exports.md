@@ -13,7 +13,11 @@ description: Instructions for merging new webflow exports
 
 ## Fixing conflicts
 
-If you have conflicts with webflow-controlled files, importing the latest webflow export ought to fix that.
+If you have conflicts with webflow-controlled files, these can be fixed as follows:
+
+1. Fix any conflicts in non-webflow-controlled files as usual.
+2. Import the latest webflow export.
+3. Test the changes, and add all the changes to git and commit as usual.
 
 This only works when the latest webflow export is safe to import, which should always be the case, by versioning components with breaking changes.
 
