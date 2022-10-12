@@ -22,7 +22,7 @@ The functional styles div resides on the main mapping page (hidden using .hidden
 \
 Elements can be called as needed into different areas. This approach was aimed at improving loading times and initial states that would have incorrect information.
 
-![The individual components ready to be cloned.](<../.gitbook/assets/image (1).png>)
+![The individual components ready to be cloned.](<../.gitbook/assets/image (1) (1).png>)
 
 ## Rich Data Panel
 

@@ -593,7 +593,7 @@ Feature preview: [https://wazimap-ng.webflow.io/feature-previews/map-legend-0212
 
 ![Preview of the .point-legend showing as part of the non-print ui](<../../.gitbook/assets/image (22).png>)
 
-![Structure of new .map-bottom-items div](<../../.gitbook/assets/image (21).png>)
+![Structure of new .map-bottom-items div](<../../.gitbook/assets/image (21) (2).png>)
 
 * Made `.map-options` and `.map-point-legend` children of `.map-bottom-items` (new div)
 * `.map-options` and `.map-point-legend` have a `.hidden` applied by default while waiting for the user to add a point layer or choropleth to the map.

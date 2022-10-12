@@ -40,6 +40,10 @@
 * [GUI Tests](testing/gui-tests.md)
 * [Heroku Review Apps](testing/heroku-review-apps.md)
 
+## Design
+
+* [Iconography](design/iconography.md)
+
 ## Change Proposals
 
 ***
