@@ -5,8 +5,3 @@
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (powered-by-wazimap) (1).zip" %}
 
 * Added "Powered by Wazimap" watermarks to map, point mapper, data mapper and rich data.
-
-
-
-
-
