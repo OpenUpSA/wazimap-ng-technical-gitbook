@@ -12,12 +12,14 @@ Here is an example of how such a configuration might look.
     "wazimap-ng.africa"
   ],
   "choropleth": {
-    "colors": [
-      "#eff3ff",
-      "#bdd7e7",
-      "#6baed6",
-      "#3182bd",
-      "#08519c"
+    "zero_color": "#eeeeee",
+    "negative_color_range": [
+      "#0a3d62",
+      "#82ccdd"
+    ],
+    "positive_color_range": [
+      "#fef0d9",
+      "#b30000"
     ],
     "opacity": 0.7,
     "opacity_over": 0.8
