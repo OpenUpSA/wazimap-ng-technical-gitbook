@@ -97,19 +97,49 @@ The chart atttribution variable controls the attribution text on images of downl
 
 ```
 "choropleth": {
-  "colors": [
-    "#eff3ff",
-    "#bdd7e7",
-    "#6baed6",
-    "#3182bd",
-    "#08519c"
+  "positive_color_range": [
+    "#fef0d9",
+    "#b30000"
+  ],
+  "zero_color": "#eeeeee",
+  "negative_color_range": [
+    "#0a3d62",
+    "#82ccdd"
   ],
   "opacity": 0.7,
   "opacity_over": 0.8
 }
 ```
 
-This section determines the colours used for the choropleths creating in the map explorer
+This section determines the colours used for the choropleths creating in the map explorer.
+
+* positive\_color\_range : \[lightest color for the positive values, darkest color for the positive values]
+* zero\_color: color for the zero value in the legend
+* negative\_color\_range : \[darkest color for the negative values, lightest color for the negative values]
+
+We plot zero on the legend if the minimum value of only positives includes zero, or if the values include negatives and positives.
+
+* **only positives:**\
+  scale(positive min, positive max)\
+  e.g. light to dark brown
+* **only negatives:**\
+  scale(negative max, negative min)\
+  e.g. dark to light blue
+* **pos and neg:**\
+  negative scale(negative max, zero colour)\
+  positive scale(zero colour, positive max)\
+  e.g. dark blue to white to dark brown&#x20;
+* **example config**\
+  negative: \[dark blue, light blue]\
+  positive: \[light brown, dark brown]\
+  zero: white
+
+if choropleth contains positive and negative values, the legend scale is -(max(mag(neg max), pos max)) to max(mag(neg max), pos max)
+
+e.g. values -2 to 20\
+legend: -20 to 20\
+\-2 is light light blue\
+20 dark brown
 
 #### preferred\_children
 
