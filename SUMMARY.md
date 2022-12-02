@@ -22,6 +22,7 @@
 * [Merging webflow exports](development-process/merging-webflow-exports.md)
 * [Rules for Webflow exports](development-process/rules-for-webflow-exports.md)
 * [Webflow exports & changelog](development-process/changelog/README.md)
+  * [December 2022](development-process/changelog/december-2022.md)
   * [November 2022](development-process/changelog/november-2022.md)
   * [October 2022](development-process/changelog/october-2022.md)
   * [May 2022](development-process/changelog/may-2022.md)
