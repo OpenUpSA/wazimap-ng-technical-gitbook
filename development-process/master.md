@@ -28,7 +28,7 @@ Elements can be called as needed into different areas. This approach was aimed a
 
 Every other element is arranged in relation to this panel (using position fixed). This is so that we can maintain in page anchor linking and page navigation.
 
-![The styled components for the rich data panel](<../.gitbook/assets/image (2).png>)
+![The styled components for the rich data panel](<../.gitbook/assets/image (2) (1).png>)
 
 ### 1. Rich data nav items
 

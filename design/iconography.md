@@ -48,7 +48,7 @@ If the action has high importance it should generally be given more weight in th
 
 <figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption><p>Download is given similar weight to zoom in/out when placed in the same context as "map options"</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Core functions have a larger button size and are given more space and prominence.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Core functions have a larger button size and are given more space and prominence.</p></figcaption></figure>
 
 
 
