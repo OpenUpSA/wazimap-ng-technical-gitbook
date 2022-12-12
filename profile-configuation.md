@@ -24,6 +24,7 @@ Here is an example of how such a configuration might look.
     "opacity": 0.7,
     "opacity_over": 0.8
   },
+  "watermark_enabled": true,
   "tile_layers": [
     {
       "url": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png",
@@ -328,3 +329,13 @@ Clustering is disabled in default. Adding the JSON below to the profile config e
 * When clustering is enabled :&#x20;
 
 ![](<.gitbook/assets/image (82).png>)
+
+### Watermark
+
+Watermark can be enabled/disabled by
+
+```
+  "watermark_enabled": true
+```
+
+default value is \`true\`
