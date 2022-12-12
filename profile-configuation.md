@@ -338,4 +338,4 @@ Watermark can be enabled/disabled by
   "watermark_enabled": true
 ```
 
-default value is \`true\`
+default value is `true`
