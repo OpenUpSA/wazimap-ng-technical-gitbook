@@ -87,7 +87,7 @@ For pre-calculated percentages, usually with absolute choropleth method.
 ```
 {
     "types": {
-        "Value": {"formatting": "~.1%"}
+        "Value": {"formatting": ".1%"}
     },
     "disableToggle": true,
     "defaultType": "Value"
