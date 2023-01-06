@@ -77,3 +77,33 @@ At the moment we support 2 chart types : bar chart and line chart.  `chartType` 
 ```
  "chartType": "line" 
 ```
+
+## Examples
+
+#### Value only, formatted as percentage
+
+For pre-calculated percentages, usually with absolute choropleth method.
+
+```
+{
+    "types": {
+        "Value": {"formatting": "~.1%"}
+    },
+    "disableToggle": true,
+    "defaultType": "Value"
+}
+```
+
+#### Values formatted as whole numbers with comma thousand separator
+
+Ideal for population data, were you would like a thousand separator and whole numbers.
+
+```
+{
+  "types": {
+    "Value": {
+      "formatting": ",.0f"
+    }
+  }
+}
+```
