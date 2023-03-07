@@ -65,6 +65,7 @@ Here is an example of how such a configuration might look.
   },
   "default_panel": "point_data",
   "root_geography": "CPT",
+  "site_wide_filters_enabled": false,
   "leaflet_options": {
     "minZoom": 6
   },
@@ -336,6 +337,16 @@ Watermark can be enabled/disabled by
 
 ```
   "watermark_enabled": true
+```
+
+default value is `true`
+
+### Site-wide Filters
+
+Site-wide filters can be enabled/disabled by
+
+```
+"site_wide_filters_enabled": true
 ```
 
 default value is `true`
