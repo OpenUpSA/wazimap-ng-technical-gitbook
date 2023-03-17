@@ -1,5 +1,9 @@
 # March 2023
 
+### 2023/03/17 - Unnecessary code removal
+
+{% file src="../../.gitbook/assets/wazimap-ng.webflow (css-removal).zip" %}
+
 ### 2023/03/16 - Location tag scroll bar fix
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (location-bar-scroll-fix).zip" %}
