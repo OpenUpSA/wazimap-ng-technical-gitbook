@@ -20,7 +20,7 @@ Add the new domain name to the Netlify configuration. Find the [configuration on
 
 ![Create a new domain alias on Netlify](<../.gitbook/assets/Screen Shot 2020-09-12 at 09.21.53.png>)
 
-After adding the alias, to the app the SSL/TLS certificate should renew automatically as shown further down on the page.
+After adding the alias the SSL/TLS certificate should renew automatically as shown further down on the page.
 
 Your frontend is ready!
 
