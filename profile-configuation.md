@@ -350,3 +350,72 @@ Site-wide filters can be enabled/disabled by
 ```
 
 default value is `true`
+
+### Default Filters
+
+Default filters can be set for all the profile indicators in a profile by&#x20;
+
+```
+      "default_filters": [
+        {
+          "name": "language",
+          "value": "English"
+        },
+        {
+          "name": "gender",
+          "value": "Female"
+        }
+      ]
+```
+
+this config will make sure whenever a profile indicator has "language" group, it will be filtered by "English" in default and whenever a profile indicator has "gender" group, it will be filtered by "Female" in default. If the groups or the values are not available for a profile indicator, it will not create any issues or throw any errors. But it will be logged to developer console.
+
+### Restricting Filter Values
+
+Available values for a group can be restricted for all the profile indicators in a profile by
+
+```
+      "restrict_values": {
+        "age": [
+          "15-35 (ZA)",
+          "15-24 (Intl)",
+          "30-35"
+        ]
+      }
+```
+
+this config will make sure whenever a profile indicator has "age" group, the only available filter options will be 15-35 (ZA), 15-24 (Intl) and 30-35
+
+### View Data Whitelists
+
+Default filters and restricting values can be done view-based. This config will override the global `default_filters`and `restrict_values` if the url contains `?view=youth`
+
+```
+  "views": {
+    "youth": {
+      "default_filters": [
+        {
+          "name": "language",
+          "value": "English"
+        }
+      ],
+      "restrict_values": {
+        "age": [
+          "15-35 (ZA)",
+          "15-24 (Intl)",
+          "30-35"
+        ],
+        "race": [
+          "Coloured",
+          "Black African",
+          "Indian or Asian"
+        ],
+        "language": [
+          "English",
+          "Afrikaans",
+          "Some other"
+        ]
+      }
+    }
+  }
+```
