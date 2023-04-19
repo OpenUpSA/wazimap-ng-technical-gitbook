@@ -6,17 +6,23 @@ description: Quick tutorial on creating a new profile.
 
 Here is a quick tutorial that explains how to create a new profile. There are two parts, a) the frontend site and b) the backend profile.
 
+## Setting up the DNS
+
+Cloudflare manages the DNS records. On the Cloudflare dash, find the domain you would like to use and add a CNAME record pointing to `inspiring-dubinsky-c19ab4.netlify.com`
+
 ## Setting up the frontend
 
 Create a new domain name and point it to the Wazimap-NG server. In this case I am creating a new CNAME DNS entry called [covid.openup.org.za](https://covid.openup.org.za) that redirects to Netlify which is currently hosting the Wazi-NG frontend.
 
 ![Adding a CNAME DNS entry](<../.gitbook/assets/Screen Shot 2020-09-12 at 09.16.37.png>)
 
-Add the new domain name to the Netlify configuration.
+Add the new domain name to the Netlify configuration. Find the [configuration on this page](https://app.netlify.com/sites/wazimap-production/settings/domain).
 
 ![Create a new domain alias on Netlify](<../.gitbook/assets/Screen Shot 2020-09-12 at 09.21.53.png>)
 
-Done. Your frontend is ready!
+After adding the alias, to the app the SSL/TLS certificate should renew automatically as shown further down on the page.
+
+Your frontend is ready!
 
 ## Setting up the backend
 
