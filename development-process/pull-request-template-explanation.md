@@ -33,13 +33,13 @@ If on FE, upload the desired outcome (design) and create a Screenshot, once you 
 Create a detailed changelog, if possible. This changelog can be informed by the commits you create (reference the commit part in the git handbook). They should contain parts that you changed. This can be a bullet list, no need to create full sentences. Should be functions, classes, API Endpoints, etc.
 
 **Added**\
-****What has been added.
+What has been added.
 
 **Updated**\
-****What has been updated.
+What has been updated.
 
 **Removed**\
-****What has been removed.
+What has been removed.
 
 ### **Checklists**
 

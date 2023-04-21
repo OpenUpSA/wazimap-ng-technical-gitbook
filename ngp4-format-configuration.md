@@ -17,7 +17,7 @@ Wazimap-NG Indicators contain different types of numbers that need to be formatt
 
 Each Indicator may require its own specialised formatting. To achieve
 
-#### **** **** **** **** **** **** ****
+#### &#x20;     
 
 ## **Proposed Solution 1**
 
@@ -32,8 +32,8 @@ Each Indicator may require its own specialised formatting. To achieve
 ## **Other implications**
 
 Whereas indicators can now be mapped using a choropleth. Superindicators cannot since a choropleth can only display one Count variable at a time. This can be addressed by another select box allowing the user to choose the Count variable of interest or mapping multi-count variables could be prevented entirely.\
-****\
-****\
-****
+\
+\
+
 
 ## **Recommendation**

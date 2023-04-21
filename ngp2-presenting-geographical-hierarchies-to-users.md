@@ -9,7 +9,7 @@
 **Date: 2020-09-02**
 
 **Status: Work in progress**\
-****
+
 
 ## **Context**
 
@@ -23,7 +23,7 @@ Forks can occur at any part of the hierarchy and are dependent on the current ge
 ![](https://lh4.googleusercontent.com/m\_NsorMiAHrK42gcglOmNpK9HKPZgTX2vnHpTop16SKmAQtt\_gcYdiNDPwFkRVkyIvFxf9b4pKSTPIYRPV16wu5kD5Opb-YLzbJe-qonldvS2Hiikwx8fKDf7qS\_XxeTo\_Owo-cE)
 
 In this document we discuss the most appropriate user interface to navigate this hierarchy. \
-****
+
 
 At the time of writing, this is how Wazimap depicts the Wards in the Cape Town metro.&#x20;
 
@@ -34,10 +34,10 @@ Cape Town **Metro** with **Wards** displayed
 ![](https://lh4.googleusercontent.com/CQ5BsGrxpHXLzP6LQ\_EGoQEa-pnr2jdZ6IVXZi5HjVIEzcTvySscl69CVNpcikMcWNGNg0buC5E7UttXl8GFd7pF8wq8FBliBgvGDSQZDM2pBGBQjbF5haA\_ImHq4rJGb9wlyXFZ)
 
 Cape Town **Metro** with M**ainplaces** displayed\
-****
+
 
 A typical user requirement would be to switch between **Wards** and **Mainplaces**.\
-****
+
 
 ### **Approach 1**
 
@@ -47,7 +47,7 @@ The first approach to address this is to use a contextual toggle. The select box
 
 
 This approach requires minor UI changes and can be implemented relatively quickly. Users may however may not necessarily understand the geographical hierarchy and contextual changes may be hard to follow. For example, it may not be obvious that **Subplaces** are not available below Wards.\
-****\
-****
+\
+
 
 ### **Approach 2**

@@ -7,7 +7,7 @@ description: 'Stable version: ... | Latest version: https://wazi-rich-data.webfl
 ## General
 
 **Rationale for recent structure update:**\
-****The latest version of wazimap has been reworked to ensure we can include the following features:
+The latest version of wazimap has been reworked to ensure we can include the following features:
 
 1. In-page anchor linking and page navigation
 2. A component based approach to populating pages

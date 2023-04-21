@@ -13,16 +13,16 @@
 The data model that NG has been built around is the concept of a universe, i.e. the total number of people in a particular context. This universe can then be disaggregated by a number of attributes. For instance the country population is a universe that is divided into male and female, i.e.:
 
 **`# male + # female = total population`**\
-****
+
 
 **Similarly:**
 
 **`# Left-handers in WC + # Right-handers in WC = total population of WC`**\
-****
+
 
 The input file might look like this:\
-****\
-****
+\
+
 
 | **Geography**    | **Preferred hand** | **Count** |
 | ---------------- | ------------------ | --------- |
@@ -32,11 +32,11 @@ The input file might look like this:\
 | **Eastern Cape** | **Right**          | **95**    |
 
 **Table 1**\
-****
+
 
 That works well for census data where you are disaggregating a universe. It falls short when you would like to compare two unrelated datasets side-by-side. As an example:\
 \
-****
+
 
 | **Geography**    | **Access to drinking water**      | **Year** | **Count**  |
 | ---------------- | --------------------------------- | -------- | ---------- |
@@ -44,14 +44,14 @@ That works well for census data where you are disaggregating a universe. It fall
 | **Western Cape** | **Have access to drinking water** | **2017** | **35,000** |
 
 **Table 2**\
-****
+
 
 In this case, we cannot sum the two rows to get the universe, i.e. there aren’t 30,000 + 35,000 = 65,000 people with access to water in the Western Cape. We do however ever want to be able to compare these two figures. \
 
 
 The problem does not only apply to time-based data, e.g.\
-****\
-****
+\
+
 
 | **Geography**    | **Age Group** | **Employment Status** | **Count**   |
 | ---------------- | ------------- | --------------------- | ----------- |
@@ -63,15 +63,15 @@ The problem does not only apply to time-based data, e.g.\
 **Table 3**
 
 In this case we have two universes which overlap but we still want to be able to compare them:\
-****
+
 
 ![](https://lh4.googleusercontent.com/iL4gI7ssYKmHq-sorLAn4y9NR6Aa2bC50M-6fW0SUJ7dgUJMjdxi6h\_XfLZ1s5gZ7GGNkdlbLi-ZSb7BHqXYEJULoIEpBYGimLTjOLyIKwhccZ9KfbbRHfaoFBx0jsUDI7J5JFUM)
 
 ## **Proposed Solution 1**
 
 An underlying assumption of the dataset model is that there is only one count field in every file. We could change this assumption by allowing multiple counts, effectively pivoting our table.\
-****\
-****
+\
+
 
 | **Geography**    | **Access to drinking water**      | **Year - 2016** | **Year - 2017** |
 | ---------------- | --------------------------------- | --------------- | --------------- |
@@ -93,7 +93,7 @@ We would also need to decide how the system would identify count columns. The cu
 
 
 An alternative approach would be to designate a pivot column, e.g. Year. \
-****
+
 
 ### **Benefits**
 
@@ -108,8 +108,8 @@ An alternative approach would be to designate a pivot column, e.g. Year. \
 ### **Proposed Solution 2**
 
 Using this approach we add the concept of a super indicator which ties together two or more indicators together. For instance, table 3 becomes two separate indicators:\
-****\
-****
+\
+
 
 | **Geography**    | **Age Group** | **Employment Status** | **Count**  |
 | ---------------- | ------------- | --------------------- | ---------- |
@@ -124,8 +124,8 @@ Using this approach we add the concept of a super indicator which ties together 
 | **Western Cape** | **15-35**     | **Unemployed**        | **120,000** |
 
 **Table 6**\
-****\
-****These are then associated in the backend.
+\
+These are then associated in the backend.
 
 This solution would affect the following components:
 
@@ -146,7 +146,7 @@ This solution would affect the following components:
 * Less extreme but equally problematic is two related datasets with different groups, e.g. 2016 Matric passes disaggregated by gender vs 2017 Matric passes without disaggregation. In this case, we will need to decide how this will be displayed on the frontend, especially in graph filters
 
 **In the case of two incompatible datasets, we need to decide whether filters are available for missing groups.**\
-****
+
 
 ![](https://lh5.googleusercontent.com/zfcFBFZ8H\_JfxZnqsypJfpfWtLyR9jg6-ybsF0TgleSuN8dKXNbktIzQNcXthvaIaNU9j2--WFNoEpnPR0aA-PY4QIY2usR-bZMpiim-6ud5cuvlMLvf31\_YZP7gACk8cAvrPu26)
 

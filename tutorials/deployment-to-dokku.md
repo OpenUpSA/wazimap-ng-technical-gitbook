@@ -84,4 +84,3 @@ dokku nginx:set wazimap client-max-body-size 100m
 * Add a git remote for deployment `git remote add dokku:wazimap`
 * Deploy `git push dokku staging:master` (if deploying the staging branch)
 
-``
