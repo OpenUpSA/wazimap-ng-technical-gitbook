@@ -31,7 +31,11 @@ Webflow export
 
 Ensured that point mapper labels are correctly truncated.
 
-![](<../../.gitbook/assets/image (85).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (85).png" alt="">
+
+</div>
 
 ## 10/01/2021 - Map data version support
 
@@ -51,17 +55,33 @@ Documentation of generic modal: [https://wazimap-ng.webflow.io/documentation#mod
 
 **Generic Modal:**
 
-![Added generic modal (.generic-modal)](<../../.gitbook/assets/image (79).png>)
+<div align="left">
 
-![Element structure](<../../.gitbook/assets/image (78).png>)
+<img src="../../.gitbook/assets/image (79).png" alt="Added generic modal (.generic-modal)">
 
-![.profile-indicator\_\_version](<../../.gitbook/assets/image (76).png>)
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (78).png" alt="Element structure">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (76).png" alt=".profile-indicator__version">
+
+</div>
 
 {% hint style="info" %}
 Documentation of indicator version: [https://wazimap-ng.webflow.io/documentation#rich-data](https://wazimap-ng.webflow.io/documentation#rich-data)
 {% endhint %}
 
-![Added highlight element that notifies users as to where they can change options in future (.highlight)](<../../.gitbook/assets/image (77).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (77).png" alt="Added highlight element that notifies users as to where they can change options in future (.highlight)">
+
+</div>
 
 ## 09/23/2021 - Facilities loading state
 
@@ -77,9 +97,17 @@ Documentation of indicator version: [https://wazimap-ng.webflow.io/documentation
 * Added loading state **(hidden)** for hide/show facilities button (.location-facilities\_\_trigger--loading)
 * Added loading state **(hidden)** for location facility block items (.location-facility\_\_item--loading)
 
-![Loading state for title and show locations button](<../../.gitbook/assets/image (75).png>)
+<div align="left">
 
-![location-facility\_\_item\_loading for loading indicator on each row](<../../.gitbook/assets/image (74).png>)
+<img src="../../.gitbook/assets/image (75).png" alt="Loading state for title and show locations button">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (74).png" alt="location-facility__item_loading for loading indicator on each row">
+
+</div>
 
 ## 09/16/2021 - Point mapper dropdown icon colour fix
 
@@ -99,7 +127,11 @@ Webflow Export
 Documentation: [https://wazimap-ng.webflow.io/documentation#tooltips](https://wazimap-ng.webflow.io/documentation#tooltips)
 {% endhint %}
 
-![](<../../.gitbook/assets/image (22) (1).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (22) (1).png" alt="">
+
+</div>
 
 #### Added:
 
@@ -117,7 +149,11 @@ Documentation: [https://wazimap-ng.webflow.io/documentation#point-mapper](https:
 
 #### Point mapper dropdown with toggle:
 
-![](<../../.gitbook/assets/image (68).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (68).png" alt="">
+
+</div>
 
 #### Point filters:
 
@@ -138,7 +174,11 @@ Webflow export
 
 * Restricted max height to 90vh on the tutorial modal
 
-![](<../../.gitbook/assets/image (37) (1).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (37) (1).png" alt="">
+
+</div>
 
 ## 08/25/2021 - Rich Data Nav Fix
 
@@ -154,7 +194,11 @@ Changed:
 
 * Made the section nav scroll when height is restricted
 
-![](<../../.gitbook/assets/image (60).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (60).png" alt="">
+
+</div>
 
 ## 08/12/2021 - Print CSS test&#x20;
 
@@ -213,11 +257,23 @@ Changed:
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (z-depth-legend-table-margin-legend-fix - 07192021) (1).zip" %}
 
-![Added margin below tables to improve spacing in rich data panel](<../../.gitbook/assets/image (55).png>)
+<div align="left">
 
-![Hid icon by default](<../../.gitbook/assets/image (58).png>)
+<img src="../../.gitbook/assets/image (55).png" alt="Added margin below tables to improve spacing in rich data panel">
 
-![Added .slide-info\_\_introduction to all tutorial slides](<../../.gitbook/assets/image (59).png>)
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (58).png" alt="Hid icon by default">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (59).png" alt="Added .slide-info__introduction to all tutorial slides">
+
+</div>
 
 #### Changed:
 
@@ -239,7 +295,11 @@ There was a miscommunication about what options users preferred and we implement
 Please note that due to slow performance and export speeds, the **backlog of old feature previews has been purged**. I have created a backup on the webflow side to revert back if this causes any issues. I don't foresee there being a problem. Hopefully the performance issues are noticeable.
 {% endhint %}
 
-![Preview of rich-data profile-indicator filters](<../../.gitbook/assets/image (52).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (52).png" alt="Preview of rich-data profile-indicator filters">
+
+</div>
 
 #### Changed:
 
@@ -272,7 +332,11 @@ Changed:&#x20;
 Webflow export
 {% endfile %}
 
-![Preview of disabled state](<../../.gitbook/assets/image (49).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (49).png" alt="Preview of disabled state">
+
+</div>
 
 * Added `.disabled` state to `.map-download` button by default.&#x20;
 * Remove this class to set state to enabled.
@@ -303,7 +367,11 @@ Webflow Export
 Please note that this element was changed as per a feature request: [https://app.gitbook.com/@openup/s/wazi-ng-technical/\~/drafts/-Md\_pTCg5RT4tBx8Ni2q/development-process/changelog#05-21-2021-additive-filtering](https://app.gitbook.com/@openup/s/wazi-ng-technical/\~/drafts/-Md\_pTCg5RT4tBx8Ni2q/development-process/changelog#05-21-2021-additive-filtering)
 {% endhint %}
 
-![](<../../.gitbook/assets/image (48).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (48).png" alt="">
+
+</div>
 
 #### Changed:
 
@@ -337,9 +405,17 @@ Webflow Export
 Webflow Export
 {% endfile %}
 
-![Example of issue](<../../.gitbook/assets/image (44).png>)
+<div align="left">
 
-![Preview of fix](<../../.gitbook/assets/image (46).png>)
+<img src="../../.gitbook/assets/image (44).png" alt="Example of issue">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (46).png" alt="Preview of fix">
+
+</div>
 
 #### Changed:
 
@@ -356,9 +432,17 @@ Webflow export
 * Adjusted the svg height value for `.location-facility__icon` to 24px to avoid console errors.
 * Removed wazimap-ng.css script call
 
-![Old console errors](<../../.gitbook/assets/image (43).png>)
+<div align="left">
 
-![Console errors after fix](<../../.gitbook/assets/image (42).png>)
+<img src="../../.gitbook/assets/image (43).png" alt="Old console errors">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (42).png" alt="Console errors after fix">
+
+</div>
 
 ## 06/21/2021 - .is--disabled to .disabled
 
@@ -384,7 +468,11 @@ Fixed the short truncation on map options title. It now extends the full width o
 
 Removed capitalization on the map options title.
 
-![](<../../.gitbook/assets/image (41).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (41).png" alt="">
+
+</div>
 
 ## 05/25/2021 - Changes to map options filters
 
@@ -398,9 +486,17 @@ This feature change was requested because dropdowns were not working due to them
 
 #### Changed:
 
-![Removed the filters content section from the map-options div](<../../.gitbook/assets/image (36).png>)
+<div align="left">
 
-![Added map-options\_\_filters\_content to the styles panel for cloning](<../../.gitbook/assets/image (37).png>)
+<img src="../../.gitbook/assets/image (36).png" alt="Removed the filters content section from the map-options div">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (37).png" alt="Added map-options__filters_content to the styles panel for cloning">
+
+</div>
 
 * The backend will need to clone the `.map-options__filters_content` in the styles panel for the map-options panel as needed. The hope is that this will prevent the dropdowns from breaking.
 
@@ -414,9 +510,17 @@ Webflow export
 Feature preview: [https://wazimap-ng.webflow.io/feature-previews/additive-filters-05212021](https://wazimap-ng.webflow.io/feature-previews/additive-filters-05212021)
 {% endhint %}
 
-![Additive filter preview in rich-data panel](<../../.gitbook/assets/image (34).png>)
+<div align="left">
 
-![Additive filter preview in map-options](<../../.gitbook/assets/image (35).png>)
+<img src="../../.gitbook/assets/image (34).png" alt="Additive filter preview in rich-data panel">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (35).png" alt="Additive filter preview in map-options">
+
+</div>
 
 #### Added:
 
@@ -464,7 +568,11 @@ Webflow export
 Feature preview: [https://wazimap-ng.webflow.io/feature-previews/download-all-facilities-04222021](https://wazimap-ng.webflow.io/feature-previews/download-all-facilities-04222021)
 {% endhint %}
 
-![Preview of "Download all facilities" button](<../../.gitbook/assets/image (33).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (33).png" alt="Preview of &#x22;Download all facilities&#x22; button">
+
+</div>
 
 #### Changes:
 
@@ -472,7 +580,11 @@ Feature preview: [https://wazimap-ng.webflow.io/feature-previews/download-all-fa
 * Added `.location__facilities_download.location__facilities_download-all--footer`. This button shows on smaller screen sizes.
 * `.location__facilities_header-wrapper` to contain the icon and title. **Please note** that this may cause integrations with backend data to break.
 
-![Revised structure of the facilities header](<../../.gitbook/assets/image (32).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (32).png" alt="Revised structure of the facilities header">
+
+</div>
 
 ## 04/22/2021 - Chart menu data attributes
 
@@ -500,7 +612,11 @@ Rich data tables
 
 * Added `.profile-indicator__table` to the `.styles` section&#x20;
 
-![Preview of the table (component has the "load more rows" button and showing info hidden) ](<../../.gitbook/assets/image (31).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (31).png" alt="Preview of the table (component has the &#x22;load more rows&#x22; button and showing info hidden) ">
+
+</div>
 
 #### Documentation:
 
@@ -522,7 +638,11 @@ Location print and google maps button
 Feature preview: [https://wazimap-ng.webflow.io/feature-previews/google-map-link-02242021](https://wazimap-ng.webflow.io/feature-previews/google-map-link-02242021)
 {% endhint %}
 
-![Print button and google maps button](<../../.gitbook/assets/image (29).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (29).png" alt="Print button and google maps button">
+
+</div>
 
 ### Added:
 
@@ -531,7 +651,11 @@ Feature preview: [https://wazimap-ng.webflow.io/feature-previews/google-map-link
 * Added `.facility-info__view-google-map` as a child of  `.facility-info`.
   * Component has class `.hidden` applied by default and can be removed to show when available
 
-![.facility-info\_\_print as a child of .facility-info\_\_header](<../../.gitbook/assets/image (30).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (30).png" alt=".facility-info__print as a child of .facility-info__header">
+
+</div>
 
 ## 03/01/2021 - Explicit print button in rich data
 
@@ -547,9 +671,17 @@ Trello card: [https://trello.com/c/qEwQAdRg](https://trello.com/c/qEwQAdRg)
 
 * Added `.rich-data__print` to the rich data panel
 
-![Explicit print button within rich-data panel](<../../.gitbook/assets/image (28).png>)
+<div align="left">
 
-![Structure of rich-data and print button](<../../.gitbook/assets/image (27).png>)
+<img src="../../.gitbook/assets/image (28).png" alt="Explicit print button within rich-data panel">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (27).png" alt="Structure of rich-data and print button">
+
+</div>
 
 ## 03/01/2021 - Rich data location buttons
 
@@ -567,7 +699,11 @@ Trello cards: [https://trello.com/c/iqyaamZj](https://trello.com/c/PjRb7JD0) + [
 Feature preview: [https://wazimap-ng.webflow.io/feature-previews/rich-data-location-button-03012021](https://wazimap-ng.webflow.io/feature-previews/rich-data-location-button-03012021)
 {% endhint %}
 
-![Preview of new implementation](<../../.gitbook/assets/image (26).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (26).png" alt="Preview of new implementation">
+
+</div>
 
 * Info text changed from  "This **location** has 0000 locations in 0000 categories." to  "This **area** has 0000 locations in 0000 categories."
 * Button colour changed to green
@@ -591,9 +727,17 @@ Trello card: [https://trello.com/c/iqyaamZj](https://trello.com/c/iqyaamZj)
 Feature preview: [https://wazimap-ng.webflow.io/feature-previews/map-legend-02122021](https://wazimap-ng.webflow.io/feature-previews/map-legend-02122021)
 {% endhint %}
 
-![Preview of the .point-legend showing as part of the non-print ui](<../../.gitbook/assets/image (22).png>)
+<div align="left">
 
-![Structure of new .map-bottom-items div](<../../.gitbook/assets/image (21) (2).png>)
+<img src="../../.gitbook/assets/image (22).png" alt="Preview of the .point-legend showing as part of the non-print ui">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (21) (2).png" alt="Structure of new .map-bottom-items div">
+
+</div>
 
 * Made `.map-options` and `.map-point-legend` children of `.map-bottom-items` (new div)
 * `.map-options` and `.map-point-legend` have a `.hidden` applied by default while waiting for the user to add a point layer or choropleth to the map.
@@ -604,13 +748,25 @@ Feature preview: [https://wazimap-ng.webflow.io/feature-previews/map-legend-0212
   * This functionality needs to be added on the backend
   * If this functionality is not ready for deployment, the `.point-legend__remove` item can be hidden before cloning
 
-![point-legend\_\_remove added to point-legend](<../../.gitbook/assets/image (23).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (23).png" alt="point-legend__remove added to point-legend">
+
+</div>
 
 #### 2. Version of the point-legend without a remove button for print
 
-![print version of .point-legend without the remove button](<../../.gitbook/assets/image (24).png>)
+<div align="left">
 
-![structure of .point-legend for print version](<../../.gitbook/assets/image (25).png>)
+<img src="../../.gitbook/assets/image (24).png" alt="print version of .point-legend without the remove button">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (25).png" alt="structure of .point-legend for print version">
+
+</div>
 
 ## 02/18/2021 - Map legend
 
@@ -630,11 +786,23 @@ Trello card: [https://trello.com/c/iqyaamZj](https://trello.com/c/iqyaamZj)
 * Added `.map-print__point-legend` to `.map-print`&#x20;
 * `.map-print` has a `.hidden` class by default which is removed when required
 
-![map-print contents](<../../.gitbook/assets/image (18).png>)
+<div align="left">
 
-![map-print in loading configuration](<../../.gitbook/assets/image (19).png>)
+<img src="../../.gitbook/assets/image (18).png" alt="map-print contents">
 
-![Duplicated point-legend](<../../.gitbook/assets/image (20).png>)
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (19).png" alt="map-print in loading configuration">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (20).png" alt="Duplicated point-legend">
+
+</div>
 
 #### 2. Point legend:
 
@@ -669,9 +837,17 @@ Trello card: [https://trello.com/c/m1uc8zOh](https://trello.com/c/m1uc8zOh)
 * Added `data-element="chart-value-select"` to the hover menu chart value type selector
 * Added `data-element="chart-download-data"` to hover menu download data options
 
-![](<../../.gitbook/assets/image (14).png>)
+<div align="left">
 
-![](<../../.gitbook/assets/image (15).png>)
+<img src="../../.gitbook/assets/image (14).png" alt="">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (15).png" alt="">
+
+</div>
 
 ### Fixed
 
@@ -696,7 +872,11 @@ Webflow feature preview: [https://wazimap-ng.webflow.io/feature-previews/chart-d
 Trello card: [https://trello.com/c/tNa3oDXM/654-provide-css-to-allow-hiding-of-the-chart-type-toggles-in-the-chart-context-menu](https://trello.com/c/tNa3oDXM/654-provide-css-to-allow-hiding-of-the-chart-type-toggles-in-the-chart-context-menu)
 {% endhint %}
 
-![Preview of the change to the hover-menu structure](<../../.gitbook/assets/image (11).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (11).png" alt="Preview of the change to the hover-menu structure">
+
+</div>
 
 * Added a div for `.hover-menu__chart-value` and `.hover-menu__download-data`
 * Add `.hidden` to remove this group from the menu
@@ -709,9 +889,17 @@ Trello card: [https://trello.com/c/tNa3oDXM/654-provide-css-to-allow-hiding-of-t
 Trello card: [https://trello.com/c/KV0Yk0hR/655-fix-the-active-css-for-the-value-toggle-on-the-chart-context-menu](https://trello.com/c/KV0Yk0hR/655-fix-the-active-css-for-the-value-toggle-on-the-chart-context-menu)
 {% endhint %}
 
-![Old approach](<../../.gitbook/assets/image (13).png>)
+<div align="left">
 
-![New approach](<../../.gitbook/assets/image (12).png>)
+<img src="../../.gitbook/assets/image (13).png" alt="Old approach">
+
+</div>
+
+<div align="left">
+
+<img src="../../.gitbook/assets/image (12).png" alt="New approach">
+
+</div>
 
 * Changed the way the `.last` class is applied to `.hover-menu__content_list-item` to make the active class behave as intended.&#x20;
   * Old method was a single class `.hover-menu__content_list-item--last`
@@ -753,7 +941,11 @@ Related Trello card: [https://trello.com/c/0tGnWAkN](https://trello.com/c/0tGnWA
 Webflow feature preview: [https://wazimap-ng.webflow.io/feature-previews/tab-notice](https://wazimap-ng.webflow.io/feature-previews/tab-notice)
 {% endhint %}
 
-![Tab notice in loading state](<../../.gitbook/assets/image (10).png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/image (10).png" alt="Tab notice in loading state">
+
+</div>
 
 * Added `.tab-notice` as a child of `.main`
 * Added `.hidden` class to `.tab-notice` to hide by default.
