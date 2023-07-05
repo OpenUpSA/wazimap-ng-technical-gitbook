@@ -84,6 +84,12 @@ The attribute table of the new layer now contains the parent code in the **code\
 
 All that’s left is to create a new Parent\_cod column by copying the value from code\_2 and then deleting code\_2 (unfortunately it isn’t possible to rename the column).&#x20;
 
+{% hint style="info" %}
+Make sure your shapefile is in the Coordinate Reference System (CRS) **EPSG:4326 - WGS 84**
+
+If it isn't, boundaries might be completely absurd and not show properly on the map.
+{% endhint %}
+
 ### **Simplifying boundary files**
 
 The file produced in the previous step was 122mb. Before loading boundaries into Wazimap, I use mapshaper.org to compress them by removing unnecessary detail.&#x20;
