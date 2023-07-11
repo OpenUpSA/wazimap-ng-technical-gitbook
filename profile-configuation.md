@@ -393,6 +393,7 @@ Default filters and restricting values can be done view-based. This config will 
 ```
   "views": {
     "youth": {
+      "label": "youth view",
       "default_filters": [
         {
           "name": "language",
@@ -419,3 +420,17 @@ Default filters and restricting values can be done view-based. This config will 
     }
   }
 ```
+
+View label can be defined using the `label` key. If `label` key does not exist, view name will be used as the view label.
+
+### Default View Label
+
+Default view label can be defined using the `profile.default_view_label`
+
+```
+{
+    default_view_label: "Test view"
+}
+```
+
+If the `default_view_label` does not exist, the default label will be assumed "Default"
