@@ -384,7 +384,9 @@ Available values for a group can be restricted for all the profile indicators in
       }
 ```
 
-this config will make sure whenever a profile indicator has "age" group, the only available filter options will be 15-35 (ZA), 15-24 (Intl) and 30-35
+this config will make sure whenever a profile indicator has "age" group, the only available filter options will be 15-35 (ZA), 15-24 (Intl) and 30-35\
+\
+**\* Key metrics aren't supported in restricted values:** Key metrics will not take restrict\_values under consideration when calculating metrics.
 
 ### View Data Whitelists
 
@@ -421,7 +423,10 @@ Default filters and restricting values can be done view-based. This config will 
   }
 ```
 
-View label can be defined using the `label` key. If `label` key does not exist, view name will be used as the view label.
+View label can be defined using the `label` key. If `label` key does not exist, view name will be used as the view label.\
+\
+**\* Key metrics aren't supported in view data whitelists:** Key metrics will still appear even if subindicator is not present in restricted values\
+
 
 ### Default View Label
 
