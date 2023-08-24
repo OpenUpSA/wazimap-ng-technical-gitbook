@@ -397,6 +397,7 @@ Default filters and restricting values can be done view-based. This config will 
     "youth": {
       "url": "https://deploy-preview-735--wazimap-production.netlify.app/?dev-tools=true&view=children&profileView=%7B%22filters%22%3A%5B%5D%2C%22hiddenIndicators%22%3A%5B2198%2C2206%2C2201%2C2205%2C2319%2C2320%2C2321%2C2322%2C2323%2C2324%2C2325%2C2330%2C2407%2C2408%2C2411%5D%7D",
       "label": "youth view",
+      "order": 4,
       "default_filters": [
         {
           "name": "language",
@@ -427,6 +428,8 @@ Default filters and restricting values can be done view-based. This config will 
 View label can be defined using the `label` key. If `label` key does not exist, view name will be used as the view label.
 
 Url of a view can be defined using the `url` key. If `url` key does not exist, view url will be created as `${current url}?view=${view}`. `url`must be an absolute url - not a relative path
+
+\`order\` key can be used to order the view options in the dropdown
 
 **\* Key metrics aren't supported in view data whitelists:** Key metrics will still appear even if subindicator is not present in restricted values\
 
