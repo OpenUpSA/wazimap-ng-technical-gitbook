@@ -429,7 +429,7 @@ View label can be defined using the `label` key. If `label` key does not exist, 
 
 Url of a view can be defined using the `url` key. If `url` key does not exist, view url will be created as `${current url}?view=${view}`. `url`must be an absolute url - not a relative path
 
-\`order\` key can be used to order the view options in the dropdown
+`order` key can be used to order the view options in the dropdown
 
 **\* Key metrics aren't supported in view data whitelists:** Key metrics will still appear even if subindicator is not present in restricted values\
 
