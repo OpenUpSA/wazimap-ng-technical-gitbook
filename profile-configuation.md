@@ -440,7 +440,7 @@ Default view label can be defined using the `profile.default_view_label`
 
 ```
 {
-    default_view_label: "Test view"
+    "default_view_label": "Test view"
 }
 ```
 
@@ -454,7 +454,7 @@ Tabular comparison link can be added using the `tabular_link_enabled`
 
 ```
 {
-    tabular_link_enabled: true
+    "tabular_link_enabled": true
 }
 ```
 
