@@ -445,3 +445,17 @@ Default view label can be defined using the `profile.default_view_label`
 ```
 
 If the `default_view_label` does not exist, the default label will be assumed "Default"
+
+### Linking Tabular Comparison
+
+<figure><img src=".gitbook/assets/Screenshot 2023-09-05 at 14.54.15.png" alt=""><figcaption><p>tabular comparison link</p></figcaption></figure>
+
+Tabular comparison link can be added using the `tabular_link_enabled`
+
+```
+{
+    tabular_link_enabled: true
+}
+```
+
+Default value for `tabular_link_enabled`  is false.
