@@ -341,6 +341,16 @@ Watermark can be enabled/disabled by
 
 default value is `true`
 
+### Adding Cc License
+
+Cc license(© 2023. This work is openly licensed via [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0)) can be added to the page by&#x20;
+
+```
+"cc_license_enabled": true
+```
+
+default value is `false`
+
 ### Site-wide Filters
 
 Site-wide filters can be enabled/disabled by
