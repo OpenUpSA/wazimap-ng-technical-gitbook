@@ -16,7 +16,7 @@ Added transition styling to the v2 data mapper content items and made max-height
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (data-mapper-v2-01132022) (2).zip" %}
 
-![New item in the styles panel. Select data-category--v2 to use class controlled interactions](<../../.gitbook/assets/image (61) (1).png>)
+![New item in the styles panel. Select data-category--v2 to use class controlled interactions](<../../.gitbook/assets/image (60).png>)
 
 #### Changes:
 

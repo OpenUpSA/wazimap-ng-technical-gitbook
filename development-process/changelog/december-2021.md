@@ -16,14 +16,14 @@
 
 #### Map credit:
 
-![Map credit in the bottom left corner.](<../../.gitbook/assets/image (90) (1).png>)
+![Map credit in the bottom left corner.](<../../.gitbook/assets/image (45).png>)
 
 * Added .map-credit to .map.
 * This item is shown by default and the link directs to Wazimap NG product page.
 
 #### Point filters: <a href="#changes" id="changes"></a>
 
-![Point filters closed by default](<../../.gitbook/assets/image (89) (1).png>)
+![Point filters closed by default](<../../.gitbook/assets/image (56).png>)
 
 * Added `.is--shown` and `.is--hidden` for the `.point-filters_content` element.
 * Backend should toggle this to open and close the modal.
@@ -34,7 +34,7 @@
 
 #### Data mapper:
 
-![](<../../.gitbook/assets/image (89).png>)
+![](<../../.gitbook/assets/image (42).png>)
 
 * Added `.map-options__no-data` to the `.map-options__filters_content`
 * `.map-options__no-data` is hidden by default

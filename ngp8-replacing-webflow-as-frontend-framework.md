@@ -57,7 +57,7 @@ We are now looking at introducing a frontend framework, or the frontend librarie
 
 ### Upcoming components
 
-![](<.gitbook/assets/WaziCompare - Mockup 1 (3) (1).png>) ![](<.gitbook/assets/image (22) (2).png>) ![](<.gitbook/assets/image (21) (1).png>) ![](<.gitbook/assets/indicator-panel-contracted-filter-reset (1).jpg>)
+![](<.gitbook/assets/WaziCompare - Mockup 1 (3) (1).png>) ![](<.gitbook/assets/image (22) (1).png>) ![](<.gitbook/assets/image (21) (1).png>) ![](<.gitbook/assets/indicator-panel-contracted-filter-reset (1).jpg>)
 
 ### Libraries and tech to consider
 
@@ -76,7 +76,7 @@ We are now looking at introducing a frontend framework, or the frontend librarie
 * Try the [MUI react material UI component library](https://mui.com/material-ui/)
 * Try the [Semantic UI component library](https://semantic-ui.com/) with React integration
 * Implement the search/select-one component and style accordingly
-  * &#x20;![](<.gitbook/assets/image (22) (2).png>)
+  * &#x20;![](<.gitbook/assets/image (22) (1).png>)
 * Implement the filter-reset snackbar
   * &#x20;![](<.gitbook/assets/indicator-panel-contracted-filter-reset (1).jpg>)
 * Do either of them risk breaking styling of existing parts?

@@ -8,11 +8,7 @@
 Google Style Marker
 {% endfile %}
 
-<div align="left">
-
-<img src="../.gitbook/assets/image (10) (1).png" alt="">
-
-</div>
+<div align="left"><img src="../.gitbook/assets/image (109).png" alt=""></div>
 
 This marker is based on the look of the google pin style and is able to accommodate icons and text abbreviations easily.
 
@@ -32,11 +28,7 @@ At all zoom levels, this pin should be 21px wide.
 White Marker
 {% endfile %}
 
-<div align="left">
-
-<img src="../.gitbook/assets/image (71).png" alt="">
-
-</div>
+<div align="left"><img src="../.gitbook/assets/image (80).png" alt=""></div>
 
 This marker is based on the look of the google pin style and is able to accommodate icons and text abbreviations easily.
 

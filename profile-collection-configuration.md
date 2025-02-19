@@ -12,7 +12,7 @@ For a point attribute to be filterable, it needs to be included in `filterable_f
   ]
 ```
 
-![](<.gitbook/assets/image (83).png>)
+![](<.gitbook/assets/image (89).png>)
 
 The values in `filterable_fields` array that are not attributes of the category will be ignored
 
@@ -22,7 +22,7 @@ The values in `filterable_fields` array that are not attributes of the category 
   ]
 ```
 
-![](<.gitbook/assets/image (84).png>)
+![](<.gitbook/assets/image (51).png>)
 
 ### Field Types
 

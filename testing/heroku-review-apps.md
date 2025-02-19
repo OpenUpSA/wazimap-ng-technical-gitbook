@@ -2,7 +2,7 @@
 
 ### Creating a review app
 
-![](../.gitbook/assets/Screenshot\_2022-05-29\_16-55-42.png)
+![](../.gitbook/assets/Screenshot_2022-05-29_16-55-42.png)
 
 1. Login to the heroku dashboard
 2. Go to the wazimap pipeline
@@ -18,7 +18,7 @@ Migrations and demodata are only loaded when the app is created. If you need to 
 * Add it to the configuration in profiles for the backend review app and save\
   ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.42.54 PM.png>)
 * Go to Ui deploy preview add ?dev-tools=true to enable dev tools and add `deploy-preview-542--wazimap-staging.netlify.app` to Hostname and backend review app url to Api url `https://wazireview.herokuapp.com` and enter\
-  ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.44.34 PM.png>)
+  ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.44.34 PM (1).png>)
 
 ## Creating staging apps in heroku
 
@@ -78,7 +78,7 @@ Via GUI:
 
 * Go to overview on app in heroku dev center and there will option to see dyno formation\
   click on configure dyno link on right hand side\
-  ![](<../.gitbook/assets/Screenshot 2022-05-24 at 1.14.55 PM.png>)
+  ![](<../.gitbook/assets/Screenshot 2022-05-24 at 1.14.55 PM (1).png>)
 * Switch on the dyno to run Qcluster (click on edit and turn the toggle on)\
   ![](<../.gitbook/assets/Screenshot 2022-05-24 at 1.17.21 PM.png>)
 
@@ -106,7 +106,7 @@ Via GUI:
 * Add it to the configuration in profiles for the backend review app and save\
   ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.42.54 PM.png>)
 * Go to Ui deploy preview add ?dev-tools=true to enable dev tools and add `deploy-preview-542--wazimap-staging.netlify.app` to Hostname and backend review app url to Api url `https://wazireview.herokuapp.com` and enter\
-  ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.44.34 PM.png>)\
+  ![](<../.gitbook/assets/Screenshot 2022-05-18 at 5.44.34 PM (1).png>)\
 
 
 ### Destroy review apps when branches are merged

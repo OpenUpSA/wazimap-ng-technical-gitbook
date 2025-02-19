@@ -2,7 +2,7 @@
 
 ## 2022-12-05 - Data mapper content list wrapper
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (23).png>)
 
 {% file src="../../.gitbook/assets/wazimap-ng.webflow (data-mapper-content-wrapper-20221205).zip" %}
 

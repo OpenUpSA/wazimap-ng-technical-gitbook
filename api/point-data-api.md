@@ -13,11 +13,11 @@ A common way to fetch points is to
 
 Example themes:
 
-![](../.gitbook/assets/Screenshot\_2021-08-26\_15-03-42.png)
+![](../.gitbook/assets/Screenshot_2021-08-26_15-03-42.png)
 
 Example point categories
 
-![](../.gitbook/assets/Screenshot\_2021-08-26\_15-03-53.png)
+![](../.gitbook/assets/Screenshot_2021-08-26_15-03-53.png)
 
 {% hint style="info" %}
 **Profile Collections vs Categories**
@@ -35,21 +35,19 @@ Avoid hard-coding theme, category and point IDs without documented agreement wit
 To update points in-place rather than replace entire categories of points, agree on a consistent unique identifier that will be available in the point data fields with the profile administrators.
 {% endhint %}
 
-{% swagger baseUrl="https://production.wazimap-ng.openup.org.za" path="/api/v1/profiles/" method="get" summary="Fetch Profile ID" %}
-{% swagger-description %}
-Profile id is required to make requests to points API.
+## Fetch Profile ID
 
-\
+<mark style="color:blue;">`GET`</mark> `https://api.wazimap.com/api/v1/profiles/`
 
-
+Profile id is required to make requests to points API.\
 Get the ID of the profile from the Profile list.
-{% endswagger-description %}
 
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
     "count": 2,
-    "next": "https://production.wazimap-ng.openup.org.za/api/v1/profiles/?page=2",
+    "next": "https://api.wazimap.com/api/v1/profiles/?page=2",
     "previous": null,
     "results": [
         {
@@ -94,8 +92,8 @@ Get the ID of the profile from the Profile list.
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 | Field                    | Detail                                                                                                         |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------- |
@@ -107,43 +105,25 @@ Get the ID of the profile from the Profile list.
 | description              | TextField - Contains short intro about Profile                                                                 |
 | configuration            | Profile configurations set up by profile admin                                                                 |
 
-{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/themes/" method="get" summary="Get Themes for a Profile" %}
-{% swagger-description %}
-This API endpoint will return all Themes that are linked to specific Profile
+## Get Themes for a Profile
 
+<mark style="color:blue;">`GET`</mark> `https://api.wazimap.com/api/v1/profile/:profile_id/points/themes/`
+
+This API endpoint will return all Themes that are linked to specific Profile\
+A Profile can be linked to multiple themes and Themes contains multiple categories.\
 \
+Example request:\
+`GET https://api.wazimap.com/api/v1/profile/8/points/themes/`\
 
 
-A Profile can be linked to multiple themes and Themes contains multiple categories.
+#### Path Parameters
 
-\
+| Name        | Type   | Description       |
+| ----------- | ------ | ----------------- |
+| profile\_id | number | ID of the profile |
 
-
-
-
-\
-
-
-Example request:
-
-\
-
-
-
-
-`GET https://production.wazimap-ng.openup.org.za/api/v1/profile/8/points/themes/`
-
-\
-
-
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="profile_id" type="number" %}
-ID of the profile
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 [
     {
@@ -177,8 +157,8 @@ ID of the profile
     },
 ]
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 | Field      | Description                                                                       |
 | ---------- | --------------------------------------------------------------------------------- |
@@ -189,20 +169,21 @@ ID of the profile
 | profile    | ID of the Linked Profile                                                          |
 | categories | List of sub-data that displays more information and points available for a Theme  |
 
-{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/theme/:theme_id/profile_categories/" method="get" summary="Get Categories for a Theme" %}
-{% swagger-description %}
+## Get Categories for a Theme
+
+<mark style="color:blue;">`GET`</mark> `https:/``/api.wazimap.com/api/v1/profile/:profile_id/points/theme/:theme_id/profile_categories/`
+
 Get all categories under a Theme
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="profile_id" type="number" %}
-ID of the Profile
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="theme_id" type="number" %}
-ID of the theme
-{% endswagger-parameter %}
+| Name        | Type   | Description       |
+| ----------- | ------ | ----------------- |
+| profile\_id | number | ID of the Profile |
+| theme\_id   | number | ID of the theme   |
 
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 [
     {
@@ -224,8 +205,8 @@ ID of the theme
     }
 ]
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 | Field       | Description                                |
 | ----------- | ------------------------------------------ |
@@ -235,32 +216,23 @@ ID of the theme
 | theme       | Linked Theme obj Details                   |
 | Metadata    | Information about the source of data       |
 
-{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/category/:category_id/points/" method="get" summary="Get Points for a Category" %}
-{% swagger-description %}
-Get coordinates and location details for a category.
+## Get Points for a Category
 
-\
+<mark style="color:blue;">`GET`</mark> `https://``api.wazimap.com/api/v1/profile/:profile_id/points/category/:category_id/points/`
 
+Get coordinates and location details for a category.\
+Example request:\
+`GET https://api.wazimap.com/api/v1/profile/8/points/category/578/points/`
 
-Example request:
+#### Path Parameters
 
-\
+| Name         | Type   | Description        |
+| ------------ | ------ | ------------------ |
+| profile\_id  | number | ID of the Profile  |
+| category\_id | number | ID of the Category |
 
-
-
-
-`GET https://production.wazimap-ng.openup.org.za/api/v1/profile/8/points/category/578/points/`
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="profile_id" type="number" %}
-ID of the Profile
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" name="category_id" type="number" %}
-ID of the Category
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
     "type": "FeatureCollection",
@@ -309,8 +281,8 @@ ID of the Category
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 | Field                 | Description                                                                                                                                                                                                                                                          |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -319,25 +291,22 @@ ID of the Category
 | features > geometry   | Coordinate details for a Location                                                                                                                                                                                                                                    |
 | features > properties | <p>Data associated with coordinates. It can include anything profile admin wants to display in association with location. ex: Name, Phone number, Detailed address etc.</p><p>There is also option for profile admin to have url and image in feature properties</p> |
 
-{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/geography/:geography_code/points/" method="get" summary="Get Categories & Points for a Geography" %}
-{% swagger-description %}
-Get points within a Geography.
+## Get Categories & Points for a Geography
 
-\
+<mark style="color:blue;">`GET`</mark> `https://api.wazimap.com/api/v1/profile/:profile_id/points/geography/:geography_code/points/`
 
-
+Get points within a Geography.\
 API returns Categories within Geography with all the points associated with specific Category inside requested Geo Code
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="profile_id" type="number" %}
-ID of the profile
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="geography_code" type="string" %}
-Geo Code for Geography
-{% endswagger-parameter %}
+| Name            | Type   | Description            |
+| --------------- | ------ | ---------------------- |
+| profile\_id     | number | ID of the profile      |
+| geography\_code | string | Geo Code for Geography |
 
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
     count: 2,
@@ -368,8 +337,8 @@ Geo Code for Geography
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 | Field              | Description                                                    |
 | ------------------ | -------------------------------------------------------------- |
@@ -378,24 +347,22 @@ Geo Code for Geography
 | results > category | Category Name                                                  |
 | results > features | List of locations with details for a category within Geography |
 
-{% swagger baseUrl="https://production.wazimap-ng.openup.org.za/" path="api/v1/profile/:profile_id/points/category/:category_id/geography/:geography_code/points/" method="get" summary="Get Points for a Category within a Geography" %}
-{% swagger-description %}
+## Get Points for a Category within a Geography
+
+<mark style="color:blue;">`GET`</mark> `https://api.wazimap.com/api/v1/profile/:profile_id/points/category/:category_id/geography/:geography_code/points/`
+
 Get all Points for a Category within a specific Geo Code
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="profile_id" type="number" %}
-ID of the Profile
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="category_id" type="number" %}
-ID for the Category
-{% endswagger-parameter %}
+| Name            | Type   | Description            |
+| --------------- | ------ | ---------------------- |
+| profile\_id     | number | ID of the Profile      |
+| category\_id    | number | ID for the Category    |
+| geography\_code | string | Geo Code for Geography |
 
-{% swagger-parameter in="path" name="geography_code" type="string" %}
-Geo Code for Geography
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
     "type": "FeatureCollection",
@@ -432,5 +399,5 @@ Geo Code for Geography
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}

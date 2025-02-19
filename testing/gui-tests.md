@@ -24,15 +24,15 @@
 * Everytime `cypress:gui` script is run, the test results, logs and their videos are saved to the dashboard. Github actions runs this script too.&#x20;
 * By selecting `WazimapNG` in the Projects page, all the latest test runs could be viewed.
 
-![Projects page](<../.gitbook/assets/image (60) (1).png>)
+![Projects page](<../.gitbook/assets/image (97).png>)
 
-![Latest test runs of WazimapNG project](<../.gitbook/assets/image (72).png>)
+![Latest test runs of WazimapNG project](<../.gitbook/assets/image (1).png>)
 
 * By clicking on any of the test runs, you can view
   * Overview : How many tests are failed / passed / skipped.... etc
   * Test results : Details, statuses, result logs... etc
   * Specs : Screenshots, videos... etc
 
-![Analytics](<../.gitbook/assets/image (64).png>)
+![Analytics](<../.gitbook/assets/image (62).png>)
 
 * More useful details(Average run duration, Top failures, Slowest tests...)  could be found in Analytics menu of the dashboard.&#x20;

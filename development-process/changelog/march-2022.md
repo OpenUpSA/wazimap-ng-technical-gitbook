@@ -20,11 +20,11 @@ Changelog:
 * Removed "municipality" dummy text from ".map-tooltip\_\_geography-chip"
 * Removed "location type" dummy text from ".location-tag\_\_type"
 
-![](<../../.gitbook/assets/image (63) (1).png>)
+![](<../../.gitbook/assets/image (58).png>)
 
-![](<../../.gitbook/assets/image (61).png>)
+![](<../../.gitbook/assets/image (85).png>)
 
-![](<../../.gitbook/assets/image (62).png>)
+![](<../../.gitbook/assets/image (64).png>)
 
 ## Removal of dummy data charts - 03/24/2022
 

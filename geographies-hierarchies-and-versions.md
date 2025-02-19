@@ -16,7 +16,7 @@ A demarcation version is used to distinguish multiple versions of the same geogr
 
 A dataset is related to a specific geography hierarchy through the profile, and a specific demarcation version. The data is related to specific boundaries via the geography codes.
 
-When loading shapefiles, they are related to a specific geography hierarchy and demarcation version by their names. Levels in the hierarchy are distinguished via the "level" field, e.g. `country`, `ward`, `mainplace`, `equal area hexagon`. All levels that have a parent in another level must be [configured as "child types" of their parent in the profile configuration](profile-configuation.md#preferred\_children) to determine their priority for selection as the current child type shown on the map when their parent geography is selected by the user.&#x20;
+When loading shapefiles, they are related to a specific geography hierarchy and demarcation version by their names. Levels in the hierarchy are distinguished via the "level" field, e.g. `country`, `ward`, `mainplace`, `equal area hexagon`. All levels that have a parent in another level must be [configured as "child types" of their parent in the profile configuration](profile-configuation.md#preferred_children) to determine their priority for selection as the current child type shown on the map when their parent geography is selected by the user.&#x20;
 
 ### Discussion
 
@@ -56,7 +56,7 @@ Attributes
 * pr
 * dc - district and metro municipalities
 * local-mn
-* Wards\_2016_\__geomfix
+* Wards\_201&#x36;_\__&#x67;eomfix
 
 Attributes
 

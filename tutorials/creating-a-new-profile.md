@@ -36,7 +36,9 @@ If after 10 minutes it hasn't renewed, click Renew Certificate and check in anot
 
 ## Setting up the backend
 
-The backend is also simple to create. Login at [https://production.wazimap-ng.openup.org.za/admin](https://production.wazimap-ng.openup.org.za/admin) and add a new profile [https://production.wazimap-ng.openup.org.za/admin/profile/profile/add/](https://production.wazimap-ng.openup.org.za/admin/profile/profile/add/).&#x20;
+The backend is also simple to create. Login at [https://api.wazimap.com/admin](https://api.wazimap.com/admin)
+
+&#x20;and add a new profile [https://api.wazimap.com/admin/profile/profile/add/](https://api.wazimap.com/admin/profile/profile/add/)
 
 ![](<../.gitbook/assets/Screen Shot 2020-09-12 at 09.12.33.png>)
 

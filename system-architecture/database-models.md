@@ -100,7 +100,7 @@ The actual structure of IndicatorData objects is a little more complicated. More
 
 **Universes** represent saved filters on queries and enable the Data Administrator to run a query on a subset of the database. The default **Universe** is the total of all the distinct observations in a geography (e.g. the total population of the geography). It is possible to create a custom **Universe** and apply it to an **Indicator.**&#x20;
 
-![](../.gitbook/assets/universe.svg)
+![](<../.gitbook/assets/universe (1).svg>)
 
 A **Universe** which creates a filter on gender can enable queries on Female exclusively. PseudoSQL to represent this operation
 

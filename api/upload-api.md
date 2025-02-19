@@ -12,28 +12,29 @@ Authoritation is done in the header via an user-based token. The token can be ge
 Authorization : Token yourtoken
 ```
 
-{% swagger baseUrl="" path="/api/v1/datasets/" method="post" summary="Create new dataset" %}
-{% swagger-description %}
+## Create new dataset
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `/api/v1/datasets/`
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
+#### Headers
 
-{% endswagger-parameter %}
+| Name          | Type   | Description |
+| ------------- | ------ | ----------- |
+| Authorization | string |             |
 
-{% swagger-parameter in="body" name="file" type="string" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name    | Type   | Description |
+| ------- | ------ | ----------- |
+| file    | string |             |
+| profile | string |             |
 
-{% swagger-parameter in="body" name="profile" type="string" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Update existing dataset
 
@@ -70,7 +71,7 @@ POST /api/v1/datasets/:id/upload/
 #### Example
 
 ```bash
-curl --location --request POST 'http://production.wazimap-ng.openup.org.za/api/v1/datasets/84/upload/' \
+curl --location --request POST 'http://api.wazimap.com/api/v1/datasets/84/upload/' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Token yourtoken' \
 --form 'file=@/covid_next.csv' \

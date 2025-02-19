@@ -142,7 +142,7 @@ if choropleth contains positive and negative values, the legend scale is -(max(m
 
 e.g. values -2 to 20\
 legend: -20 to 20\
-\-2 is light light blue\
+-2 is light light blue\
 20 dark brown
 
 #### preferred\_children
@@ -293,11 +293,11 @@ translations: {
 
 This can also be used to relable terms to be more appropriate to a specifc profile, e.g. presenting the default "points"
 
-![](.gitbook/assets/screenshot\_2021-09-16\_16-37-41.png)
+![](.gitbook/assets/Screenshot_2021-09-16_16-37-41.png)
 
 as "services"
 
-![](.gitbook/assets/screenshot\_2021-09-16\_16-37-53.png)
+![](.gitbook/assets/Screenshot_2021-09-16_16-37-53.png)
 
 #### Translatable Keys :&#x20;
 
@@ -325,11 +325,11 @@ Clustering is disabled in default. Adding the JSON below to the profile config e
 
 * When clustering is disabled :&#x20;
 
-![](<.gitbook/assets/image (81).png>)
+![](<.gitbook/assets/image (46).png>)
 
 * When clustering is enabled :&#x20;
 
-![](<.gitbook/assets/image (82).png>)
+![](<.gitbook/assets/image (50).png>)
 
 ### Watermark
 
@@ -350,6 +350,16 @@ Cc license(© 2023. This work is openly licensed via [CC BY-NC-ND 4.0](https://c
 ```
 
 default value is `false`
+
+### Enabling Point Search By Distance
+
+Point search by distance can be enabled/disabled by&#x20;
+
+```
+"point_search_enabled": true
+```
+
+default value is `true`
 
 ### Site-wide Filters
 
@@ -396,7 +406,7 @@ Available values for a group can be restricted for all the profile indicators in
 
 this config will make sure whenever a profile indicator has "age" group, the only available filter options will be 15-35 (ZA), 15-24 (Intl) and 30-35\
 \
-**\* Key metrics aren't supported in restricted values:** Key metrics will not take restrict\_values under consideration when calculating metrics.
+&#xNAN;**\* Key metrics aren't supported in restricted values:** Key metrics will not take restrict\_values under consideration when calculating metrics.
 
 ### View Data Whitelists
 
