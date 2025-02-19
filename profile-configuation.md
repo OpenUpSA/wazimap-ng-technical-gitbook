@@ -1,6 +1,6 @@
 # Profile Configuration
 
-A number of configuration options are available to control how the application is set-up. They can be set in the configuration field of the profile model, e.g.: [https://production.wazimap-ng.openup.org.za/admin/profile/profile/](https://production.wazimap-ng.openup.org.za/admin/profile/profile/)
+A number of configuration options are available to control how the application is set-up. They can be set in the configuration field of the profile model, e.g.: [https://api.wazimap.com/admin/profile/profile/](https://api.wazimap.com/admin/profile/profile/)
 
 ### Full profile configuration example
 
